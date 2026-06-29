@@ -1,0 +1,46 @@
+* Upload structured (JSON) overall results to RaceRoster.
+*   Param 1 (%1):  The RaceRoster sub-event ID.
+*
+*   Recommendation:
+*     - Define sub-event IDs in Entries.INI (e.g. %rr_5k%) rather than hardcoding
+*       them here or in multiple listings — one place to update when IDs change.
+*     - If you also publish unstructured results, use a separate ID for structured
+*       (e.g. %rr_5k% for structured, %rr_5k_u% for unstructured).
+
+External Report To  RaceRoster
+Records Per Page    100000
+No Page Numbers
+List DNF
+Dq Field            DNF
+
+Header
+.INCLUDE            RACENAME
+##%1##
+.End of Header
+
+Select              BIB
+>                   0
+And
+Select              DNF
+EQ
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Field               DIV
+Field               City
+Field               State
+Field               DIVPLACE
+Field               DIVTOTAL
+Field               SEXPLACE
+Field               SEXTOTAL
+
+Event               Finish
+minus               GunStart
+Time Format         H:MM:SS.01
+Field Header        Gun Time
+
+Event               Finish
+minus               ChipStart
+Time Format         H:MM:SS.01
+Field Header        Chip Time

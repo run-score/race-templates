@@ -1,0 +1,35 @@
+* 5K Awards List
+*
+* Purpose:          Generates the complete awards listing for the 5K race.
+*                   Run after results are validated and before the awards ceremony.
+*
+* Flow:
+*   1. OVERHDR.RSM        -- Prints the awards header and resets any prior excludes.
+*   2. @OVERALL.RSM       -- Lists top N overall winners (male & female) and excludes them.
+*   3. AGERES.RSM         -- Lists top N in each age group (overall winners already excluded).
+*   4. FormFeedAtEnd.rsm  -- Optional "Form feed at end" when needed.
+*
+* To customize:
+*   - Change the first number in each line to adjust how many winners per category.
+*   - Add or remove AGERES.RSM lines to change age group brackets.
+*
+OVERHDR.RSM
+* Overall male and female awards (top 3 each)
+@OVERALL.RSM 3 FEMALE F
+@OVERALL.RSM 3 MALE   M
+* Age group awards (top 3 each, overall winners excluded)
+AGERES.RSM 3 FEMALE F 1  19
+AGERES.RSM 3 MALE   M 1  19
+AGERES.RSM 3 FEMALE F 20 29
+AGERES.RSM 3 MALE   M 20 29
+
+AGERES.RSM 3 FEMALE F 30 39
+AGERES.RSM 3 MALE   M 30 39
+
+AGERES.RSM 3 FEMALE F 40 49
+AGERES.RSM 3 MALE   M 40 49
+AGERES.RSM 3 FEMALE F 50 59
+AGERES.RSM 3 MALE   M 50 59
+AGERES.RSM 3 FEMALE F 60 99
+AGERES.RSM 3 MALE   M 60 99
+FormFeedAtEnd.rsm

@@ -1,0 +1,21 @@
+* Age-graded results
+*When to use:       Use this to provide fair comparisons between runners of different ages and sexes, or to offer special awards (like "Best Performance")
+*                   regardless of who crossed the finish line first.
+*How to use:        - Ensure your database has Age and Gender/Sex fields populated.
+*                    - Call the Age Grade Percent or Age Graded command followed by the specific distance file (e.g., AGEGRADE.5K)
+*                    -Use Sort Down if scoring by percentage (highest is best) or Sort if scoring by adjusted time (lowest is best).
+*   
+records/page        50
+header
+*** RESULTS GRADED BY AGE AND SEX BASED ON WORLD MASTERS ATHLETICS TABLES **
+.include            RACENAME
+.End of Header
+.include            fieldlst
+ form feed at end
+Field               AGE
+Field               SEX
+Event               Finish
+Event               Finish
+age grade percent   agegrade.5K
+field header        AGEGRADE
+Sort Down             

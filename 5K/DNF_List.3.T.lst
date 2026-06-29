@@ -1,0 +1,13 @@
+* Shows all runners marked as Did Not Finish.
+*   When to use:    After the race to review DNF runners.
+*   How to use:     Double-click to display the list in the Browse window.
+Destination         Browse
+Select              BIB
+>                   0
+And
+Select              DNF
+=                   DNF
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE

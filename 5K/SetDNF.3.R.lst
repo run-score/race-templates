@@ -1,0 +1,7 @@
+* Marks a runner as Did Not Finish.
+*   When to use:    When a runner did not finish the race.
+*   How to use:     Double-click, enter the Bib number, and click OK.
+Select              Bib
+=                   ?Enter Bib Number of DNF Runner
+Selected            DNF
+Selected Message    DNF

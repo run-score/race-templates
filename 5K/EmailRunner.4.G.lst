@@ -1,0 +1,42 @@
+* Email Runner: Sends an email to a specific runner by bib number.
+*   When to use:    When you need to email a specific runner their results or information.
+*   How to use:     Double-click, enter the bib number, and click OK.
+*   Setup:          Configure SendGrid API key and sender in Entries.INI (%email_apikey%, %email_from%).
+Header
+
+Your results for the %full name% race:
+
+.End of Header
+Destination         temp.txt
+Records Per Page    1
+Page Length         3
+From Page Number    1
+To Page Number      1000
+No Column Headers
+No Page Numbers
+No Total
+Select              BIB
+=                   ?Enter Bib Number
+Message             Name:
+Space               1
+Field               Name
+Line Feed
+Message             Sex/Age:
+Space               1
+Field               Sex
+Space               1
+Field               AGE
+Line Feed
+Message             Gun Time:
+Space               1
+Field               TIME
+Line Feed
+Message             Chip Time:
+Space               1
+Field               NETTIME
+
+EMAIL TO            EMAIL
+Email Subject       %email_subject% - Your Results
+EMAIL SERVER        sendgrid
+EMAIL APIKEY        %email_apikey%
+EMAIL FROM          %email_from%

@@ -1,0 +1,16 @@
+* Urgent Broadcast
+* Selection: All participants with a mobile phone number
+Select              PHONE
+NE
+
+* SMS Configuration
+SMS Destination     PHONE
+No Column Headers
+No Page Numbers
+No Total
+Squeeze
+
+* Message Construction
+Message             URGENT: %race name% alert. 
+Message             Severe weather/thunderstorms approaching. 
+Message             Please seek shelter immediately and follow official instructions.

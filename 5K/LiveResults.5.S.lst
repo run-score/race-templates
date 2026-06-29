@@ -1,0 +1,25 @@
+* Scrolling display of the most recent finishers.
+*   When to use:    During the race on a monitor visible to spectators.
+*   How to use:     Double-click to launch the full-screen live results display.
+*   Tip:            Recommended to run on an RSClient machine to keep RSServer available.
+Live Results
+Full Screen
+Scroll Size         50
+Scroll Speed        2
+Scroll Delay        3
+Font Size           20
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Field               City
+Field               State
+Event               GunStart
+Field Header        Gun
+Event               ChipStart
+Field Header        Chip
+Event               FINISH
+Event               Finish
+Minus               GunStart
+Field Header        Time
+Pace                5K

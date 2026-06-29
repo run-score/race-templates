@@ -1,0 +1,45 @@
+* RaceRoster upload header for unstructured text results.
+*
+* IMPORTANT:        This RSM MUST be the very first RSM in the listing. It is the
+*                   only section that sets External Report To RaceRoster and
+*                   registers the ##NNN## sub-event ID — the conditions the
+*                   engine's upload gate requires. Without it first, later
+*                   Destination Append sections are still written to the .txt file
+*                   on disk (mode "a+" creates it) but are never uploaded.
+*                   Additionally, Destination (not Append) overwrites the file,
+*                   clearing the previous run's output for a clean start.
+*
+* Purpose:          Opens the Race Roster upload file. This is the ONLY
+*                   sub-listing that carries:
+*                     Output Format txt
+*                     External Report To RaceRoster
+*                     Destination (creates/overwrites the file)
+*                     ##NNN## results-race ID marker in the header
+*                   All later sections use Destination Append with the same
+*                   filename — see OVERALL-RR.RSM and AGERES-RR.RSM.
+*
+* Race Roster setup: Create a separate results race (e.g. "Awards") with
+*                   Result type "Unstructured (Text/PDF)". Copy its numeric ID
+*                   into Entries.INI (sample: %rr_5k_awards_u% = 283746).
+*                   Race Roster displays the uploaded text as-is — the same
+*                   plain-text layout written to ~awards-5k.txt in this folder.
+*
+* Param 1 (%1):     Race Roster results-race ID (e.g. %rr_5k_awards_u% from
+*                   Entries.INI, or a numeric ID passed directly).
+* Param 2 (%2):     Destination filename — must start with ~ (e.g.
+*                   "~awards-5k.txt") so the file is created in the race folder.
+*
+* Example:          RaceRosterHeader.RSM %rr_5k_awards_u% "~awards-5k.txt"
+*
+* See also:         Working example: C:\RunScore\SampleRaces\5k
+*                   docs — Publish Unstructured Results (Race Roster online).
+*
+Output Format       txt
+External Report To  RaceRoster
+Destination         %2
+No Page Numbers
+No Total
+ 
+header
+##%1##
+.End Of Header

@@ -1,0 +1,11 @@
+* Set RUNNER STATUS to STARTING for runners without a GunStart time.
+Select              BIB
+>                   0
+And
+Select              RUNNER STATUS
+EQ
+And
+Select              GUNSTART
+EQ
+Selected            RUNNER STATUS
+Selected Message    STARTING

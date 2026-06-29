@@ -1,0 +1,22 @@
+* Event to Database for Finish
+event to database
+event               Finish
+database field      time
+
+place
+database field      place
+
+division place      div
+database field      divplace
+
+division total      div
+database field      divtotal
+
+division place      sex
+database field      sexplace
+
+division total      sex
+database field      sextotal
+
+pace                20K
+database field      pace

@@ -1,0 +1,51 @@
+* Age-group results for awards ceremony (RaceRoster append).
+*
+* Purpose:          Lists the top N finishers within a specific sex and age range
+*                   and appends the section to the Race Roster upload file.
+*                   Used after overall winners have been excluded. Each call adds
+*                   an age-group header and finisher lines to ~awards-5k.txt.
+*
+* IMPORTANT:        Uses Destination Append — NOT plain Destination.
+*                   Plain Destination would overwrite the file and destroy all
+*                   sections written by RaceRosterHeader.rsm, OVERALL-RR.RSM,
+*                   and any prior AGERES-RR.RSM calls.
+*                   RaceRosterHeader.rsm MUST have run first — it registers the
+*                   upload gate (External Report To + ##NNN##). Without it, this
+*                   section writes to disk but is never uploaded.
+*
+*                   Does NOT repeat External Report To, Output Format, or the
+*                   ##NNN## marker — only Destination Append is needed here.
+*
+* Param 1 (%1):     Number of results to display (e.g., 3 for top 3).
+* Param 2 (%2):     Sex label for the header (FEMALE or MALE).
+* Param 3 (%3):     Sex code for selection (F or M).
+* Param 4 (%4):     Minimum age of the age group (e.g., 20).
+* Param 5 (%5):     Maximum age of the age group (e.g., 29).
+* Param 6 (%6):     Destination filename (must start with ~, e.g. ~awards-5k.txt).
+*                   Must match the filename passed to RaceRosterHeader.rsm.
+*
+* Example:          AGERES-RR.RSM 3 FEMALE F 1 19 "~awards-5k.txt"
+*
+* See also:         Working example: C:\RunScore\SampleRaces\5k
+*
+Destination Append  %6
+No Page Numbers
+No Column Headers
+Header
+%2 AGE GROUP:  %4 - %5
+.end of header
+Select              SEX
+=                   %3
+And
+Overall Place
+Select              AGE
+>=                  %4
+And
+select              AGE
+<=                  %5
+Records/Page        %1
+Field               Name
+Field               AGE
+Field               City
+Field               STATE
+Event               %awards_event%

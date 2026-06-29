@@ -1,0 +1,17 @@
+Comment             Overall Results for 5K
+From Page Number    1
+To Page Number      1000
+Header
+.include            RACENAME
+.End of Header
+Record              17:25 by RunScore in 2026
+Field               Name
+Field               AGE
+Field               SEX
+Field               CITY
+Field Length        15
+Field               STATE
+Field               CLUB
+.include            eventlst
+Pace                5K
+ 

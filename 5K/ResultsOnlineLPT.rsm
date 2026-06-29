@@ -1,0 +1,56 @@
+* Upload structured (JSON) overall results with runner status to RaceRoster (LPT).
+*   Param 1 (%1):  The RaceRoster sub-event ID.
+*
+*   Note:           LPT requires structured (JSON) results so RaceRoster can parse
+*                   the data for Live Predictive Tracking. Unstructured (text) results
+*                   are not supported by LPT.
+*
+*   Recommendation:
+*     - Define sub-event IDs in Entries.INI (e.g. %rr_5k%) rather than hardcoding
+*       them here or in multiple listings — one place to update when IDs change.
+*     - Run @CalcStatus.lst before uploading so RUNNER STATUS is populated.
+
+External Report To  RaceRoster
+Records Per Page    100000
+No Page Numbers
+List DNF
+Dq Field            DNF
+
+Header
+.INCLUDE            RACENAME
+##%1##
+.End of Header
+
+Select              BIB
+>                   0
+And
+Select              DNF
+EQ
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Field               DIV
+Field               City
+Field               State
+Field               DIVPLACE
+Field               DIVTOTAL
+Field               SEXPLACE
+Field               SEXTOTAL
+Field               RUNNER STATUS
+
+Event               Finish
+minus               GunStart
+Time Format         H:MM:SS.01
+Field Header        Gun Time
+
+Event               Finish
+minus               ChipStart
+Time Format         H:MM:SS.01
+Field Header        Chip Time
+
+* LPT split: elapsed time from actual chip mat crossing to checkpoint (not gun time)
+Event               LPTCheckpoint
+minus               ChipStart
+Time Format         H:MM:SS.01
+Field Header        LPT Time

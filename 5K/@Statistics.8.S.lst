@@ -1,0 +1,15 @@
+* Statistics: Displays participant statistics by various categories.
+*   When to use:    Before or after the race to review participant demographics.
+*   How to use:     Double-click to display statistics for all categories.
+*   Customize:      Comment out (*) any categories you don't need, or add new ones.
+
+Statistics.rsm      RACE
+Statistics.rsm      DIV
+Statistics.rsm      SEX
+Statistics.rsm      AGE
+
+* Additional categories:
+* Statistics.rsm    CITY
+* Statistics.rsm    STATE
+* Statistics.rsm    CLUB
+* Statistics.rsm    TSHIRT

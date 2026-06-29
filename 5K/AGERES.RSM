@@ -1,0 +1,33 @@
+* Age-group results for awards ceremony
+*
+* Purpose:          Lists the top N finishers within a specific sex and age range.
+*                   Used after overall winners have been excluded.
+*
+* Param 1 (%1):     Number of results to display (e.g., 3 for top 3).
+* Param 2 (%2):     Sex label for the header (FEMALE or MALE).
+* Param 3 (%3):     Sex code for selection (F or M).
+* Param 4 (%4):     Minimum age of the age group (e.g., 20).
+* Param 5 (%5):     Maximum age of the age group (e.g., 29).
+*
+* Example:          AGERES.RSM 3 FEMALE F 20 29
+*
+No Page Numbers
+No Column Headers
+Header
+%2 AGE GROUP:  %4 - %5
+.end of header
+Select              SEX
+=                   %3
+And
+Overall Place
+Select              AGE
+>=                  %4
+And
+select              AGE
+<=                  %5
+Records/Page        %1
+Field               Name
+Field               AGE
+Field               City
+Field               STATE
+Event               %awards_event%

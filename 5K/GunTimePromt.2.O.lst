@@ -1,0 +1,10 @@
+* Enter Gun Time for 5k Race Prompt
+*   When to use:    Just once at the starting gun.
+*   How to use:     Double-click to open the dialog box, then enter your time (using the HH:MM:SS.00 format).
+*   Alternative:    Feel free to edit the input directly within the GunTime file, then double-click to run it!
+
+
+select              Race
+=                   5k
+selected            GunStart
+selected Message    ?ENTER Gun Time and click OK Format MUST BE HH:MM:SS.ss

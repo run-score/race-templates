@@ -1,0 +1,54 @@
+* Readme file
+/*
+This sample race is for a 5 km road race. 
+
+The race has a single start.
+
+The race has the following events(mats): a GunStart and a ChipStart, an Announce, and a Finish.
+
+
+We recommend using the Priority to group your listing files.
+You may also use different colors to differentiate the functionality of the different listing files.
+
+All the files follow the best practice recommendation.
+
+
+We recommend starting each listing file with a short comment describing its purposes.
+
+
+Unregistered (bandit) runner number
+------------------------------------
+When a finish is recorded for a bib or chip number that is not in the entries
+database, RunScore assigns it to a special "unregistered" runner (also called the
+bandit). This lets you keep the result without stopping to register the runner
+during the race.
+
+RunScore decides which number to use in the following order. Each step, when set,
+overrides the one before it:
+
+    1. A built-in default of 0.
+    2. The unregistered runner number from your RunScore profile -- your default
+       for every race.
+    3. The "unregistered number" setting in this race's Entries.INI, which applies
+       to this race only and takes precedence over the profile.
+
+This 5K race sets the value in Entries.INI:
+
+    unregistered number 20000
+
+so the unregistered runner is identified by bib 20000 in this race.
+
+A related Entries.INI setting controls what happens to a number that is read but
+not found in the database:
+
+    Not found added     yes
+
+With "Not found added" set to yes, an unknown bib/chip is added to the database as
+a new entry (with no name) instead of being assigned to the unregistered runner;
+set it to no to record the result against the unregistered runner without creating
+a new entry.
+
+To change the default, edit the "unregistered number" value in this race's
+Entries.INI (this race only), or change the "Unregistered runner number" field in
+Tools > Preferences (applies to new races).
+*/

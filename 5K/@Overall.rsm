@@ -1,0 +1,13 @@
+* Overall awards wrapper
+*
+* Purpose:          Runs OVERALL.RSM to list top finishers, then EXCLUDE.RSM
+*                   to exclude them from subsequent age-group results.
+*
+* Param 1 (%1):     Number of overall winners (e.g., 3).
+* Param 2 (%2):     Sex label (FEMALE or MALE).
+* Param 3 (%3):     Sex code (F or M).
+*
+* Example:          @OVERALL.RSM 3 FEMALE F
+*
+OVERALL.RSM %1 %2 %3
+EXCLUDE.RSM %1 %2 %3

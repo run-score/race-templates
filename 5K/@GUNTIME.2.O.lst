@@ -1,0 +1,7 @@
+* Assigns gun times to the 5k Race
+*   When to use:    Just once at the starting gun.
+*   How to use:     Update the race name (if different from "5k") and set your specific gun time.
+*   Alternative:    Feel free to use the GunTime Prompt to set this up using a handy dialog box!
+
+
+setgunstart.rsm 5k 09:02:11.15

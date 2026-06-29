@@ -1,0 +1,34 @@
+* Urgent Email Broadcast
+*   When to use:    In case of emergency (weather, course change, cancellation).
+*   How to use:     Double-click to send an urgent email to all runners with an email address.
+*   Setup:          Configure SendGrid API key and sender in Entries.INI (%email_apikey%, %email_from%).
+Header
+
+URGENT ALERT - %race name%
+
+.End of Header
+Destination         temp.txt
+Records Per Page    1
+Page Length         3
+From Page Number    1
+To Page Number      1000
+No Column Headers
+No Page Numbers
+No Total
+
+* Selection: All participants with an email address
+Select              EMAIL
+NE
+
+* Message Construction
+Message             URGENT: %race name% alert.
+Line Feed
+Message             Severe weather/thunderstorms approaching.
+Line Feed
+Message             Please seek shelter immediately and follow official instructions.
+
+EMAIL TO            EMAIL
+Email Subject       URGENT: %race name% Alert
+EMAIL SERVER        sendgrid
+EMAIL APIKEY        %email_apikey%
+EMAIL FROM          %email_from%

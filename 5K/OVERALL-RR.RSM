@@ -1,0 +1,44 @@
+* Overall results for top N finishers by sex (RaceRoster append).
+*
+* Purpose:          Lists the top N overall finishers for a specific sex category
+*                   and appends the section to the Race Roster upload file.
+*                   Used by @awards2RR.6.R.lst after RaceRosterHeader.rsm creates
+*                   ~awards-5k.txt; each call adds another block of plain text
+*                   (overall male/female headers and finisher lines) to that file.
+*
+* IMPORTANT:        Uses Destination Append — NOT plain Destination.
+*                   Plain Destination would overwrite the file and destroy all
+*                   sections written by RaceRosterHeader.rsm and prior calls.
+*                   RaceRosterHeader.rsm MUST have run first — it registers the
+*                   upload gate (External Report To + ##NNN##). Without it, this
+*                   section writes to disk but is never uploaded.
+*
+*                   Does NOT repeat External Report To, Output Format, or the
+*                   ##NNN## marker — only Destination Append is needed here.
+*
+* Param 1 (%1):     Number of results to display (e.g., 3 for top 3).
+* Param 2 (%2):     Sex label for the header (FEMALE or MALE).
+* Param 3 (%3):     Sex code for selection (F or M).
+* Param 4 (%4):     Destination filename (must start with ~, e.g. ~awards-5k.txt).
+*                   Must match the filename passed to RaceRosterHeader.rsm.
+*
+* Example:          OVERALL-RR.RSM 3 FEMALE F "~awards-5k.txt"
+*
+* See also:         Working example: C:\RunScore\SampleRaces\5k
+*
+Destination Append  %4
+no page numbers
+no column headers
+Header
+.ce ********** %2 OVERALL RESULTS FOR 5K RACE ***********
+.End of Header
+Field               Name
+Field               AGE
+Field               CITY
+Field Length        15
+Field               STATE
+Field               CLUB
+Select              SEX
+=                   %3
+records/page        %1
+event               %awards_event%

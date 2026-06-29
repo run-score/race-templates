@@ -1,0 +1,27 @@
+ Packet labels for Avery 5160 10x3 labels
+Labels
+top margin          2
+left margin         1
+
+font                bold
+columns             3
+line length         99* Page Layout/Format
+*Page length         60lines/inch          6
+
+select              NO.
+>=                  ?Enter first number
+and
+select              NO.
+<=                  ?Enter last number
+Field               NO.
+Field               SEX
+Field               AGE
+Line Feed
+Field               FIRST NAME
+Squeeze
+Field               LAST NAME
+Line Feed
+Line Feed
+Line Feed
+Line Feed
+ 

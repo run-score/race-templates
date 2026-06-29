@@ -1,0 +1,20 @@
+* Save Unstructured (Text) Results to RaceRoster.
+*
+*   When to use:    After the race to publish final unstructured text results.
+*   How to use:     Double-click to upload results to RaceRoster.
+*
+*   Setup:
+*     Pass the RaceRoster sub-event ID and destination filename below.
+*     Example (direct):  ResultsUnsOnline.rsm   297655   "~results_5k.txt"
+*     Example (Entries): ResultsUnsOnline.rsm   %rr_5k_u%   "~results_5k.txt"
+*
+*   Recommendation:
+*     - If you publish both structured and unstructured results, use separate
+*       RaceRoster sub-event IDs (e.g. %rr_5k% for structured, %rr_5k_u% for
+*       unstructured). Define them once in Entries.INI rather than hardcoding IDs
+*       in multiple listings and RSMs — this avoids forgetting to update one file.
+*     - Prefix the destination filename with ~ (e.g. "~results_5k.txt"). The tilde
+*       creates the file in the race directory; without it, the file is created in
+*       the binary directory, which can cause issues when switching races.
+
+ResultsUnsOnline.rsm   %rr_5k_u%   "~results_5k.txt"
