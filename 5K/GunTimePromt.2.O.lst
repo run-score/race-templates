@@ -1,10 +1,31 @@
 * Enter Gun Time for 5k Race Prompt
+*
 *   When to use:    Just once at the starting gun.
-*   How to use:     Double-click to open the dialog box, then enter your time (using the HH:MM:SS.00 format).
-*   Alternative:    Feel free to edit the input directly within the GunTime file, then double-click to run it!
+*   How to use:     Double-click to open the dialog box, then enter your time
+*                   (HH:MM:SS.ss format). The dialog writes the value into the
+*                   GunStart database field only — it does not update the
+*                   GunStart event by itself.
+*   Alternative:    Edit @GUNTIME.2.O.lst or setgunstart.rsm directly, then run
+*                   GunStart2Event.2.O.lst to copy the field into the event.
+*
+*   This listing uses Continue (see docs: Continue command) so processing does
+*   not stop after the dialog; the steps below then push GunStart field → event.
 
 
 select              Race
 =                   5k
 selected            GunStart
 selected Message    ?ENTER Gun Time and click OK Format MUST BE HH:MM:SS.ss
+
+* Continue — without this, the listing stops after Selected and GunStart event
+*            is never updated even though the dialog saved the database field.
+Continue
+
+* Database to Event — copies the GunStart field value (from the dialog above)
+*                     into the GunStart event for all matching runners.
+Database to Event
+Initialize Times
+Event               GunStart
+Database Field      GunStart
+Select              GunStart
+<>
