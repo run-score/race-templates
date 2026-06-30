@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: RunScore Documentation
+    url: https://docs.runscore.com
+    about: Documentation, tutorials, guides, and release notes
+  - name: Timers Helping Timers Forum
+    url: https://runscore.groups.io/g/main
+    about: Community support for race timers
+  - name: Youtube Channel
+    url: https://www.youtube.com/@run-score
+    about: Watch our videos for tips and tricks
