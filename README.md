@@ -56,6 +56,6 @@ These templates follow RunScore best practices:
 
 ## Learn more & support
 
-- Step-by-step video tutorials: [docs.runscore.com](https://docs.runscore.com)
-- "Timers Helping Timers" community forum — ask questions and swap tips with other timers (linked from [docs.runscore.com](https://docs.runscore.com))
-- Release notes and changelog: [docs.runscore.com/changelog](https://docs.runscore.com/changelog)
+- [RunScore Documentation](https://docs.runscore.com) — Documentation, tutorials, guides, and release notes
+- [Timers Helping Timers Forum](https://runscore.groups.io/g/main) — Community support for race timers
+- [Youtube Channel](https://www.youtube.com/@run-score) — Watch our videos for tips and tricks
