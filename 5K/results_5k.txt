@@ -1,0 +1,48 @@
+                       Thirty-Ninth Annual Vernon V
+                      Vernon, New York     06/20/2009
+Place Bib   Name                                     S Age Div   City               St Divpl Divto Sexpl Sexto Gun Time   Chip Time     
+===== ===== ======================================== = === ===== ================== == ===== ===== ===== ===== ========== ========== 
+    1    44 John Jewell                              M  84 M6099 Newtown            PA                           17:14.47   14:50.00 
+    2    23 Dave Derry                               M  78 M6099 Thompsonville      RI                           17:15.92   15:20.09 
+    3    15 Stuart deVilbris                         M  69 M6099 Devon              PA                           17:01.22   15:39.74 
+    4    11 Steven Hoble                             M  71 M6099 Vernon             NY                           16:55.61   15:46.81 
+    5    18 Ken Swift                                M  52 M5059 Swift Town         KY                           18:04.17   15:55.21 
+    6    42 Ravena Bastian                           F  51 F5059 Bellington         PA                           17:33.25   15:57.87 
+    7    33 Ralph Maxel                              M  36 M3039 Pembrooke          NY                           18:00.58   16:07.12 
+    8    31 Tami Ide                                 F  69 F6099 Appleton           NY                           17:45.75   16:07.44 
+    9    30 Pete Williams                            M  57 M5059 Vernon             NY                           17:50.89   16:07.78 
+   10    43 Clark Benson                             M  70 M6099 Apalachin          NY                           18:06.71   16:15.94 
+   11     3 Frank Held                               M  54 M5059 Vernon             NY                           17:20.40   16:16.95 
+   12    34 Jim Walker                               M  63 M6099 Mudville           NJ                           17:50.01   16:22.74 
+   13    29 Dick Runner                              M  74 M6099 Norton             DE                           18:06.88   16:25.87 
+   14    50 Tom Jester                               M  56 M5059 Vernon             NY                           18:05.85   16:31.68 
+   15    20 Mary Swift                               F  64 F6099 Swift Town         KY                           17:46.35   16:32.37 
+   16     7 Paul Winters                             M  39 M3039 Mount Morrow       NY                           18:21.40   16:45.66 
+   17     6 Patti Evans                              F  41 F4049 Vernon             NY                           18:05.52   16:54.22 
+   18    10 Pete Class                               M  58 M5059 Northville NY      NY                           17:28.64   16:58.13 
+   19    22 Jim Ryan                                 M  57 M5059 Moorestown         NY                           18:53.48   17:11.61 
+   20    27 John Smith                               M  40 M4049 Carbondale         PA                           18:22.39   17:12.39 
+   21    17 Ken Adams                                M  83 M6099 Norton             NY                           18:44.90   17:18.89 
+   22    40 George Watson                            M  70 M6099 Samsonville        NY                           18:57.93   17:19.90 
+   23    26 Jenny Blakely                            F  53 F5059 Mount Morrow       NY                           18:36.34   17:26.10 
+   24     1 Tom Riel                                 M  45 M4049 Kane               NY                           18:48.02   17:34.34 
+   25     8 Fred Winters                             M  35 M3039 Mount Morrow       NY                           18:26.77   17:35.98 
+   26     9 Steve Demo                               M  53 M5059 Mount Morrow       NY                           18:46.83   17:48.54 
+   27    35 Dwight Weaver                            M  53 M5059 Stumbleton         WI                           19:17.01   17:55.23 
+   28    28 Keith Meyer                              M  60 M6099 Johnson City       OH                           20:16.28   18:03.43 
+   29    16 Norman Jones                             M  80 M6099 Vernon             NY                           19:34.15   18:15.64 
+   30     4 Dennis Button                            M  45 M4049 Walton             PA                                DNF   18:23.54 
+   31    38 Joe White                                M  65 M6099 Middletown         MD                           19:21.69   18:32.58 
+   32    37 Andrew Olson                             M  39 M3039 Westtown           NY                           20:14.08   18:38.17 
+   33    12 Mary Gardner                             F  59 F5059 Mount Morrow       NY                           20:10.09   18:51.86 
+   34    19 Paul Swift                               M  24 M2029 Swift Town         KY                           20:58.63   18:53.29 
+   35    45 Jim Moore                                M  41 M4049 Moorestown         NY                           20:21.46   19:02.43 
+   36    21 Ted Merritt                              M  38 M3039 Pocono             PA                           21:07.46   19:11.40 
+   37     5 Paul Cramer                              M  88 M6099 Walton             PA                                DNF   19:14.00 
+   38    41 Don Gill                                 M  37 M3039 Vernon             NY                           20:47.80   19:32.23 
+   39    14 Paul McLaughlin                          M  63 M6099 Williamsport       PA                           21:17.33   19:48.04 
+   40    25 Anne Bender                              F  62 F6099 Delaware           NJ                           20:31.33   19:52.00 
+   41    24 Eugene Bender                            M  63 M6099 Delaware           NJ                           21:07.38   20:01.52 
+   42    39 Adele Thompson                           F  46 F4049 Afton              NY                           21:47.09   20:10.57 
+   43    36 Gabe Vicky                               M  65 M6099 Dwighton           NY                           23:01.73   21:05.65 
+   44    32 Judy Jones                               F  54 F5059 Issacstown         PA                           23:34.34   21:53.08 

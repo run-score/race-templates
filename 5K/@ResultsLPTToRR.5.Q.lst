@@ -1,0 +1,20 @@
+* Save Structured (JSON) Results with Runner Status (LPT) to RaceRoster.
+*
+*   When to use:    During LPT-enabled races to publish results with runner status.
+*   How to use:     Double-click to upload structured results including runner status.
+*
+*   Note:           LPT requires structured (JSON) results — unstructured (text) uploads
+*                   are not supported by Live Predictive Tracking.
+*
+*   Setup:
+*     Pass the RaceRoster sub-event ID below.
+*     Example (direct):  ResultsOnlineLPT.rsm   297655
+*     Example (Entries): ResultsOnlineLPT.rsm   %rr_5k%
+*
+*   Recommendation:
+*     - Run @CalcStatus.lst first so RUNNER STATUS is populated before upload.
+*     - Use a dedicated sub-event ID for LPT (e.g. %rr_5k%) defined in Entries.INI.
+*     - Timer must choose either LPT or non-LPT workflow for the race — do not mix
+*       @AutoResults and @AutoResultsLPT on the same sub-event.
+
+ResultsOnlineLPT.rsm   %rr_5k%

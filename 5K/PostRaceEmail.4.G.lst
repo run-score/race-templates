@@ -1,0 +1,50 @@
+* Sends bulk email results after the race is finalized.
+*   When to use:    After all errors are fixed and "Event to Database" has been run.
+*   How to use:     Double-click to email results to all runners with an EMAIL and TIME.
+*   Setup:          Configure SendGrid API key and sender in Entries.INI (%email_apikey%, %email_from%).
+*   Note:           Ensure "Event to Database" is run first to populate result fields.
+
+/* Before running: You MUST execute the "Event to Database" command.
+This copies Finish Times and Places into the participant records so
+this script can find them.
+*/
+
+Header
+
+Your results for the %full name% race:
+
+.End of Header
+Destination         temp.txt
+Records Per Page    1
+Page Length         3
+From Page Number    1
+To Page Number      1000
+No Column Headers
+No Page Numbers
+No Total
+
+Select              EMAIL
+NE
+And
+Select              TIME
+NE
+
+* Message Construction
+Field               Name
+Message             : Time:
+Space               1
+Field               TIME
+Message             . Div:
+Space               1
+Field               DIVPLACE
+Message             /
+Field               DIVTOTAL
+Message             . Full Results:
+Space               1
+Field               Result URL
+
+EMAIL TO            EMAIL
+Email Subject       %email_subject% - Your Results
+EMAIL SERVER        sendgrid
+EMAIL APIKEY        %email_apikey%
+EMAIL FROM          %email_from%

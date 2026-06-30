@@ -1,0 +1,12 @@
+* List of potential duplicate runners
+* Purpose:          Identifies runners with the same First Name, Last Name, and Birthdate.
+* Why Birthdate:    Included to distinguish between family members (e.g., Father/Son) 
+*                    who share the same name but have different birth years.
+* When to use:      After importing data or during the final registration audit.
+* How it works:     Scans for matches across all three fields and opens a Browse screen.
+* Double-click any entry to resolve the duplication.
+*
+Remove Duplicates   Browse
+Field               LAST NAME
+Field               FIRST NAME
+Field               BIRTHDATE

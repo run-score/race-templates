@@ -1,0 +1,35 @@
+* Live Email Finisher Notifications. Automated Email Alerts for Finishers.
+*   When to use:    Run this live during the race to send instant notifications as participants cross the finish line.
+*   How to use:     Ensure the EMAIL field in your database contains valid email addresses. Double-click to start the listener;
+*                   an email is triggered each time a new finish time is recorded.
+*   Setup:          Configure SendGrid API key and sender in Entries.INI (%email_apikey%, %email_from%).
+Announce            Headers
+Announce Event      Finish
+
+* Message Construction
+Message             Congrats
+Space               1
+Field               First Name
+Squeeze
+Space               0
+Message             , you've finished the %race name%.
+Line Feed
+Message             Official Results: https://results.raceroster.com/v3/events/%resultsid5k%/
+
+/* Recommendation: Avoid including the finish time directly in the email.
+Times can change due to manual corrections or chip-to-gun adjustments.
+Providing a results URL is the most accurate way to share data.
+*/
+
+* Optional Time Formatting (Commented Out)
+* Field             RACE
+* Message           event, in a time of
+* Event             Finish
+* Minus             ChipStart
+* Time Format       H:MM:SS.01
+
+EMAIL TO            EMAIL
+Email Subject       %email_subject% - You've Finished!
+EMAIL SERVER        sendgrid
+EMAIL APIKEY        %email_apikey%
+EMAIL FROM          %email_from%

@@ -1,0 +1,7 @@
+* Marks a runner as Disqualified.
+*   When to use:    When a runner is disqualified.
+*   How to use:     Double-click, enter the Bib number, and click OK.
+Select              Bib
+=                   ?Enter Bib Number of DQ Runner
+Selected            DNF
+Selected Message    DQ

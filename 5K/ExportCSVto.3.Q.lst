@@ -1,0 +1,35 @@
+* CSV Export (Custom): Exports race results to a user-specified CSV file.
+*   When to use:    After the race to export results for external use.
+*   How to use:     Double-click, enter the desired file path and name, and click OK.
+*   Example:        Enter ~MyRaceResults.csv to save in the race folder.
+Output Format       CSV
+Destination         ?Enter file path and name (e.g., ~Results.csv)
+No Page Numbers
+Records Per Page    100000
+List DNF
+Dq Field            DNF
+
+Select              BIB
+>                   0
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Field               DIV
+Field               City
+Field               State
+Field               DIVPLACE
+Field               DIVTOTAL
+Field               SEXPLACE
+Field               SEXTOTAL
+Field               PACE
+
+Event               Finish
+minus               GunStart
+Time Format         H:MM:SS.01
+Field Header        Gun Time
+
+Event               Finish
+minus               ChipStart
+Time Format         H:MM:SS.01
+Field Header        Chip Time

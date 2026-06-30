@@ -1,0 +1,29 @@
+* SMS Finisher Notifications. Automated SMS Alerts for Finishers
+* When to use:      Run this live during the race to send instant notifications as participants cross the finish line.
+* How to use:       Ensure the PHONE field in your database contains valid mobile numbers. Double-click the script to start the listener;
+*                   an SMS is triggered each time a new finish time is recorded.
+* Setup:            You must configure your SMS Gateway provider, API key, and "From" number within the Entries.INI file before use.
+Announce            Headers
+Announce Event      Finish
+Sms Destination     Phone
+
+* Message Construction
+* Note: Keep messages under 160 characters to avoid multi-part SMS charges.
+Message             Congrats 
+Field               First Name
+Squeeze
+Space               0
+Message             , you've finished the %race name%. 
+Message             Official Results: https://results.raceroster.com/v3/events/%resultsid5k%/
+
+/* Recommendation: Avoid including the finish time directly in the SMS. 
+Times can change due to manual corrections or chip-to-gun adjustments. 
+Providing a results URL is the most accurate way to share data.
+*/
+
+* Optional Time Formatting (Commented Out)
+* Field             RACE
+* Message           event, in a time of
+* Event             Finish
+* Minus             ChipStart
+* Time Format       H:MM:SS.01

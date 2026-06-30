@@ -1,0 +1,18 @@
+* Exclude top N finishers by sex from subsequent age-group awards
+*
+* Purpose:          Marks top N finishers of a specific sex as excluded,
+*                   so they don't appear again in age-group results.
+*                   Called automatically by @Overall.rsm after listing overall winners.
+*
+* Param 1 (%1):     Number of runners to exclude (e.g., 3).
+* Param 2 (%2):     Sex label (FEMALE or MALE) -- unused but passed for consistency.
+* Param 3 (%3):     Sex code for selection (F or M).
+*
+* Example:          EXCLUDE.RSM 3 FEMALE F
+*
+No Page Numbers
+No Column Headers
+Select              SEX
+=                   %3
+Exclude             %1
+event               %awards_event%

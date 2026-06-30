@@ -1,0 +1,26 @@
+* Overall results for top N finishers by sex
+*
+* Purpose:          Lists the top N overall finishers for a specific sex category.
+*                   Used during the awards ceremony after results are validated.
+*
+* Param 1 (%1):     Number of results to display (e.g., 3 for top 3).
+* Param 2 (%2):     Sex label for the header (FEMALE or MALE).
+* Param 3 (%3):     Sex code for selection (F or M).
+*
+* Example:          OVERALL.RSM 3 FEMALE F
+*
+no page numbers
+no column headers
+Header
+.ce ********** %2 OVERALL RESULTS FOR 5K RACE ***********
+.End of Header
+Field               Name
+Field               AGE
+Field               CITY
+Field Length        15
+Field               STATE
+Field               CLUB
+Select              SEX
+=                   %3
+records/page        %1
+event               %awards_event%

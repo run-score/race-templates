@@ -1,0 +1,52 @@
+* Data Validation: Shows runners with missing critical fields.
+*   When to use:    Before race day or after participant import to verify data quality.
+*   How to use:     Double-click to display runners with missing data in the Browse window.
+*   Customize:      Comment out (*) any field checks you don't need, or uncomment additional ones.
+Destination         Browse
+
+* Check for blank fields - add or remove checks as needed
+Select              BIB
+EQ
+OR
+Select              AGE
+EQ
+Or
+Select              SEX
+EQ
+Or
+Select              DIV
+EQ
+Or
+Select              CHIP
+EQ
+Or
+Select              RACE
+EQ
+Or
+Select              FIRST NAME
+EQ
+Or
+Select              LAST NAME
+EQ
+And
+Select              BIB
+NE                  0
+* Uncomment additional checks as needed:
+* Or
+* Select              CITY
+* EQ
+* Or
+* Select              STATE
+* EQ
+
+* The Field commands below are not used when Destination is Browse.
+* Uncomment them if you change Destination to a text file (they define the output columns).
+* Field               BIB
+* Field               Name
+* Field               Sex
+* Field               AGE
+* Field               DIV
+* Field               CHIP
+* Field               RACE
+* Field               City
+* Field               State

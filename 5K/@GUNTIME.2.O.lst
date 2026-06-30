@@ -1,0 +1,19 @@
+* Assigns gun times to the 5k Race
+*
+*   When to use:    Just once at the starting gun.
+*   How to use:     Update the race name (if different from "5k") and set your
+*                   specific gun time in setgunstart.rsm below. That macro writes
+*                   the GunStart database field only — it does not update the
+*                   GunStart event by itself.
+*   Alternative:    Use GunTimePromt.2.O.lst for a dialog box (includes Continue
+*                   and field → event copy in one listing).
+*
+*   setgunstart.rsm lines below — one per race distance, field values only.
+
+
+setgunstart.rsm 5k 09:02:11.15
+
+* GunTime2Event.rsm — copies GunStart database field into the GunStart event.
+*                     setgunstart.rsm above only writes the field; without this
+*                     step the event is never updated.
+GunTime2Event.rsm

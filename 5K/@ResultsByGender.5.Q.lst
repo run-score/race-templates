@@ -1,0 +1,10 @@
+* Results by Gender: Displays race results filtered by gender.
+*   When to use:    After the race to review results by gender.
+*   How to use:     Double-click to display the results in the Browse window.
+
+ResultsByGender.rsm M Finish
+ResultsByGender.rsm F Finish
+
+* Examples for other events:
+* ResultsByGender.rsm M Time
+* ResultsByGender.rsm F Time

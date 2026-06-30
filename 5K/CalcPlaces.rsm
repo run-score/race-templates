@@ -1,0 +1,45 @@
+* Compute all result fields and store in database.
+*   Param 1 (%1):  The pace distance (e.g., 5K, 10K, Half).
+*   Note:           Adding 'K' after a distance converts km to miles for pace.
+*                   To get pace per km instead, omit the 'K' (e.g., use '20' not '20K').
+
+Event to Database
+
+* Gun Time: Finish minus GunStart -> TIME field
+Event               Finish
+Minus               GunStart
+database field      time
+
+* Net Time: Finish minus ChipStart -> NETTIME field
+Event               Finish
+Minus               ChipStart
+database field      nettime
+
+* Overall place (based on the last event, which is chip time)
+place
+database field      place
+
+* Pace (based on chip time)
+pace                %1
+database field      pace
+
+* Division places and totals
+division place      div
+database field      divplace
+
+division total      div
+database field      divtotal
+
+* Sex places and totals
+division place      sex
+database field      sexplace
+
+division total      sex
+database field      sextotal
+
+* Age places and totals
+division place      age
+database field      ageplace
+
+division total      age
+database field      agetotal

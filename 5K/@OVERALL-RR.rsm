@@ -1,0 +1,25 @@
+* Overall awards wrapper for RaceRoster upload.
+*
+* Purpose:          Runs OVERALL-RR.RSM to list top finishers and append them
+*                   to the Race Roster upload file, then EXCLUDE.RSM so those
+*                   runners do not appear again in age-group sections.
+*
+*                   EXCLUDE.RSM is print/processing only — it has no Destination
+*                   and does not affect the upload file.
+*
+* IMPORTANT:        RaceRosterHeader.rsm MUST have run before this wrapper.
+*                   It registers the upload gate (External Report To + ##NNN##).
+*                   Without it, OVERALL-RR.RSM writes to disk but never uploads.
+*
+* Param 1 (%1):     Number of overall winners (e.g., 3).
+* Param 2 (%2):     Sex label (FEMALE or MALE).
+* Param 3 (%3):     Sex code (F or M).
+* Param 4 (%4):     Destination filename (must start with ~, e.g. ~awards-5k.txt).
+*                   Must match the filename passed to RaceRosterHeader.rsm.
+*
+* Example:          @OVERALL-RR.RSM 3 FEMALE F "~awards-5k.txt"
+*
+* See also:         Working example: C:\RunScore\SampleRaces\5k
+*
+OVERALL-RR.RSM %1 %2 %3 %4
+EXCLUDE.RSM %1 %2 %3

@@ -1,0 +1,22 @@
+* Awards list header
+*
+* Purpose:          Prints the race name and "AWARDS LIST" banner at the top
+*                   of the awards report. Resets the exclude count to 0
+*                   so no runners are excluded at the start of awards.
+*
+* Parameters:       None.
+*
+* Note:             Always call this first in the awards listing file
+*                   before @OVERALL.RSM and AGERES.RSM.
+*
+Header
+
+.INCLUDE            RACENAME
+
+.ce ********** AWARDS LIST **************
+
+.End of Header
+No Page Numbers
+No Column Headers
+Exclude             0
+event               %awards_event%

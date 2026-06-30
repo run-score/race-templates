@@ -1,0 +1,11 @@
+* Auto Results: Clears, recalculates, and uploads results to RaceRoster.
+*   When to use:    During or after the race to prepare and publish results.
+*   How to use:     Double-click for a one-time run.
+*   Auto-run:       Right-click and select "Auto run" to repeat at a timed interval.
+*   Setup:          Set your RaceRoster sub-event ID in Entries.INI (%rr_5k%).
+
+* Step 1: Clear and recalculate all result fields
+@CalcPlaces.lst
+
+* Step 2: Upload results to RaceRoster
+@ResultsToRR.lst

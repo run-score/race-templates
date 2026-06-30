@@ -1,0 +1,26 @@
+* Print bar codes on a Laser printer
+* for Avery 5160 10x3 labels
+columns             3
+top margin          1
+line length         84lines/inch          6* Page Layout/Format
+*Page length         60
+records/page        30
+select              Bib
+>=                  ?Enter lowest bib number desired
+and
+select              Bib
+<=                  ?Enter maximum bib number desired
+labels
+form feed at end
+Field               Bib
+Field               FIRST NAME
+Field               LAST NAME
+Message             AGE:
+Field               AGE
+Message             SEX:
+Field               SEX
+Line Feed
+Bar Code            Bib
+Line Feed
+Line Feed
+ 

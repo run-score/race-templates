@@ -1,0 +1,22 @@
+* Calculates Cross-Country Team Scores
+* When to use:      Use this when you need to generate a team standings report based on finishing places.
+
+
+* How to use:       Ensure your CLUB (or team) field is populated. The script identifies the team field, sets the number of scoring members (default 5), 
+*                   and the number of displacers (default 7).
+
+
+*Alternative:       To score by total team time instead of finishing place, add the Team Score Time command to the script.
+Header
+.include            racename
+
+----------------------------------------------------------------------------
+                          TEAM Results
+----------------------------------------------------------------------------
+.End of Header
+.include            fieldlst
+Event               Finish
+Team Field          CLUB
+Team Score          5
+Team Displace       7
+ 

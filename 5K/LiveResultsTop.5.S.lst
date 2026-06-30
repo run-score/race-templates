@@ -1,0 +1,26 @@
+* Top Finishers: Displays the leading finishers with a scrolling highlight.
+*   When to use:    During the race to show the current top finishers on a spectator monitor.
+*   How to use:     Double-click to launch the full-screen live results display.
+*   Tip:            Recommended to run on an RSClient machine to keep RSServer available.
+*   Note:           Scroll Size controls the number of top finishers shown (e.g., 5 = Top 5).
+Live Results        Winners
+Full Screen
+Scroll Size         5
+Scroll Speed        2
+Scroll Delay        3
+Font Size           20
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Field               City
+Field               State
+Event               GunStart
+Field Header        Gun
+Event               ChipStart
+Field Header        Chip
+Event               FINISH
+Event               Finish
+Minus               GunStart
+Field Header        Time
+Pace                5K

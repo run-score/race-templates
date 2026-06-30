@@ -1,0 +1,18 @@
+* Auto Results (LPT): Clears, recalculates, computes status, and uploads to RaceRoster.
+*   When to use:    During or after LPT-enabled races to prepare and publish results with tracking.
+*   How to use:     Double-click for a one-time run.
+*   Auto-run:       Right-click and select "Auto run" to repeat at a timed interval.
+*   Setup:          Set your RaceRoster sub-event ID in Entries.INI (%rr_5k%).
+*   LPT prereq:    Timer must add an LPT checkpoint event per Race Roster's LPT setup
+*                   instructions (distance varies by course, e.g. 1 km, 1.5 km, 2 km).
+*   Important:      Use either this (LPT) or @AutoResults (non-LPT) — do not mix both
+*                   on the same sub-event.
+
+* Step 1: Clear and recalculate all result fields
+@CalcPlaces.lst
+
+* Step 2: Calculate runner status
+@CalcStatus.lst
+
+* Step 3: Upload structured results with status to RaceRoster
+@ResultsLPTToRR.lst

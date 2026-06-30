@@ -1,0 +1,9 @@
+* Clear Start Times (Gun & Chip)
+* When to use:    Before a new race or during testing to quickly reset start time data for all participants.
+* How to use:     Double-click to run the file. It will automatically execute the macro to clear both fields.
+* Note:           This macro can clear any other database field (e.g., Age, DNF, Wave, Division).
+* Customize:      Comment out (*) either line if you only want to clear one specific field, or add extra fields if needed.
+
+
+clear-f.rsm GunStart
+clear-f.rsm ChipStart
