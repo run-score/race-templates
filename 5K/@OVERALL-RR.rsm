@@ -4,7 +4,7 @@
 *                   to the Race Roster upload file, then EXCLUDE.RSM so those
 *                   runners do not appear again in age-group sections.
 *
-*                   EXCLUDE.RSM is print/processing only — it has no Destination
+*                   EXCLUDE.RSM is print/processing only -- it has no Destination
 *                   and does not affect the upload file.
 *
 * IMPORTANT:        RaceRosterHeader.rsm MUST have run before this wrapper.

@@ -1,0 +1,13 @@
+PRINTER CONTROL     27 69
+message             PLACE NO.   NAME                       TIME    PACE
+line feed
+message             ===== ===== ========================== ======= =====
+line feed
+place
+Field               NO.
+FIELD               FIRST NAME
+FIELD               LAST NAME
+event               TIME
+pace                6.21
+line feed           3
+

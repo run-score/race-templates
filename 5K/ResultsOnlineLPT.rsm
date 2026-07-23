@@ -7,7 +7,7 @@
 *
 *   Recommendation:
 *     - Define sub-event IDs in Entries.INI (e.g. %rr_5k%) rather than hardcoding
-*       them here or in multiple listings — one place to update when IDs change.
+*       them here or in multiple listings -- one place to update when IDs change.
 *     - Run @CalcStatus.lst before uploading so RUNNER STATUS is populated.
 
 External Report To  RaceRoster

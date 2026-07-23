@@ -1,0 +1,18 @@
+* Calculates Cross-Country Team Scores for Full Marathon
+* When to use:      Use this when you need to generate a team standings report based on finishing places.
+* How to use:       Ensure your CLUB (or team) field is populated.
+Header
+.include            racename.FULL
+
+----------------------------------------------------------------------------
+                          TEAM Results - Full Marathon
+----------------------------------------------------------------------------
+.End of Header
+Select              Race
+=                   FULL
+.include            fieldlst
+Event               Finish
+Team Field          CLUB
+Team Score          5
+Team Displace       7
+ 

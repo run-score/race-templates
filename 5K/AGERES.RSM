@@ -14,7 +14,7 @@
 No Page Numbers
 No Column Headers
 Header
-%2 AGE GROUP:  %4 - %5
+%2 AGE GROUP:  %4 - %5  (%agegroup_label%)
 .end of header
 Select              SEX
 =                   %3
@@ -31,3 +31,4 @@ Field               AGE
 Field               City
 Field               STATE
 Event               %awards_event%
+minus               %agegroup_start%

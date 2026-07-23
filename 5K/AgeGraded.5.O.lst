@@ -15,7 +15,10 @@ header
 Field               AGE
 Field               SEX
 Event               Finish
+minus               %agegroup_start%
+field header        %agegroup_label%
 Event               Finish
+minus               %agegroup_start%
 age grade percent   agegrade.5K
 field header        AGEGRADE
 Sort Down             

@@ -1,0 +1,13 @@
+* GunStart Field to event GunStart
+* Purpose: Resets and assigns the starting gun time for all valid participants (Bib > 0).
+* When to use: Run once at the starting gun (after @GunTime or GunTimePrompt).
+* How it works: "Initialize Times" clears any previous time values. "Database To Event" then pulls the fresh time from the "GunStart" database field and moves it into the "GunStart" event.
+
+Initialize Times    
+Select              Bib
+>                   0
+
+Database To Event
+Event               GunStart
+Time Format         HH:MM:SS.01
+Database Field      GunStart

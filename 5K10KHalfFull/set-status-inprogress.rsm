@@ -1,0 +1,17 @@
+* Set RUNNER STATUS to IN_PROGRESS for runners with GunStart and ChipStart but no Finish.
+Select              BIB
+>                   0
+And
+Select              RUNNER STATUS
+EQ
+And
+Select              GUNSTART
+NE
+And
+Select              CHIPSTART
+NE
+And
+Select              FINISH
+EQ
+Selected            RUNNER STATUS
+Selected Message    IN_PROGRESS

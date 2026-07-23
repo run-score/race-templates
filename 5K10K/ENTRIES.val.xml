@@ -1,0 +1,61 @@
+<fields>
+	<field name="BIB">
+		<database_search/>
+	</field>
+	<field name="CHIP">
+		<database_search/>
+	</field>
+	<field name="RUNNER STATUS">
+		<protect/>
+	</field>
+	<field name="FIRST NAME">
+		<database_view/>
+		<type_ahead/>
+	</field>
+	<field name="LAST NAME">
+		<database_search/>
+		<type_ahead/>
+	</field>
+	<field name="AGE">
+		<max>90</max>
+	</field>
+	<field name="BIRTHDATE">
+		<date/>
+	</field>
+	<field name="SEX">
+		<allowed>M</allowed>
+		<allowed>F</allowed>
+	</field>
+	<field name="DNF">
+		<allowed>DNF</allowed>
+		<allowed>DQ</allowed>
+	</field>
+	<field name="TIME">
+		<time/>
+	</field>
+	<field name="PACE">
+		<time/>
+	</field>
+	<field name="NETTIME">
+		<time/>
+	</field>
+	<field name="GUNSTART">
+		<time/>
+	</field>
+	<field name="CHIPSTART">
+		<time/>
+	</field>
+	<field name="Finish">
+		<time/>
+	</field>
+	<field name="CITY">
+		<database_view/>
+	</field>
+	<field name="TSHIRT">
+		<allowed>S</allowed>
+		<allowed>M</allowed>
+		<allowed>L</allowed>
+		<allowed>X</allowed>
+		<case>upper</case>
+	</field>
+</fields>

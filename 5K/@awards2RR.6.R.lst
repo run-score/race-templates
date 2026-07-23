@@ -1,4 +1,4 @@
-* 5K Awards List — Race Roster unstructured upload
+* 5K Awards List -- Race Roster unstructured upload
 *
 * Purpose:          Generates the printed awards listing AND uploads a single
 *                   plain-text file (~awards-5k.txt) to Race Roster. Run after
@@ -6,43 +6,43 @@
 *
 * Race Roster setup (one-time, on raceroster.com):
 *   1. Create a results race for this event (e.g. name it "Awards").
-*   2. Set Result type to "Unstructured (Text/PDF)" — not Structured.
+*   2. Set Result type to "Unstructured (Text/PDF)" -- not Structured.
 *   3. Copy the numeric results-race ID into Entries.INI as %rr_5k_awards_u%
 *      (sample value: 283746). Distance and Display are optional for awards.
 *   4. After upload, enable "Results are viewable by the public" to publish.
-*   Race Roster displays the uploaded text as-is — same layout as awards-5k.txt
+*   Race Roster displays the uploaded text as-is -- same layout as awards-5k.txt
 *   in this race folder (overall headers, age-group headers, finisher lines).
 *
 * Upload pattern (see docs: Publish Unstructured Results):
-*   ONE destination file for all categories — not one file per age group.
+*   ONE destination file for all categories -- not one file per age group.
 *   RaceRosterHeader.rsm is the only sub-listing with External Report To,
 *   Output Format txt, Destination, and the ##NNN## results-race ID marker.
 *   OVERALL-RR.RSM and AGERES-RR.RSM use Destination Append to add each
 *   section to the same ~awards-5k.txt file.
 *   OVERHDR.RSM and EXCLUDE.RSM are print/processing only (no upload).
 *
-* IMPORTANT — ordering and append rules:
+* IMPORTANT -- ordering and append rules:
 *   - RaceRosterHeader.RSM MUST be the very first RSM in this listing. It is the
 *     only section that sets External Report To and registers the ##NNN##
 *     sub-event ID, which the engine's upload gate requires. If it doesn't run
 *     first, later sections are written to ~awards-5k.txt on disk but never
 *     uploaded. Destination (not Append) also clears the previous run's file.
 *   - Every subsequent RSM that produces upload output MUST use
-*     Destination Append — never plain Destination. A plain Destination
+*     Destination Append -- never plain Destination. A plain Destination
 *     would overwrite the file and destroy all sections written before it.
 *   - RSMs that are print/processing only (OVERHDR.RSM, EXCLUDE.RSM) do not
-*     have a Destination command at all — they execute but produce no file.
+*     have a Destination command at all -- they execute but produce no file.
 *
 * Flow:
 *   1. RaceRosterHeader.rsm -- Creates ~awards-5k.txt with ##%rr_5k_awards_u%##.
-*   2. OVERHDR.RSM           -- Printed awards banner; resets exclude count.
+*   2. OVERHDR.RSM           -- Printed awards banner (Exclude 0 is a no-op; array starts fresh).
 *   3. @OVERALL-RR.RSM       -- Overall winners; appends to upload file; excludes.
 *   4. AGERES-RR.RSM         -- Age-group winners; appends to upload file.
-*   (FormFeedAtEnd.rsm is intentionally omitted — form feeds are irrelevant
+*   (FormFeedAtEnd.rsm is intentionally omitted -- form feeds are irrelevant
 *    for plain-text upload to Race Roster.)
 *
 * How to upload:
-*   Right-click this listing → Send results to online.
+*   Right-click this listing -> Send results to online.
 *   Preview first with Output To Editor if desired.
 *
 * To customize:

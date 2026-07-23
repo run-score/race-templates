@@ -1,0 +1,31 @@
+* Displays runner info for the announcer at the finish line
+
+* Purpose:          Provides a high-contrast, color-coded screen for calling out runners.
+
+* Where to run:     Usually run on a separate RSClient machine at the announcer station.
+
+* When to use:      During the race, typically triggered 10-15m before the finish line.
+
+* How it works:     Listens for the "Announcer" event and displays incoming runner details.
+
+Announce            Headers
+Announce            No squeeze
+Announce Event      Announcer
+Background Color    White
+field               bib
+Text Color          Green
+field               first name
+Text Color          Black
+field               last name
+field               sex
+Text Color          Blue
+Field Length        4
+field               age
+Field Length        4
+Text Color          Orange
+Field               Race
+Text Color          Red
+Field Length        7
+field               city
+Text Color          Magenta
+field               state

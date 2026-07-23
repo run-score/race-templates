@@ -1,0 +1,52 @@
+                               Vernon Races
+                         FIVE KILOMETER ROAD RACE
+                   Vernon, New York           06/20/2009
+
+Place Bib   Name                                     S Age Div   City               St Divpl Divto Sexpl Sexto Gun Time   Chip Time     
+===== ===== ======================================== = === ===== ================== == ===== ===== ===== ===== ========== ========== 
+    1    21 Ted Merritt                              M  38 M3039 Pocono             PA 1     6     1     35       1:53.55    0:40.94 
+    2    45 Jim Moore                                M  41 M4049 Moorestown         NY 1     4     2     35       2:03.67    0:52.55 
+    3     6 Patti Evans                              F  41 F4049 Vernon             NY 1     3     1     11       2:29.70    1:18.72 
+    4     4 Dennis Button                            M  45 M4049 Walton             PA 2     4     3     35       3:00.31    1:49.78 
+    5     7 Paul Winters                             M  39 M3039 Mount Morrow       NY 2     6     4     35       3:38.73    2:33.01 
+    6    32 Judy Jones                               F  54 F5059 Issacstown         PA 1     5     2     11       3:54.79    2:43.99 
+    7     3 Frank Held                               M  54 M5059 Vernon             NY 1     8     5     35       4:04.42    2:53.38 
+    8    19 Paul Swift                               M  24 M2029 Swift Town         KY 1     1     6     35       4:11.21    2:59.39 
+    9    42 Ravena Bastian                           F  51 F5059 Bellington         PA 2     5     3     11       4:24.79    3:11.30 
+   10    44 John Jewell                              M  84 M6099 Newtown            PA 1     16    7     35       4:36.27    3:22.96 
+   11    28 Keith Meyer                              M  60 M6099 Johnson City       OH 2     16    8     35       4:53.22    3:41.89 
+   12    41 Don Gill                                 M  37 M3039 Vernon             NY 3     6     9     35       5:02.29    3:50.93 
+   13     8 Fred Winters                             M  35 M3039 Mount Morrow       NY 4     6     10    35       5:16.50    4:03.08 
+   14    12 Mary Gardner                             F  59 F5059 Mount Morrow       NY 3     5     4     11       5:22.90    4:13.72 
+   15    36 Gabe Vicky                               M  65 M6099 Dwighton           NY 3     16    11    35       5:26.12    4:18.41 
+   16    25 Anne Bender                              F  62 F6099 Delaware           NJ 1     3     5     11       5:33.47    4:24.54 
+   17    34 Jim Walker                               M  63 M6099 Mudville           NJ 4     16    12    35       5:36.66    4:28.43 
+   18    23 Dave Derry                               M  78 M6099 Thompsonville      RI 5     16    13    35       5:56.23    4:43.32 
+   19    22 Jim Ryan                                 M  57 M5059 Moorestown         NY 2     8     14    35       6:28.66    5:18.23 
+   20    31 Tami Ide                                 F  69 F6099 Appleton           NY 2     3     6     11       6:38.57    5:26.10 
+   21    15 Stuart deVilbris                         M  69 M6099 Devon              PA 6     16    15    35       6:51.00    5:38.35 
+   22     2 Margaret Schwartz                        F  45 F4049 Vernon             NY 2     3     7     11       6:47.81    5:41.29 
+   23    16 Norman Jones                             M  80 M6099 Vernon             NY 7     16    16    35       7:12.66    5:57.86 
+   24    39 Adele Thompson                           F  46 F4049 Afton              NY 3     3     8     11       7:24.00    6:13.59 
+   25     5 Paul Cramer                              M  88 M6099 Walton             PA 8     16    17    35       7:33.65    6:18.97 
+   26    50 Tom Jester                               M  56 M5059 Vernon             NY 3     8     18    35       7:41.87    6:31.09 
+   27    37 Andrew Olson                             M  39 M3039 Westtown           NY 5     6     19    35       7:42.01    6:31.41 
+   28    33 Ralph Maxel                              M  36 M3039 Pembrooke          NY 6     6     20    35       7:58.78    6:44.95 
+   29    27 John Smith                               M  40 M4049 Carbondale         PA 3     4     21    35       8:00.42    6:50.77 
+   30    43 Clark Benson                             M  70 M6099 Apalachin          NY 9     16    22    35       8:15.93    7:06.43 
+   31    11 Steven Hoble                             M  71 M6099 Vernon             NY 10    16    23    35       9:10.93    7:59.93 
+   32     1 Tom Riel                                 M  45 M4049 Kane               NY 4     4     24    35      10:20.26    9:10.75 
+   33    35 Dwight Weaver                            M  53 M5059 Stumbleton         WI 4     8     25    35      10:29.38    9:18.12 
+   34    38 Joe White                                M  65 M6099 Middletown         MD 11    16    26    35      10:36.19    9:25.87 
+   35    13 Karen Oats                               F  52 F5059 Vernon             NY 4     5     9     11      10:43.54    9:29.78 
+   36    18 Ken Swift                                M  52 M5059 Swift Town         KY 5     8     27    35      10:46.27    9:34.44 
+         30 Pete Williams                            M  57 M5059 Vernon             NY 6     8     28    35       0:56.18        DNF 
+         40 George Watson                            M  70 M6099 Samsonville        NY 12    16    29    35       0:57.04        DNF 
+         20 Mary Swift                               F  64 F6099 Swift Town         KY 3     3     10    11           DNF        DNF 
+          9 Steve Demo                               M  53 M5059 Mount Morrow       NY 7     8     30    35           DNF        DNF 
+         10 Pete Class                               M  58 M5059 Northville NY      NY 8     8     31    35           DNF        DNF 
+         29 Dick Runner                              M  74 M6099 Norton             DE 13    16    32    35           DNF        DNF 
+         14 Paul McLaughlin                          M  63 M6099 Williamsport       PA 14    16    33    35           DNF        DNF 
+         26 Jenny Blakely                            F  53 F5059 Mount Morrow       NY 5     5     11    11           DNF        DNF 
+         17 Ken Adams                                M  83 M6099 Norton             NY 15    16    34    35           DNF        DNF 
+         24 Eugene Bender                            M  63 M6099 Delaware           NJ 16    16    35    35           DNF        DNF 

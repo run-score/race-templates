@@ -1,0 +1,23 @@
+* Awards list header
+*
+* Purpose:          Prints the race name and "AWARDS LIST" banner at the top
+*                   of the awards report. Exclude 0 has no effect and is
+*                   kept for clarity; the exclusion array is fresh at each
+*                   listing run. Only Cancel Exclude clears exclusions mid-run.
+*
+* Parameters:       %1 = race code (e.g., 5K, 10K, HALF, or FULL) for the per-distance banner.
+*
+* Note:             Always call this first in the awards listing file
+*                   before @OVERALL.RSM and AGERES.RSM.
+*
+Header
+
+.INCLUDE            RACENAME.%1
+
+.ce ********** AWARDS LIST **************
+
+.End of Header
+No Page Numbers
+No Column Headers
+Exclude             0
+event               %awards_event%

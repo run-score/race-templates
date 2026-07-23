@@ -4,7 +4,7 @@
 *
 *   Recommendation:
 *     - Define sub-event IDs in Entries.INI (e.g. %rr_5k_u%) rather than hardcoding
-*       them here or in multiple listings — one place to update when IDs change.
+*       them here or in multiple listings -- one place to update when IDs change.
 *     - If you also publish structured results, use a separate ID for unstructured
 *       (e.g. %rr_5k% for structured, %rr_5k_u% for unstructured).
 *     - The ~ prefix on the destination filename is required. It creates the upload

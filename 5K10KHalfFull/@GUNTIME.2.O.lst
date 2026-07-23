@@ -1,0 +1,23 @@
+* Assigns gun times to all four races
+*
+*   When to use:    Just once at the starting gun (once per distance, or all here).
+*   How to use:     Update the race names and gun times in setgunstart.rsm below.
+*                   Each line writes the GunStart database field only -- it does
+*                   not update the GunStart event by itself.
+*   Alternative:    Use GunTimePromt5K.2.O.lst / GunTimePromt10K.2.O.lst /
+*                   GunTimePromtHalf.2.O.lst / GunTimePromtFull.2.O.lst
+*                   for a dialog box (includes Continue
+*                   and field -> event copy).
+*
+*   setgunstart.rsm lines below -- one per race distance, field values only.
+
+
+setgunstart.rsm 5K 09:02:11.15
+setgunstart.rsm 10K 08:31:50.84
+setgunstart.rsm HALF 08:00:00.00
+setgunstart.rsm FULL 07:30:00.00
+
+* GunTime2Event.rsm -- copies GunStart database field into the GunStart event.
+*                     setgunstart.rsm above only writes the field; without this
+*                     step the event is never updated.
+GunTime2Event.rsm

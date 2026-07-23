@@ -1,0 +1,8 @@
+* List of gaps in bib number sequence
+*  Purpose:         Identifies missing bib numbers in your sequence to ensure all runners are entered.
+*    When to use:   During race setup (1-2 days prior) or for final checks right before the start.
+*    How it works:  Scans the database for gaps and saves the report to "c:\tmp\bib_gaps.txt". Open this file in Notepad++ or your preferred text editor to review the results.
+*
+
+missing numbers     Bib
+Destination         %temp_dir%\bib_gaps.txt

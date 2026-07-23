@@ -1,0 +1,37 @@
+* Readme file
+/*
+This sample race is for a 2-distance road race: 5K and 10K (the "Vernon Races").
+
+The two distances share one course and finish; participants are separated by the
+RACE field (5k or 10k). The 5K and 10K can start together or at staggered (wave)
+gun times -- set the gun time for each distance from Misc, or use the
+GunTimePromt5k / GunTimePromt10k dialogs.
+
+Timing events (mats): GunStart, ChipStart, LPTCheckpoint, Announcer, and Finish.
+(LPTCheckpoint feeds Race Roster live participant tracking; 5kSplit is available
+as an optional split point.)
+
+Online integration:
+  - Race Roster is the online system for registration and results (structured,
+    unstructured, and live-tracking uploads).
+  - SendGrid is used for email notifications (Web API).
+  - Twilio is used for SMS notifications.
+
+Key files:
+  - @CalcPlaces          -- Clears and recomputes places per distance (5k, then 10k).
+  - @CalcStatus          -- Computes runner status for live participant tracking (LPT).
+  - @ResultsToRR / @ResultsUnsToRR / @ResultsLPTToRR -- Upload structured, unstructured,
+    and LPT results to Race Roster, per distance.
+  - @AutoResults / @AutoResultsLPT -- One-click recalculate + upload (non-LPT / LPT).
+  - @awards5k / @awards10          -- Per-distance awards (print).
+  - @awards2RR5k / @awards2RR10k   -- Per-distance awards uploaded to Race Roster.
+  - AgeGraded5K / AgeGraded10K, ResultsPrint5K / ResultsPrint10K,
+    TEAMSC5K / TEAMSC10K, @ResultsByGender -- Per-distance reports.
+  - GunTimePromt5k / GunTimePromt10k -- Per-distance gun time entry dialogs.
+  - LiveSMSFinish / LiveEmailFinish / LiveResults -- Live finisher notifications and display.
+
+We recommend using the Priority to group your listing files.
+You may also use different colors to differentiate the functionality of the different listing files.
+
+All the files follow the best practice recommendation.
+*/

@@ -1,0 +1,28 @@
+* Exclude top N finishers by sex from subsequent age-group awards
+*
+* Purpose:          Marks top N finishers of a specific sex as excluded,
+*                   so they don't appear again in age-group results.
+*                   Called automatically by @Overall.rsm after listing overall winners.
+*
+* Param 1 (%1):     Number of runners to exclude (e.g., 3).
+* Param 2 (%2):     Sex label (FEMALE or MALE) -- unused but passed for consistency.
+* Param 3 (%3):     Sex code for selection (F or M).
+* Param 4 (%4):     Race for selection (5K, 10K, HALF, or FULL).
+*
+* Example:          EXCLUDE.RSM 3 FEMALE F 5K
+*
+No Page Numbers
+No Column Headers
+Select              SEX
+=                   %3
+And                 
+Select              Race
+=                   %4
+Exclude             %1
+* The event + minus below is the sort key that decides WHO gets excluded
+* (this macro has no report output). Using %overall_start% ranks exclusion
+* exactly like OVERALL.RSM, so the runners removed are the ones it placed --
+* correct even when %overall_start% is a per-runner start (chip/wave), not just
+* a gun start where raw finish order would coincidentally match.
+event               %awards_event%
+minus               %overall_start%

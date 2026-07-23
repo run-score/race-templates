@@ -1,0 +1,11 @@
+* List registered runners missing a bib number
+* Purpose:          Identifies registered runners who have not yet been assigned a bib.
+* When to use:      Pre-race setup, packet pickup, or right before the start.
+* Output1:          Displays the list in the browser.
+* Output2:          Saves the list to "c:\tmp\runners_missing_bib.txt" (open with a text editor).
+
+Select              Bib
+EQ                  
+
+Destination         Browser
+*Destination        %temp_dir%\runners_missing_bib.txt

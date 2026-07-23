@@ -1,0 +1,19 @@
+* Data Validation (Single Field): Shows runners with a specific missing field.
+*   When to use:    Before race day or after participant import to check a specific field.
+*   How to use:     Double-click, enter the field name to check (e.g., AGE, DIV, CHIP), and click OK.
+Destination         Browse
+
+Select              ?Enter field name to check (e.g., AGE, DIV, CHIP, SEX, RACE)
+EQ
+
+* The Field commands below are not used when Destination is Browse.
+* Uncomment them if you change Destination to a text file (they define the output columns).
+* Field               BIB
+* Field               Name
+* Field               Sex
+* Field               AGE
+* Field               DIV
+* Field               CHIP
+* Field               RACE
+* Field               City
+* Field               State

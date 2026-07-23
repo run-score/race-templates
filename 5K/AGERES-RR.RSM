@@ -5,16 +5,16 @@
 *                   Used after overall winners have been excluded. Each call adds
 *                   an age-group header and finisher lines to ~awards-5k.txt.
 *
-* IMPORTANT:        Uses Destination Append — NOT plain Destination.
+* IMPORTANT:        Uses Destination Append -- NOT plain Destination.
 *                   Plain Destination would overwrite the file and destroy all
 *                   sections written by RaceRosterHeader.rsm, OVERALL-RR.RSM,
 *                   and any prior AGERES-RR.RSM calls.
-*                   RaceRosterHeader.rsm MUST have run first — it registers the
+*                   RaceRosterHeader.rsm MUST have run first -- it registers the
 *                   upload gate (External Report To + ##NNN##). Without it, this
 *                   section writes to disk but is never uploaded.
 *
 *                   Does NOT repeat External Report To, Output Format, or the
-*                   ##NNN## marker — only Destination Append is needed here.
+*                   ##NNN## marker -- only Destination Append is needed here.
 *
 * Param 1 (%1):     Number of results to display (e.g., 3 for top 3).
 * Param 2 (%2):     Sex label for the header (FEMALE or MALE).
@@ -32,7 +32,7 @@ Destination Append  %6
 No Page Numbers
 No Column Headers
 Header
-%2 AGE GROUP:  %4 - %5
+%2 AGE GROUP:  %4 - %5  (%agegroup_label%)
 .end of header
 Select              SEX
 =                   %3
@@ -49,3 +49,4 @@ Field               AGE
 Field               City
 Field               STATE
 Event               %awards_event%
+minus               %agegroup_start%

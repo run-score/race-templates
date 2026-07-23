@@ -1,0 +1,27 @@
+* Race information and E-mail parameters for sending to AllSportRunning.com
+*
+* E-mail results to AllSportRunning.com
+* Leave a space in front of "email to    results@AllSportRunning.com"  and
+* until done testing.
+* Edit the items at the bottom of this file according to your race.
+* Edit line that emails to runscore to your own e-mail address and move to first column
+* Edit "email from" to your e-mail address and move to first column
+* Edit "email subject" to name of your race and move to first column
+* Edit "email server" to your SMTP server and move to first column
+* Run the listing and see if you get the results as a short e-mail plus an attachment
+* of RSTMP$$$.txt
+* When things work, move the "email to results@AllSportRunning.com" 
+* over to the margin after testing
+* Following for AllSportRunning
+ email to            results@AllSportRunning.com
+* Following for testing to mail to yourself.  Change to your e-mail address
+ email to            your-email@example.com
+ email from          your-email@example.com
+ email subject       Vernon XX
+ email server        smtp.example.com
+no column headers
+no page numbers
+exclude             0
+header
+.end of header
+

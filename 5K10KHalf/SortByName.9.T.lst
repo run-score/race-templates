@@ -1,0 +1,14 @@
+* Grouped Alphabetical Listing
+* Organizes Participants into Visual Sections
+* When to use:      Use this when you want a report separated by headers - for example, grouping everyone from the same Club, State, or shared Last Name together.
+* How to use:       The BY command creates a new section header every time the data in that field changes. Pair it with SORT to alphabetize the individuals within those specific groups.
+
+
+* Note: use an empty comparand after <> - a literal "" matches two quote
+*       characters, not an empty string, and would exclude nothing.
+Select              LAST NAME
+<>
+By                  LAST NAME
+Sort                FIRST NAME
+Destination         Browser
+ 

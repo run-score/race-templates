@@ -1,0 +1,6 @@
+* Print statistics by a specified field.
+*   Param 1 (%1):  The field name to group by (e.g., RACE, DIV, SEX, AGE).
+
+Select              BIB
+GT                  0
+BY PERCENT          %1

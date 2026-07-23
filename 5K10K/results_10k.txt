@@ -1,0 +1,56 @@
+                               Vernon Races
+                          TEN KILOMETER ROAD RACE
+              Vernon, New York                    06/20/2009
+
+Place Bib   Name                                     S Age Div   City               St Divpl Divto Sexpl Sexto Gun Time   Chip Time     
+===== ===== ======================================== = === ===== ================== == ===== ===== ===== ===== ========== ========== 
+    1    92 Aryn Garrit                              F  25 F2029 Norton             PA 1     4     1     32      31:52.05    0:19.89 
+    2    78 Pascal Cockley                           F  67 F6099 Walton             NY 1     12    2     32      32:03.23    0:35.25 
+    3   100 Leonie Rootes                            F  70 F6099 Vernon             NY 2     12    3     32      32:18.57    0:50.18 
+    4    54 Cleon Surmeyers                          M  38 M3039 Walton             DE 1     6     1     18      32:31.25    1:00.58 
+    5    91 Cornela Barry                            M  52 M5059 Norton             NY 1     5     2     18      32:49.32    1:15.83 
+    6    99 Tracey Gautrey                           F  67 F6099 Devon              PA 3     12    4     32      32:52.67    1:18.97 
+    7    52 Alessandra Mowatt                        F  38 F3039 Middletown         PA 1     6     5     32      32:55.77    1:26.39 
+    8    82 Bertie Steinor                           F  64 F6099 Kane               NY 4     12    6     32      33:20.45    1:46.50 
+    9    87 Lyndsie Tarply                           M  32 M3039 Moorestown         NY 2     6     3     18      33:17.49    1:47.99 
+   10    86 Joannes Garbett                          F  29 F2029 Westtown           PA 2     4     7     32      33:22.40    1:54.35 
+   11    71 Griswold Mcmanaman                       F  37 F3039 Norton             PA 2     6     8     32      33:32.49    1:58.68 
+   12    51 Ted Ted                                  M  64 M6099 Middletown         NY 1     3     4     18      33:35.87    2:03.37 
+   13    69 Paulo Dilliway                           M  27 M2029 Northville         PA 1     2     5     18      33:35.25    2:04.44 
+   14    79 Ricca Bedo                               F  65 F6099 Pocono             NY 5     12    9     32      33:42.89    2:09.34 
+   15    97 Katalin Kocher                           M  50 M5059 Westtown           NY 2     5     6     18      33:42.27    2:12.19 
+   16    59 Benton Cristoforo                        M  46 M4049 Devon              NY 1     2     7     18      34:25.88    2:53.92 
+   17    56 Angelika Loddon                          M  52 M5059 Moorestown         PA 3     5     8     18      34:31.01    2:58.52 
+   18    95 Darwin Wragg                             M  39 M3039 Dwighton           PA 3     6     9     18      34:28.00    2:59.43 
+   19    93 Camala Winham                            M  24 M2029 Dwighton           NY 2     2     10    18      34:55.73    3:25.82 
+   20    81 Samuel Louden                            F  56 F5059 Issacstown         PA 1     3     10    32      35:24.47    3:56.59 
+   21    85 Joyann Briars                            F  43 F4049 Norton             PA 1     7     11    32      35:41.81    4:08.01 
+   22    76 Hilary Jenkison                          F  62 F6099 Devon              NY 6     12    12    32      35:40.94    4:10.51 
+   23    66 Florrie Grange                           F  68 F6099 Mudville           NY 7     12    13    32      36:02.89    4:34.18 
+   24    58 Otes Reinhard                            F  37 F3039 Issacstown         PA 3     6     14    32      36:14.08    4:43.90 
+   25    53 Charlotte De Gregoli                     F  61 F6099 Northville         NY 8     12    15    32      36:25.58    4:52.13 
+   26    98 Nicolette Matic                          F  46 F4049 Westtown           RI 2     7     16    32      36:22.11    4:53.74 
+   27    57 Samara Clemente                          F  34 F3039 Middletown         NY 4     6     17    32      36:33.43    5:05.44 
+   28    88 Teddy Triplett                           F  40 F4049 Pocono             NY 3     7     18    32      36:51.70    5:19.94 
+   29    96 Alley Kersaw                             F  70 F6099 Moorestown         NY 9     12    19    32      37:07.07    5:36.44 
+   30    68 Worden Courson                           F  41 F4049 Walton             PA 4     7     20    32      37:22.71    5:49.33 
+   31    89 Elliot Marney                            M  58 M5059 Norton             MD 4     5     11    18      37:20.29    5:51.39 
+   32    72 Ines Millis                              M  33 M3039 Issacstown         NY 4     6     12    18      37:23.08    5:52.24 
+   33    77 Evelyn Bisiker                           M  57 M5059 Apalachin          NY 5     5     13    18      37:40.44    6:12.22 
+   34    60 Pete Mallatratt                          F  70 F6099 Mount Morrow       NJ 10    12    21    32      37:53.51    6:23.42 
+   35    63 Lanie Schoroder                          F  42 F4049 Johnson City       NY 5     7     22    32      38:25.39    6:53.53 
+   36    75 Roxane Filyakov                          M  31 M3039 Northville         NY 5     6     14    18      38:32.32    7:03.14 
+   37    94 Tiena Nesfield                           F  28 F2029 Delaware           NY 3     4     23    32      39:17.39    7:44.86 
+   38    61 Falito Klas                              F  29 F2029 Afton              NY 4     4     24    32      39:22.04    7:50.82 
+   39    74 Trip Brugh                               M  38 M3039 Samsonville        KY 6     6     15    18      40:10.63    8:41.81 
+   40    84 Vanya Ollerhad                           M  62 M6099 Carbondale         NY 2     3     16    18      45:26.49   13:55.25 
+         83 Tobie Kinforth                           F  34 F3039 Kane               PA 5     6     25    32      26:41.54        DNF 
+         62 Brennan Beadham                          F  60 F6099 Walton             NY 11    12    26    32      28:01.18        DNF 
+         67 Evelyn Gautrey                           F  58 F5059 Kane               NY 2     3     27    32      28:39.23        DNF 
+         90 Alick Dabernott                          F  49 F4049 Northville         NY 6     7     28    32      29:23.32        DNF 
+         64 Lezley Peche                             F  48 F4049 Norton             PA 7     7     29    32      29:36.84        DNF 
+         70 Tabor Lean                               M  49 M4049 Apalachin          PA 2     2     17    18      30:20.21        DNF 
+         80 Antonella Lampbrecht                     F  53 F5059 Swift Town         DE 3     3     30    32      31:20.51        DNF 
+         55 Hermina Treswell                         M  69 M6099 Afton              NY 3     3     18    18      31:23.14        DNF 
+         65 Frannie Harden                           F  34 F3039 Johnson City       NJ 6     6     31    32      31:23.55        DNF 
+         73 Evangelin Jeffreys                       F  61 F6099 Stumbleton         NJ 12    12    32    32      31:26.84        DNF 

@@ -1,0 +1,25 @@
+* Calculate Runner Status: Sets RUNNER STATUS based on race progress.
+*   When to use:    During the race to update runner status for LPT, or after recalculating.
+*   How to use:     Double-click to recalculate all runner statuses.
+*   Note:           Requires GunStart, ChipStart, and FINISH events. Sets:
+*                   COMPLETE     - FINISH is not empty
+*                   IN_PROGRESS  - GunStart not empty, FINISH empty
+*                   STARTING     - GunStart is empty
+*   Depends on:     Events must be written to DB fields first (Events2DB.rsm).
+
+* Step 1: Clear runner status and event database fields
+clear-f.rsm         "RUNNER STATUS"
+clear-f.rsm         CHIPSTART
+clear-f.rsm         FINISH
+
+* Step 2: Write events to database fields
+Events2DB.rsm
+
+* Step 3: Set status for finishers
+set-status-complete.rsm
+
+* Step 4: Set status for in-progress runners
+set-status-inprogress.rsm
+
+* Step 5: Set status for starters
+set-status-starting.rsm

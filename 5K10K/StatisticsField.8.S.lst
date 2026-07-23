@@ -1,0 +1,6 @@
+* Statistics: Displays participant statistics for a chosen category.
+*   When to use:    Before or after the race to review participant demographics.
+*   How to use:     Double-click, enter the field name to get statistics for, and click OK.
+Select              BIB
+GT                  0
+BY PERCENT          ?Enter field name for statistics (e.g., RACE, DIV, SEX, AGE)

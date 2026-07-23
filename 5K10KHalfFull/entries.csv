@@ -1,0 +1,18 @@
+NO.,LAST NAME,FIRST NAME,AGE,ADDRESS,CITY,STATE,ZIP,EMAIL,CLUB,DIV,SEX,BIRTHDATE,TSHIRT,PHONE,RACE
+1,Button,David,65,98 West Ave.,Walton,PA,19876,jones@geol.binghamton.edu,Walton RC,M6099,M,01/24/41,M,(607)555-1234,5K
+3,Schwartz,Margaret,42,348 Summerset St.,Vernon,NY,13468,runner@example.com,Vernon RC,F4049,F,05/13/64,X,(607)555-2345,5K
+5,Cramer,Paul,75,56 Sheldon St,Walton,PA,19876,,Walton RC,M6099,M,06/30/30,S,,5K
+10,Hoble,Steven,68,13 Cortland Dr.,Vernon,NY,13468,,Vernon RC,M6099,M,09/01/37,,(607)754-3345,5K
+150,Oats,Karen,49,14 North St.,Vernon,NY,13469,,,F4049,F,01/31/57,S,,5K
+201,Keith,Steven,51,723 Lloyd St,Ft Walton Beach,FL,32547,kei@eventtiming.com,,M5059,M,04/06/55,X,(850)803-8740,10K
+202,Long,Shelly,34,644 Sunset Blvd,Crestview,FL,32536,shell@cox.net,,F3039,F,,M,,10K
+203,Garcia,Maria,28,45 Oak Lane,Vernon,NY,13468,,,F2029,F,08/15/81,S,,10K
+204,Chen,Michael,41,89 Elm Street,Mount Morrow,NY,13900,,MMRC,M4049,M,03/22/68,L,,10K
+301,Martinez,Sofia,33,112 Pine Road,Walton,PA,19876,,Walton RC,F3039,F,11/05/76,M,,HALF
+302,Johnson,Robert,55,67 Maple Ave.,Vernon,NY,13468,,Vernon RC,M5059,M,07/18/54,X,,HALF
+303,Williams,Sarah,29,234 River St.,Mount Morrow,NY,13900,,,F2029,F,02/14/80,S,,HALF
+304,Brown,James,47,56 Cedar Lane,Swift Town,KY,19346,,Swift RR,M4049,M,09/30/62,L,,HALF
+401,Thompson,William,35,78 Birch Lane,Vernon,NY,13468,,Vernon RC,M3039,M,03/12/74,L,,FULL
+402,Rivera,Elena,42,155 Oak Drive,Walton,PA,19876,,Walton RC,F4049,F,07/08/67,M,,FULL
+403,Kim,David,28,22 Elm Court,Mount Morrow,NY,13900,,MMRC,M2029,M,11/22/81,S,,FULL
+404,Anderson,Lisa,55,89 Maple Road,Swift Town,KY,19346,,Swift RR,F5059,F,09/15/54,X,,FULL

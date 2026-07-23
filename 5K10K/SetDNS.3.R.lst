@@ -1,0 +1,7 @@
+* Marks a runner as Did Not Start.
+*   When to use:    When a registered runner did not start the race.
+*   How to use:     Double-click, enter the Bib number, and click OK.
+Select              Bib
+=                   ?Enter Bib Number of DNS Runner
+Selected            DNF
+Selected Message    DNS

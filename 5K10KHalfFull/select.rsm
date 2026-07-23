@@ -1,0 +1,8 @@
+Select              SEX
+=                   %3
+And
+select              age
+GE                  %4
+And
+select              age
+LE                  %5

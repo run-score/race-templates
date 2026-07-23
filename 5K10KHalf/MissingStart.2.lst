@@ -1,0 +1,12 @@
+* Missing Start: Shows runners who finished but have no ChipStart time.
+*   When to use:    During or after the race to identify runners missing a start time.
+*   How to use:     Double-click to display the list in the Browse window.
+Destination         Browse
+Select              BIB
+>                   0
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Event               Finish
+Not                 CHIPSTART
