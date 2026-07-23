@@ -2,11 +2,11 @@
 
 ## Identity
 
-- Template id: 5K10K
-- Race type: road
-- Distance count: 2
-- Sample display name: Vernon Races
-- Participants separated by: RACE field (`5k` / `10k`)
+Template id: 5K10K
+Race type: road
+Distance count: 2
+Sample display name: Vernon Races
+Participants separated by: RACE field (`5k` / `10k`)
 
 ## Summary
 
@@ -25,11 +25,11 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 ## Timing model
 
 - Start model: shared course/finish; per-distance gun times (together or staggered)
-- Events (mats): GunStart, ChipStart, LPTCheckpoint, 5kSplit, Announcer, Finish
-- Optional / unused mats: 5kSplit (optional split point)
+- Events (mats): GunStart, ChipStart, Announcer, Finish
+- Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: yes -- LPTCheckpoint
-- Split points: 5kSplit (optional)
+- LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
+- Split points: 5kSplit (optional course split; unused unless configured)
 
 ## Awards policy
 
@@ -73,8 +73,8 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 | `%email_from%` | SendGrid from address | `your-email@example.com` |
 | `%email_subject%` | email subject | `Vernon 5K/10K` |
 | `Sms Provider` | SMS provider | `twilio` |
-| `Sms Api Key` | Twilio API key | placeholder |
-| `Sms From Phone` | Twilio from number | placeholder |
+| `Sms Api Key` | Twilio API key | `<<<<< ENTER YOUR KEY HERE >>>>>>` |
+| `Sms From Phone` | Twilio from number | `<<<<< ENTER FROM NUMBER HERE >>>>>>` |
 
 ## Key workflows
 
@@ -130,8 +130,11 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 
 ## Limitations
 
-- Sample Race Roster IDs and API keys are placeholders / demo values
+- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload; do not treat them as disposable sandboxes unless your org confirms they are
+- Email/SMS API keys in Entries.INI are non-functional sentinels -- replace before use
+- Do not commit RaceRosterLastRaceId.txt / RaceRosterMapping.txt / RaceRosterRace.txt / RaceRosterResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- 5kSplit is optional -- unused unless configured
-- Keep `Readme.1.X.lst` for the RunScore UI; this README is the AI source of truth
+- 5kSplit is an optional course split -- unused unless configured
+- LPT listings are wired; LPTCheckpoint needs hardware/config before race-day use
+- `Readme.1.X.lst` may under-document mats -- this README and Events.xml are authoritative for AI

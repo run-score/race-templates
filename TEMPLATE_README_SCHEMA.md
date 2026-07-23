@@ -74,12 +74,14 @@ Bullets, fixed keys (use these labels verbatim):
 
 ```text
 - Start model: <single shared start | staggered gun times per distance | ...>
-- Events (mats): <comma-separated exact event names from EVENTLST / listings>
-- Optional / unused mats: <names or N/A>
+- Events (mats): <comma-separated exact event names from Events.xml>
+- Optional / unused mats: <names present in Events.xml but not required for a basic timed race, or N/A>
 - Finish model: <shared finish | ...>
-- LPT: <yes/no -- if yes, name checkpoint event>
-- Split points: <names or N/A>
+- LPT: <yes/no -- if yes, name checkpoint event; listings may be wired even if hardware is not>
+- Split points: <names used as course splits, or N/A -- do not also list these under Optional unless truly unused>
 ```
+
+Each mat name must appear in exactly one classification (Events required path, Optional, or Split points) plus LPT naming when applicable. Do not triple-book the same event.
 
 ### `## Awards policy`
 

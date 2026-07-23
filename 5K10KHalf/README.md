@@ -2,11 +2,11 @@
 
 ## Identity
 
-- Template id: 5K10KHalf
-- Race type: road
-- Distance count: 3
-- Sample display name: Vernon Races
-- Participants separated by: RACE field (`5K` / `10K` / `HALF`)
+Template id: 5K10KHalf
+Race type: road
+Distance count: 3
+Sample display name: Vernon Races
+Participants separated by: RACE field (`5K` / `10K` / `HALF`)
 
 ## Summary
 
@@ -27,11 +27,11 @@ email/SMS.
 ## Timing model
 
 - Start model: shared single start/finish; per-distance gun times
-- Events (mats): GunStart, ChipStart, LPTCheckpoint, Split2K, Split5K, Split8K, Split10K, Split18K, Announcer, Finish
-- Optional / unused mats: Split* mats may be unused unless configured for LPT/splits
+- Events (mats): GunStart, ChipStart, Announcer, Finish
+- Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: yes -- LPTCheckpoint
-- Split points: Split2K, Split5K, Split8K, Split10K, Split18K
+- LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
+- Split points: Split2K, Split5K, Split8K, Split10K, Split18K (course splits for LPT RSMs; unused unless configured)
 
 ## Awards policy
 
@@ -79,8 +79,8 @@ email/SMS.
 | `%email_from%` | SendGrid from address | `your-email@example.com` |
 | `%email_subject%` | email subject | `Vernon Races` |
 | `Sms Provider` | SMS provider | `twilio` |
-| `Sms Api Key` | Twilio API key | placeholder |
-| `Sms From Phone` | Twilio from number | placeholder |
+| `Sms Api Key` | Twilio API key | `<<<<< ENTER YOUR KEY HERE >>>>>>` |
+| `Sms From Phone` | Twilio from number | `<<<<< ENTER FROM NUMBER HERE >>>>>>` |
 
 ## Key workflows
 
@@ -139,8 +139,11 @@ email/SMS.
 
 ## Limitations
 
-- Sample Race Roster IDs and API keys are placeholders / demo values
+- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload; do not treat them as disposable sandboxes unless your org confirms they are
+- Email/SMS API keys in Entries.INI are non-functional sentinels -- replace before use
+- Do not commit RaceRosterLastRaceId.txt / RaceRosterMapping.txt / RaceRosterRace.txt / RaceRosterResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- Split mats and LPTCheckpoint are present; unused unless configured
-- Keep `Readme.1.X.lst` for the RunScore UI; this README is the AI source of truth
+- Course Split* events are for LPT RSMs -- unused unless configured
+- LPT listings are wired; LPTCheckpoint needs hardware/config before race-day use
+- `Readme.1.X.lst` may omit LPT/splits -- this README and Events.xml are authoritative for AI

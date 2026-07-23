@@ -2,11 +2,11 @@
 
 ## Identity
 
-- Template id: 5K
-- Race type: road
-- Distance count: 1
-- Sample display name: Vernon 5K
-- Participants separated by: RACE field (single distance `5k`)
+Template id: 5K
+Race type: road
+Distance count: 1
+Sample display name: Vernon 5K
+Participants separated by: RACE field (single distance `5k`)
 
 ## Summary
 
@@ -24,10 +24,10 @@ awards upload, and live email/SMS.
 ## Timing model
 
 - Start model: single shared start (GunStart + ChipStart)
-- Events (mats): GunStart, ChipStart, LPTCheckpoint, Announcer, Finish
+- Events (mats): GunStart, ChipStart, Announcer, Finish
 - Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: yes -- LPTCheckpoint
+- LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
 - Split points: N/A
 
 ## Awards policy
@@ -68,8 +68,8 @@ awards upload, and live email/SMS.
 | `%email_from%` | SendGrid from address | `your-email@example.com` |
 | `%email_subject%` | email subject | `Vernon 5K` |
 | `Sms Provider` | SMS provider | `twilio` |
-| `Sms Api Key` | Twilio API key | placeholder |
-| `Sms From Phone` | Twilio from number | placeholder |
+| `Sms Api Key` | Twilio API key | `<<<<< ENTER YOUR KEY HERE >>>>>>` |
+| `Sms From Phone` | Twilio from number | `<<<<< ENTER FROM NUMBER HERE >>>>>>` |
 
 ## Key workflows
 
@@ -122,8 +122,10 @@ awards upload, and live email/SMS.
 
 ## Limitations
 
-- Sample Race Roster IDs and API keys are placeholders / demo values
+- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload; do not treat them as disposable sandboxes unless your org confirms they are
+- Email/SMS API keys in Entries.INI are non-functional sentinels -- replace before use
+- Do not commit RaceRosterLastRaceId.txt / RaceRosterMapping.txt / RaceRosterRace.txt / RaceRosterResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- LPTCheckpoint is present and wired; configure hardware before relying on LPT
-- Keep `Readme.1.X.lst` for the RunScore UI; this README is the AI source of truth
+- LPT listings are wired; LPTCheckpoint needs hardware/config before race-day use
+- `Readme.1.X.lst` may omit mats (e.g. LPTCheckpoint) or say Announce vs Announcer -- this README and Events.xml are authoritative for AI; UI readme is incomplete
