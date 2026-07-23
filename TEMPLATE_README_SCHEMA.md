@@ -7,6 +7,8 @@ if empty.
 Use ASCII only (`--`, `->`, straight quotes) so content stays consistent with
 sample-race conventions.
 
+Prioritized for alan-ai-api accuracy (wrong answers / bad listing picks), not human polish.
+
 ## File name and placement
 
 | Item | Rule |
@@ -74,14 +76,22 @@ Bullets, fixed keys (use these labels verbatim):
 
 ```text
 - Start model: <single shared start | staggered gun times per distance | ...>
-- Events (mats): <comma-separated exact event names from Events.xml>
-- Optional / unused mats: <names present in Events.xml but not required for a basic timed race, or N/A>
+- Events (mats): <comma-separated exact event names from Events.xml -- core race path only>
+- Optional / unused mats: <N/A unless a mat is truly unused and not a Split/LPT>
 - Finish model: <shared finish | ...>
 - LPT: <yes/no -- if yes, name checkpoint event; listings may be wired even if hardware is not>
-- Split points: <names used as course splits, or N/A -- do not also list these under Optional unless truly unused>
+- Split points: <N/A, or list mats + per-RACE mapping when multi-distance>
 ```
 
-Each mat name must appear in exactly one classification (Events required path, Optional, or Split points) plus LPT naming when applicable. Do not triple-book the same event.
+**Authoritative place for mats and splits is this section only.** Limitations may point here;
+do not restate the full mat/split list in Limitations.
+
+When course splits exist, include a **Split points by RACE** mini-table (or bullets) mapping
+each RACE value to the Split* mats used in that distance's LPT RSM. Do not invent splits
+for a distance (e.g. FULL often has **no** course Split* -- only LPTCheckpoint).
+
+Each mat name must appear in exactly one of: Events (core), Optional, or Split points
+(plus LPT naming). Do not triple-book the same event.
 
 ### `## Awards policy`
 
@@ -99,11 +109,12 @@ Fixed bullets:
 
 ### `## Integrations`
 
-Table:
+Table. **Race Roster row must list concrete listing stems** (same depth as Key workflows),
+not prose like "awards per distance":
 
 | System | Role | Wired in this template |
 |---|---|---|
-| Race Roster | registration / results / LPT / awards upload | yes/no + which upload types |
+| Race Roster | registration / results / LPT / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), LPT (`@ResultsLPTToRR`), awards (`@awards2RR` or `@awards2RR*` -- exact names in Key listings) |
 | SendGrid | email | yes/no |
 | Twilio | SMS | yes/no |
 | Other | ... | N/A |
@@ -122,6 +133,8 @@ Table of **template-meaningful** variables only (name secrets placeholders; do n
 
 Group rows: bandit -> awards -> Race Roster -> email/SMS.
 
+Example column must match Entries.INI text exactly (including SMS sentinels).
+
 ### `## Key workflows`
 
 Numbered race-day flows the chatbot should recommend. Each item:
@@ -137,17 +150,23 @@ Minimum set when present in the race:
 6. Print / upload awards
 7. Live email / SMS finish (if present)
 
+**Gun-time rule (multi-distance required):** workflow #1 must state explicitly:
+per-distance `GunTimePromt*` = **one** RACE only; `@GUNTIME.2.O.lst` = **all** distances.
+
 ### `## Key listings`
 
 Table of high-value files only (not every `.lst`):
 
 | File | Kind | Purpose | Scope |
 |---|---|---|---|
-| `@CalcPlaces.5.P.lst` | listing | recalculate places | all distances / per distance |
+| `@CalcPlaces.5.P.lst` | listing | recalculate places | all |
 
 `Kind`: `listing` | `macro` | `dialog` | `config`
 
-`Scope`: `all` | `5k` | `10k` | `half` | `full`
+**`Scope` enum (always lowercase):** `all` | `5k` | `10k` | `half` | `full`
+
+**Scope is not the RACE field.** RACE may be `5K` / `10K` / `HALF` / `FULL` while Scope stays
+`5k` / `10k` / `half` / `full`. Never write Scope as `5K`.
 
 Include at least: CalcPlaces, CalcStatus (if any), Results*ToRR, AutoResults*,
 awards*, GunTime*, Live* if present.
@@ -161,9 +180,11 @@ Fixed bullets every race repeats (copy-paste OK):
 - Priority groups related listings; color differentiates function in the UI
 - Start each listing with a short purpose comment
 - Sample race .lst / .rsm / .INI content is ASCII-only
+- Key listings Scope enum is lowercase (5k/10k/half/full/all); RACE field casing is independent
 ```
 
-Plus any race-specific naming quirks (e.g. `@awards` vs `@awards5k`).
+Plus required race-specific **awards filename traps** (exact disk names -- AI will invent
+the "logical" name otherwise). See checklist below.
 
 ### `## How to use`
 
@@ -178,12 +199,13 @@ Numbered steps, always:
 
 ### `## Limitations`
 
-Explicit "do not assume" list for the chatbot. Examples:
+Explicit "do not assume" list for the chatbot. Prefer pointers to Timing / Conventions
+over restating mat lists. Cover at least:
 
-- Sample Race Roster IDs and API keys are placeholders / demo values
-- Not a triathlon / XC / relay template
-- Awards gun vs PLACE chip divergence is intentional
-- Optional mats listed under Timing may be unused unless configured
+- Demo RR IDs / API key sentinels (replace before live upload)
+- Not triathlon / XC / relay
+- Awards gun vs PLACE chip divergence
+- UI `Readme.1.X.lst` may be incomplete vs this README / Events.xml
 
 ## Hard rules for authors / AI writers
 
@@ -192,9 +214,12 @@ Explicit "do not assume" list for the chatbot. Examples:
 3. **Exact filenames** as on disk (case-sensitive as stored).
 4. **Exact event and RACE values** as in the race files -- do not normalize `5k` -> `5K`
    unless that is what the DB uses.
-5. Prefer tables over prose for Distances / Integrations / Variables / Listings.
-6. If a feature is absent: write `N/A` in the cell or bullet -- do not omit the row/key.
-7. Repo-root README: short index linking to the race folders; no duplicate deep schema there.
+5. **Scope column** always lowercase enum; never confuse with RACE.
+6. **Awards names** only from the traps checklist / disk -- never invent `@awards10k` when
+   the file is `@awards10` or `@awards10K`.
+7. Prefer tables over prose for Distances / Integrations / Variables / Listings.
+8. If a feature is absent: write `N/A` in the cell or bullet -- do not omit the row/key.
+9. Repo-root README: short index linking to the race folders; no duplicate deep schema there.
 
 ## Per-race fill differences (checklist)
 
@@ -202,8 +227,10 @@ Explicit "do not assume" list for the chatbot. Examples:
 |---|---|---|---|---|
 | Distance count | 1 | 2 | 3 | 4 |
 | RACE values | `5k` | `5k`, `10k` | `5K`, `10K`, `HALF` | `5K`, `10K`, `HALF`, `FULL` |
-| Extra mats | LPTCheckpoint | LPTCheckpoint, optional 5kSplit | splits + LPT | splits + LPT |
-| Awards listings | `@awards`, `@awards2RR` | per-distance `5k`/`10` | per-distance | per-distance + Full |
+| Awards print | `@awards` | `@awards5k`, `@awards10` (no trailing k on 10) | `@awards5K`, `@awards10K`, `@awardsHalf` | + `@awardsFull` |
+| Awards RR | `@awards2RR` | `@awards2RR5k`, `@awards2RR10k` | `@awards2RR5K`, `@awards2RR10K`, `@awards2RRHalf` | + `@awards2RRFull` |
+| Gun prompts | `GunTimePromt` | `GunTimePromt5k` / `10k` | `GunTimePromt5K` / `10K` / `Half` | + `GunTimePromtFull` |
+| LPT split map | LPTCheckpoint only | optional `5kSplit` (not distance-specific LPT RSMs) | 5K: none; 10K: Split2K/5K/8K; HALF: Split5K/10K/18K | same + FULL: none (generic `ResultsOnlineLPT.rsm`) |
 
-Verify RACE casing from each race's data/listings when writing -- do not copy from
-this table blindly if files disagree.
+Verify RACE casing and awards filenames from each race's data/listings when writing --
+do not copy from this table blindly if files disagree.

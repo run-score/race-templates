@@ -73,7 +73,7 @@ awards upload, and live email/SMS.
 
 ## Key workflows
 
-1. Set gun time -- enter gun time via `GunTimePromt.2.O.lst` or `@GUNTIME.2.O.lst`.
+1. Set gun time -- `GunTimePromt.2.O.lst` or `@GUNTIME.2.O.lst` (single distance; either sets the one gun time).
 2. Recalculate places -- run `@CalcPlaces.5.P.lst` (and `@CalcStatus.5.P.lst` for status).
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
 4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
@@ -101,13 +101,16 @@ awards upload, and live email/SMS.
 | `LiveResults.5.S.lst` | listing | live results display | all |
 | `@ClearStartTimes.lst` | listing | clear start times | all |
 
+Scope enum is lowercase (`all` / `5k` / ...). Scope is not the RACE field (`5k` here).
+
 ## Conventions
 
 - Listing names: Name.Priority.Color.lst
 - Priority groups related listings; color differentiates function in the UI
 - Start each listing with a short purpose comment
 - Sample race .lst / .rsm / .INI content is ASCII-only
-- Awards use unsuffixed `@awards` / `@awards2RR` (no per-distance suffix)
+- Key listings Scope enum is lowercase; RACE field casing is independent
+- Awards traps (exact): `@awards` / `@awards2RR` -- no per-distance suffix
 - Filename typo retained: `GunTimePromt` (not Prompt)
 - Events.xml uses `Announcer`; some UI text may say Announce
 
@@ -122,10 +125,10 @@ awards upload, and live email/SMS.
 
 ## Limitations
 
-- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload; do not treat them as disposable sandboxes unless your org confirms they are
+- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload
 - Email/SMS API keys in Entries.INI are non-functional sentinels -- replace before use
-- Do not commit RaceRosterLastRaceId.txt / RaceRosterMapping.txt / RaceRosterRace.txt / RaceRosterResultSets.txt (runtime cache; gitignored)
+- Do not commit RaceRosterLastRaceId/Mapping/Race/ResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- LPT listings are wired; LPTCheckpoint needs hardware/config before race-day use
-- `Readme.1.X.lst` may omit mats (e.g. LPTCheckpoint) or say Announce vs Announcer -- this README and Events.xml are authoritative for AI; UI readme is incomplete
+- Timing mats / LPT / splits: see **Timing model** (do not invent mats beyond that section)
+- `Readme.1.X.lst` may omit mats or say Announce vs Announcer -- this README and Events.xml are authoritative for AI

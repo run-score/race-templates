@@ -29,7 +29,10 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 - Optional / unused mats: N/A
 - Finish model: shared single Finish
 - LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
-- Split points: 5kSplit (optional course split; unused unless configured)
+- Split points: `5kSplit` (optional course split; unused unless configured)
+
+Split points by RACE: no distance-specific LPT split RSMs in this template; `5kSplit`
+is a shared optional mat, not a per-RACE LPT map.
 
 ## Awards policy
 
@@ -45,7 +48,7 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 
 | System | Role | Wired in this template |
 |---|---|---|
-| Race Roster | registration / results / LPT / awards upload | yes -- structured, unstructured, LPT, awards per distance |
+| Race Roster | registration / results / LPT / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), LPT (`@ResultsLPTToRR`), awards (`@awards2RR5k` / `@awards2RR10k`) |
 | SendGrid | email | yes |
 | Twilio | SMS | yes |
 | Other | N/A | N/A |
@@ -78,7 +81,7 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 
 ## Key workflows
 
-1. Set gun time(s) -- `GunTimePromt5k.2.O.lst` / `GunTimePromt10k.2.O.lst` or `@GUNTIME.2.O.lst`.
+1. Set gun time(s) -- Per-distance `GunTimePromt*` sets **one** RACE only; `@GUNTIME.2.O.lst` sets **all** distances. Prompts: `GunTimePromt5k.2.O.lst` / `GunTimePromt10k.2.O.lst`.
 2. Recalculate places -- `@CalcPlaces.5.P.lst` (and `@CalcStatus.5.P.lst` for status).
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
 4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
@@ -101,12 +104,14 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 | `@awards10.6.R.lst` | listing | print awards | 10k |
 | `@awards2RR5k.6.R.lst` | listing | upload awards to Race Roster | 5k |
 | `@awards2RR10k.6.R.lst` | listing | upload awards to Race Roster | 10k |
-| `@GUNTIME.2.O.lst` | listing | set gun times for both distances | all |
-| `GunTimePromt5k.2.O.lst` | dialog | gun-time prompt | 5k |
-| `GunTimePromt10k.2.O.lst` | dialog | gun-time prompt | 10k |
+| `@GUNTIME.2.O.lst` | listing | set gun times for all distances | all |
+| `GunTimePromt5k.2.O.lst` | dialog | gun-time prompt (one RACE) | 5k |
+| `GunTimePromt10k.2.O.lst` | dialog | gun-time prompt (one RACE) | 10k |
 | `LiveEmailFinish.4.G.lst` | listing | live email on finish | all |
 | `LiveSMSFinish.4.O.lst` | listing | live SMS on finish | all |
 | `LiveResults.5.S.lst` | listing | live results display | all |
+
+Scope enum is lowercase (`all` / `5k` / `10k`). Scope is not the RACE field (also lowercase here).
 
 ## Conventions
 
@@ -114,9 +119,9 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 - Priority groups related listings; color differentiates function in the UI
 - Start each listing with a short purpose comment
 - Sample race .lst / .rsm / .INI content is ASCII-only
+- Key listings Scope enum is lowercase; RACE field casing is independent
 - RACE values are lowercase (`5k`, `10k`)
-- Awards print: `@awards5k` / `@awards10` (no trailing `k` on the 10 listing)
-- Awards RR: `@awards2RR5k` / `@awards2RR10k`
+- Awards traps (exact): print `@awards5k` / `@awards10` (no trailing `k` on 10); RR `@awards2RR5k` / `@awards2RR10k` -- never invent `@awards10k` or `@awards10K` here
 - Filename typo retained: `GunTimePromt` (not Prompt)
 
 ## How to use
@@ -130,11 +135,10 @@ with online results, LPT, optional 5k split, awards upload, and live email/SMS.
 
 ## Limitations
 
-- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload; do not treat them as disposable sandboxes unless your org confirms they are
+- `%rr_*%` / `%resultsid*%` values are shared demo Race Roster test IDs copied from SampleRaces -- replace before any live upload
 - Email/SMS API keys in Entries.INI are non-functional sentinels -- replace before use
-- Do not commit RaceRosterLastRaceId.txt / RaceRosterMapping.txt / RaceRosterRace.txt / RaceRosterResultSets.txt (runtime cache; gitignored)
+- Do not commit RaceRosterLastRaceId/Mapping/Race/ResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- 5kSplit is an optional course split -- unused unless configured
-- LPT listings are wired; LPTCheckpoint needs hardware/config before race-day use
+- Timing mats / LPT / splits: see **Timing model** only
 - `Readme.1.X.lst` may under-document mats -- this README and Events.xml are authoritative for AI
