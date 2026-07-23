@@ -100,6 +100,7 @@ awards upload, and live email/SMS.
 | `LiveSMSFinish.4.O.lst` | listing | live SMS on finish | all |
 | `LiveResults.5.S.lst` | listing | live results display | all |
 | `@ClearStartTimes.lst` | listing | clear start times | all |
+| `awards-5k.txt` | sample output | example awards print text for AI ingest | all |
 
 Scope enum is lowercase (`all` / `5k` / ...). Scope is not the RACE field (`5k` here).
 
@@ -111,6 +112,7 @@ Scope enum is lowercase (`all` / `5k` / ...). Scope is not the RACE field (`5k` 
 - Sample race .lst / .rsm / .INI content is ASCII-only
 - Key listings Scope enum is lowercase; RACE field casing is independent
 - Awards traps (exact): `@awards` / `@awards2RR` -- no per-distance suffix
+- `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
 - Events.xml uses `Announcer`; some UI text may say Announce
 

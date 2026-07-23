@@ -1,6 +1,6 @@
 NO.,LAST NAME,FIRST NAME,AGE,ADDRESS,CITY,STATE,ZIP,EMAIL,CLUB,DIV,SEX,BIRTHDATE,TSHIRT,PHONE,RACE
 1,Button,David,65,98 West Ave.,Walton,PA,19876,jones@geol.binghamton.edu,Walton RC,M6099,M,01/24/41,M,(607)555-1234,5K
-3,Schwartz,Margaret,42,348 Summerset St.,Vernon,NY,13468,runscore@stny.rr.com,Vernon RC,F4049,F,05/13/64,X,(607)555-2345,5K
+3,Schwartz,Margaret,42,348 Summerset St.,Vernon,NY,13468,runner@example.com,Vernon RC,F4049,F,05/13/64,X,(607)555-2345,5K
 5,Cramer,Paul,75,56 Sheldon St,Walton,PA,19876,,Walton RC,M6099,M,06/30/30,S,,5K
 10,Hoble,Steven,68,13 Cortland Dr.,Vernon,NY,13468,,Vernon RC,M6099,M,09/01/37,,(607)754-3345,5K
 150,Oats,Karen,49,14 North St.,Vernon,NY,13469,,,F4049,F,01/31/57,S,,5K

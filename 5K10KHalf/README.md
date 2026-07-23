@@ -124,6 +124,9 @@ Split points by RACE (from LPT RSMs -- do not invent extra splits):
 | `LiveEmailFinish.4.G.lst` | listing | live email on finish | all |
 | `LiveSMSFinish.4.O.lst` | listing | live SMS on finish | all |
 | `LiveResults.5.S.lst` | listing | live results display | all |
+| `awards-5K.txt` | sample output | example awards print text for AI ingest | 5k |
+| `awards-10K.txt` | sample output | example awards print text for AI ingest | 10k |
+| `awards-half.txt` | sample output | example awards print text for AI ingest | half |
 
 Scope enum is lowercase (`all` / `5k` / `10k` / `half`). Scope is **not** the RACE field (`5K` / `10K` / `HALF`).
 
@@ -136,6 +139,7 @@ Scope enum is lowercase (`all` / `5k` / `10k` / `half`). Scope is **not** the RA
 - Key listings Scope enum is lowercase; RACE field casing is independent
 - RACE values are uppercase (`5K`, `10K`, `HALF`) -- differs from lowercase in `5K10K`
 - Awards traps (exact): `@awards5K` / `@awards10K` / `@awardsHalf` and `@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf` -- never use `5K10K`'s `@awards10` form here
+- `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
 
 ## How to use

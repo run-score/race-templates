@@ -110,6 +110,8 @@ is a shared optional mat, not a per-RACE LPT map.
 | `LiveEmailFinish.4.G.lst` | listing | live email on finish | all |
 | `LiveSMSFinish.4.O.lst` | listing | live SMS on finish | all |
 | `LiveResults.5.S.lst` | listing | live results display | all |
+| `awards-5k.txt` | sample output | example awards print text for AI ingest | 5k |
+| `awards-10k.txt` | sample output | example awards print text for AI ingest | 10k |
 
 Scope enum is lowercase (`all` / `5k` / `10k`). Scope is not the RACE field (also lowercase here).
 
@@ -122,6 +124,7 @@ Scope enum is lowercase (`all` / `5k` / `10k`). Scope is not the RACE field (als
 - Key listings Scope enum is lowercase; RACE field casing is independent
 - RACE values are lowercase (`5k`, `10k`)
 - Awards traps (exact): print `@awards5k` / `@awards10` (no trailing `k` on 10); RR `@awards2RR5k` / `@awards2RR10k` -- never invent `@awards10k` or `@awards10K` here
+- `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
 
 ## How to use

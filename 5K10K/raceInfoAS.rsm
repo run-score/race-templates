@@ -15,10 +15,10 @@
 * Following for AllSportRunning
  email to            results@AllSportRunning.com
 * Following for testing to mail to yourself.  Change to your e-mail address
- email to            AlanJones@stny.rr.com
- email from          RunScore@stny.rr.com
+ email to            your-email@example.com
+ email from          your-email@example.com
  email subject       Vernon XX
- email server        smtp-server.stny.rr.com
+ email server        smtp.example.com
 no column headers
 no page numbers
 exclude             0

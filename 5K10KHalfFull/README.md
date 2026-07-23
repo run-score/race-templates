@@ -135,6 +135,10 @@ Do not assign Split18K (or any Split*) to FULL just because the mat exists in Ev
 | `LiveEmailFinish.4.G.lst` | listing | live email on finish | all |
 | `LiveSMSFinish.4.O.lst` | listing | live SMS on finish | all |
 | `LiveResults.5.S.lst` | listing | live results display | all |
+| `awards-5K.txt` | sample output | example awards print text for AI ingest | 5k |
+| `awards-10K.txt` | sample output | example awards print text for AI ingest | 10k |
+| `awards-half.txt` | sample output | example awards print text for AI ingest | half |
+| `awards-full.txt` | sample output | example awards print text for AI ingest | full |
 
 Scope enum is lowercase (`all` / `5k` / `10k` / `half` / `full`). Scope is **not** the RACE field (`5K` / `10K` / `HALF` / `FULL`).
 
@@ -147,6 +151,7 @@ Scope enum is lowercase (`all` / `5k` / `10k` / `half` / `full`). Scope is **not
 - Key listings Scope enum is lowercase; RACE field casing is independent
 - RACE values are uppercase (`5K`, `10K`, `HALF`, `FULL`)
 - Awards traps (exact): `@awards5K` / `@awards10K` / `@awardsHalf` / `@awardsFull` and matching `@awards2RR*` -- never invent `@awards10` (that form is `5K10K` only)
+- `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
 - FULL LPT upload reuses generic `ResultsOnlineLPT.rsm` (no Full-specific split LPT RSM)
 
