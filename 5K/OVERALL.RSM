@@ -13,6 +13,7 @@ no page numbers
 no column headers
 Header
 .ce ********** %2 OVERALL RESULTS FOR 5K RACE ***********
+.ce Based on %overall_label%
 .End of Header
 Field               Name
 Field               AGE
@@ -24,3 +25,4 @@ Select              SEX
 =                   %3
 records/page        %1
 event               %awards_event%
+minus               %overall_start%

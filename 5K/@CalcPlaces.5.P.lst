@@ -1,8 +1,9 @@
 * Calculate Places: Clears result fields and recalculates all places.
 *   When to use:    After all runners have finished, or whenever results need to be recalculated.
 *   How to use:     Double-click to clear and recalculate all place fields.
-*   Note:           This clears and recalculates: TIME, PLACE, PACE, DIVPLACE, DIVTOTAL,
-*                   SEXPLACE, SEXTOTAL, AGEPLACE, AGETOTAL, RUNNER STATUS.
+*   Note:           Clears and recalculates: TIME, NETTIME, PLACE, PACE, DIVPLACE, DIVTOTAL,
+*                   SEXPLACE, SEXTOTAL, AGEPLACE, AGETOTAL. Clears RUNNER STATUS only --
+*                   use @CalcStatus.lst to recompute status.
 *   Pace note:      Adding 'K' after a distance converts km to miles for pace.
 *                   To get pace per km instead, omit the 'K' (e.g., use '20' not '20K').
 
@@ -24,5 +25,5 @@ CalcPlaces.rsm      5K
 
 * Examples for other distances:
 * CalcPlaces.rsm    10K
-* CalcPlaces.rsm    Half
+* CalcPlaces.rsm    21.1K
 * CalcPlaces.rsm    20        (pace per km, no 'K' suffix)

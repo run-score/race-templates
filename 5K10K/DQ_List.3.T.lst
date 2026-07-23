@@ -1,0 +1,13 @@
+* Shows all runners marked as Disqualified.
+*   When to use:    After the race to review disqualified runners.
+*   How to use:     Double-click to display the list in the Browse window.
+Destination         Browse
+Select              BIB
+>                   0
+And
+Select              DNF
+=                   DQ
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE

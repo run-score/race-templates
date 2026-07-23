@@ -1,0 +1,39 @@
+                               Vernon Races
+                                 MARATHON
+                   Vernon, New York           06/20/2009
+
+Place Bib   Name                                     S Age Div   City               St Divpl Divto Sexpl Sexto Gun Time   Chip Time     
+===== ===== ======================================== = === ===== ================== == ===== ===== ===== ===== ========== ========== 
+    1   101 Michelle Martin                          F  67 F6099 Mount Morrow       NY 1     2     1     13    2:56:08.27 2:55:53.00 
+    2   102 Anthony Martin                           M  48 M4049 Walton             PA 1     3     1     20    2:58:25.99 2:58:08.00 
+    3   103 Kevin Rodriguez                          M  35 M3039 Vernon             NY 1     5     2     20    3:12:40.66 3:12:20.00 
+    4   104 Joseph Martin                            M  31 M3039 Mount Morrow       NY 2     5     3     20    3:25:18.72 3:24:56.00 
+    5   105 Emily Torres                             F  41 F4049 Walton             PA 1     4     2     13    3:25:51.48 3:25:27.00 
+    6   106 Kenneth Wilson                           M  62 M6099 Swift Town         KY 1     3     4     20    3:26:42.62 3:26:16.00 
+    7   107 Lisa Lewis                               F  19 F0119 Mount Morrow       NY 1     1     3     13    3:37:13.45 3:36:44.00 
+    8   108 William Thomas                           M  18 M0119 Walton             PA 1     1     5     20    3:38:42.52 3:38:11.00 
+    9   109 Robert Scott                             M  34 M3039 Mount Morrow       NY 3     5     6     20    3:39:14.66 3:38:41.00 
+   10   110 Mark Brown                               M  25 M2029 Vernon             NY 1     5     7     20    3:44:23.56 3:43:47.00 
+   11   111 Henry Torres                             M  53 M5059 Crestview          FL 1     3     8     20    4:04:17.52 4:03:39.00 
+   12   112 Nancy Brown                              F  36 F3039 Vernon             NY 1     3     4     13    4:07:35.55 4:06:55.00 
+   13   113 Thomas Flores                            M  24 M2029 Ft Walton Beach    FL 2     5     9     20    4:08:33.42 4:07:51.00 
+   14   114 Amanda Lee                               F  41 F4049 Walton             PA 2     4     5     13    4:15:52.84 4:15:08.00 
+   15   115 Emily Miller                             F  40 F4049 Vernon             NY 3     4     6     13    4:28:39.95 4:27:53.00 
+   16   116 Kevin Martin                             M  48 M4049 Ft Walton Beach    FL 2     3     10    20    4:40:01.36 4:39:12.00 
+   17   117 Karen Green                              F  25 F2029 Walton             PA 1     1     7     13    4:40:56.27 4:40:04.00 
+   18   118 Edward Lewis                             M  47 M4049 Mount Morrow       NY 3     3     11    20    4:51:10.30 4:50:16.00 
+   19   119 Amanda Lewis                             F  59 F5059 Swift Town         KY 1     2     8     13    4:54:39.54 4:53:43.00 
+   20   120 David Williams                           M  26 M2029 Walton             PA 3     5     12    20    4:59:51.46 4:58:53.00 
+   21   121 Peter Martinez                           M  61 M6099 Swift Town         KY 2     3     13    20    5:03:49.35 5:02:48.00 
+   22   122 Steven Thomas                            M  69 M6099 Walton             PA 3     3     14    20    5:12:44.41 5:11:41.00 
+   23   123 James Gonzalez                           M  54 M5059 Mount Morrow       NY 2     3     15    20    5:14:42.48 5:13:37.00 
+   24   124 Carol Scott                              F  55 F5059 Mount Morrow       NY 2     2     9     13    5:20:36.95 5:19:29.00 
+   25   125 Steven Thompson                          M  22 M2029 Vernon             NY 4     5     16    20    5:22:46.99 5:21:37.00 
+   26   126 Mary Wright                              F  31 F3039 Swift Town         KY 2     3     10    13    5:27:16.21 5:26:04.00 
+   27   127 William Martin                           M  59 M5059 Swift Town         KY 3     3     17    20    5:38:57.30 5:37:43.00 
+   28   128 Betty Lopez                              F  46 F4049 Ft Walton Beach    FL 4     4     11    13    5:39:07.46 5:37:51.00 
+   29   129 Dorothy Robinson                         F  62 F6099 Swift Town         KY 2     2     12    13    5:47:39.21 5:46:20.00 
+   30   130 Joshua Adams                             M  31 M3039 Mount Morrow       NY 4     5     18    20    5:51:22.46 5:50:01.00 
+   31   131 Deborah Jones                            F  35 F3039 Swift Town         KY 3     3     13    13    6:02:08.21 6:00:45.00 
+   32   132 James Miller                             M  23 M2029 Walton             PA 5     5     19    20    6:02:15.33 6:00:49.00 
+   33   133 Andrew Wright                            M  39 M3039 Swift Town         KY 5     5     20    20    6:02:36.70 6:01:09.00 

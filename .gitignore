@@ -1,0 +1,14 @@
+# Runtime / generated artifacts from opening races in RunScore
+*_IgnoredCloudChipReads.txt
+*_IgnoredRawChipReads.txt
+*window_config.json
+MergeProb.txt
+RaceRosterLastRaceId.txt
+RaceRosterMapping.txt
+RaceRosterRace.txt
+RaceRosterRegistrations.txt
+RaceRosterResultSets.txt
+RaceRosterDetails.txt
+RaceRosterTeams.txt
+RaceRosterTeamTypes.txt
+*MyLapsPA.token

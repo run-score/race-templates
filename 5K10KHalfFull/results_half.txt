@@ -1,0 +1,39 @@
+                               Vernon Races
+                               HALF MARATHON
+                   Vernon, New York           06/20/2009
+
+Place Bib   Name                                     S Age Div   City               St Divpl Divto Sexpl Sexto Gun Time   Chip Time     
+===== ===== ======================================== = === ===== ================== == ===== ===== ===== ===== ========== ========== 
+    1    76 Thomas Collins                           M  30 M3039 Walton             WI 1     4     1     19    2:01:32.90 2:00:37.92 
+    2    71 Larry Wright                             M  48 M4049 Dwighton           PA 1     4     2     19    2:06:40.25 2:05:36.58 
+    3    98 Jeffrey Taylor                           M  69 M6099 Devon              PA 1     6     3     19    2:10:52.25 2:09:42.56 
+    4    83 Heather Scott                            F  20 F2029 Moorestown         PA 1     1     1     14    2:11:23.31 2:10:26.37 
+    5    81 Nancy Young                              F  62 F6099 Afton              NY 1     2     2     14    2:12:33.98 2:12:10.65 
+    6    90 Brenda Edwards                           F  65 F6099 Thompsonville      NY 2     2     3     14    2:12:46.49 2:12:29.87 
+    7    88 James Brown                              M  44 M4049 Pembrooke          NY 2     4     4     19    2:12:51.55 2:12:32.68 
+    8    84 Cynthia Thomas                           F  33 F3039 Pembrooke          NY 1     6     4     14    2:12:56.66 2:12:38.41 
+    9    89 Katherine Walker                         F  34 F3039 Samsonville        PA 2     6     5     14    2:13:13.83 2:12:39.31 
+   10   100 Janet Thomas                             F  33 F3039 Samsonville        NY 3     6     6     14    2:13:33.66 2:13:13.62 
+   11    70 Jerry Murphy                             M  20 M2029 Thompsonville      NJ 1     3     5     19    2:14:25.34 2:13:51.98 
+   12    96 Christine Carter                         F  36 F3039 Devon              NY 4     6     7     14    2:14:32.96 2:14:26.27 
+   13    80 Elizabeth King                           F  31 F3039 Walton             NJ 5     6     8     14    2:15:14.65 2:14:35.92 
+   14    97 Richard White                            M  62 M6099 Moorestown         WI 2     6     6     19    2:15:28.13 2:15:21.54 
+   15    68 Jeffrey Torres                           M  66 M6099 Afton              NY 3     6     7     19    2:17:36.33 2:16:59.83 
+   16    73 Robert Collins                           M  67 M6099 Stumbleton         RI 4     6     8     19    2:17:37.38 2:17:02.47 
+   17    69 Cynthia Turner                           F  33 F3039 Westtown           PA 6     6     9     14    2:17:51.06 2:17:37.21 
+   18    92 George Carter                            M  48 M4049 Westtown           NY 3     4     9     19    2:20:20.95 2:20:06.95 
+   19    94 Anna Morgan                              F  55 F5059 Dwighton           NY 1     4     10    14    2:21:50.62 2:20:23.42 
+   20    82 Andrew Adams                             M  70 M6099 Norton             PA 5     6     10    19    2:22:23.68 2:21:13.39 
+   21    85 Shirley Nelson                           F  59 F5059 Thompsonville      NY 2     4     11    14    2:23:23.44 2:22:37.64 
+   22    93 Joseph Torres                            M  34 M3039 Middletown         NJ 2     4     11    19    2:24:28.52 2:24:13.28 
+   23    87 Susan Martin                             F  49 F4049 Pembrooke          NY 1     1     12    14    2:24:39.04 2:24:31.10 
+   24    99 Jerry Johnson                            M  57 M5059 Middletown         PA 1     2     12    19    2:24:50.80 2:24:31.15 
+   25    91 Steve Young                              M  24 M2029 Johnson City       PA 2     3     13    19    2:24:56.91 2:24:46.52 
+   26    74 Ryan Morgan                              M  25 M2029 Middletown         MD 3     3     14    19    2:25:49.33 2:25:23.79 
+   27    86 Jessica Mitchell                         F  51 F5059 Moorestown         PA 3     4     13    14    2:26:38.74 2:25:51.35 
+   28    72 Anthony Collins                          M  64 M6099 Apalachin          PA 6     6     15    19    2:27:00.02 2:26:03.93 
+   29    78 Raymond Thomas                           M  53 M5059 Devon              PA 2     2     16    19    2:27:05.83 2:26:15.32 
+   30    79 Kimberly Green                           F  59 F5059 Apalachin          NY 4     4     14    14    2:27:13.25 2:26:26.92 
+   31    95 Frank Clark                              M  35 M3039 Afton              PA 3     4     17    19    2:27:34.02 2:27:19.19 
+   32    75 Gary Murphy                              M  43 M4049 Norton             NY 4     4     18    19    2:28:53.98 2:27:32.93 
+   33    77 Jonathan Wilson                          M  34 M3039 Middletown         NY 4     4     19    19    2:38:25.04 2:37:52.02 

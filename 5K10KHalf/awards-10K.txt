@@ -1,0 +1,46 @@
+   
+
+        ********** FEMALE OVERALL RESULTS FOR 10K RACE ***********
+    1 Christine Evans                           47 Apalachin       PA Vernon RC  10:06:58 
+    2 Janet Nelson                              35 Northville      PA Nicely     10:11:19 
+    3 Christine Morgan                          38 Delaware        PA            10:11:42 
+         ********** MALE OVERALL RESULTS FOR 10K RACE ***********
+    1 James Baker                               38 Apalachin       DE Vernon RC  10:04:59 
+    2 Ryan Ryan                                 60 Afton           NY Pemmys     10:06:14 
+    3 Gregory Harris                            27 Walton          PA Nicely     10:13:30 
+FEMALE AGE RACE 10K GROUP:  1 - 19
+MALE AGE RACE 10K GROUP:  1 - 19
+FEMALE AGE RACE 10K GROUP:  20 - 29
+    1    32 Emma Wilson                               27 Apalachin          MD 10:15:12 
+    2    61 Michelle Davis                            29 Pembrooke          PA 10:22:39 
+    3    73 Laura Thomas                              25 Stumbleton         NY 10:25:06 
+MALE AGE RACE 10K GROUP:  20 - 29
+    1    51 George Collins                            28 Issacstown         KY 10:18:43 
+FEMALE AGE RACE 10K GROUP:  30 - 39
+    1    57 Debra Lewis                               30 Northville         NY 10:21:43 
+    2    87 Karen Ryan                                34 Vernon             PA 10:28:23 
+MALE AGE RACE 10K GROUP:  30 - 39
+    1    37 Harold Scott                              35 Afton              NY 10:15:56 
+    2    91 Joseph Torres                             31 Johnson City       PA 10:28:55 
+FEMALE AGE RACE 10K GROUP:  40 - 49
+    1    41 Sharon Carter                             40 Apalachin          NY 10:16:38 
+    2    96 Heather Swift                             45 Pembrooke          PA 10:32:55 
+MALE AGE RACE 10K GROUP:  40 - 49
+    1    55 Charles Evans                             40 Middletown         NY 10:20:47 
+    2    56 Thomas Evans                              47 Westtown           OH 10:21:04 
+FEMALE AGE RACE 10K GROUP:  50 - 59
+    1    42 Melissa Jones                             54 Vernon             PA 10:17:13 
+    2    49 Cynthia Phillips                          58 Apalachin          RI 10:18:18 
+    3    99 Angela Scott                              59 Issacstown         PA 10:36:33 
+MALE AGE RACE 10K GROUP:  50 - 59
+    1    54 Patrick Jackson                           59 Swift Town         NJ 10:20:47 
+    2    59 Douglas Roberts                           52 Afton              NJ 10:22:06 
+    3    62 Joshua Robinson                           53 Delaware           NY 10:22:41 
+FEMALE AGE RACE 10K GROUP:  60 - 99
+    1    27 Rachel Cook                               67 Carbondale         NY 10:14:09 
+    2    35 Susan Baker                               69 Pembrooke          PA 10:15:25 
+    3    47 Elizabeth Scott                           68 Kane               NY 10:17:56 
+MALE AGE RACE 10K GROUP:  60 - 99
+    1    28 Ronald Williams                           66 Devon              PA 10:14:20 
+    2    31 Benjamin Moore                            66 Samsonville        PA 10:15:08 
+    3    83 Eric Nelson                               65 Swift Town         PA 10:27:46 

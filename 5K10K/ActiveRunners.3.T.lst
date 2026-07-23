@@ -1,0 +1,12 @@
+* Shows runners who started but have not yet finished.
+*   When to use:    During the race to monitor who is still on the course.
+*   How to use:     Double-click to display the list in the Browse window.
+Destination         Browse
+Select              BIB
+>                   0
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Event               ChipStart
+Not                 Finish

@@ -1,0 +1,7 @@
+Field               FIRST NAME
+Field Header        NAME
+Field Length        7
+Squeeze
+Field               LAST NAME
+Field Header
+Field Length        11

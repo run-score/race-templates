@@ -1,0 +1,53 @@
+* Race information and E-mail parameters
+*
+* E-mail results to RunningUSA and Active.com
+* Leave a space in front of "email to    leon@run-2-3.com"  and
+* "email to    AutoResults@active.com" lines until done testing.
+* Edit the items at the bottom of this file according to your race.
+* Edit line that emails to runscore and to your own e-mail address and move to first column
+* Edit "email from" to your e-mail address and move to first column
+* Edit "email subject" to name of your race and move to first column
+* Edit "email server" to your SMTP server and move to first column
+* Run the listing and see if you get the results as a short e-mail plus an attachment
+* of RSTMP$$$.txt
+* When things work, move the "email to results" and "email to ActiveResults" lines
+* over to margin after testing
+* Move your email line to right.
+* Following for Running USA
+ email to            results@usatf.org
+* Following for active.com
+ email to            ActiveResults@active.com
+* Following for testing to mail to yourself.  Change to your e-mail address
+ email to            AlanJones@stny.rr.com
+ email from          RunScore@stny.rr.com
+ email subject       Vernon XX
+ email server        smtp-server.stny.rr.com
+no column headers
+no page numbers
+exclude             0
+header
+Race name: Vernon XX
+Race date: June 16, 2005
+Race location: Vernon, NY
+Distance: 20 km
+Course ID: NY84015AA
+Race director: Fred Boron
+Race director address: 308 Pine Rd, Vernon, NY 12345
+Race director phone: 607-295-1234
+Race director e-mail: fboron@stny.rr.com
+Submitter name: Alan Jones
+Submitter e-mail: TomJones@abcd.rr.com
+Timing Company: RunTime Software
+Division: M,  1, 19
+Division: F,  1, 19
+Division: M, 20, 29
+Division: F, 20, 29
+Division: M, 30, 39
+Division: F, 30, 39
+Division: M, 40, 49
+Division: F, 40, 49
+Division: M, 50, 99
+Division: F, 50, 99
+Results:
+.end of header
+

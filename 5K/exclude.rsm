@@ -15,4 +15,10 @@ No Column Headers
 Select              SEX
 =                   %3
 Exclude             %1
+* The event + minus below is the sort key that decides WHO gets excluded
+* (this macro has no report output). Using %overall_start% ranks exclusion
+* exactly like OVERALL.RSM, so the runners removed are the ones it placed --
+* correct even when %overall_start% is a per-runner start (chip/wave), not just
+* a gun start where raw finish order would coincidentally match.
 event               %awards_event%
+minus               %overall_start%

@@ -1,0 +1,15 @@
+* Results by Gender: Displays race results filtered by gender and distance.
+*   When to use:    After the race to review results by gender for each distance.
+*   How to use:     Double-click to display the results in the Browse window.
+
+* 5K Results
+ResultsByGender.rsm M Finish 5k
+ResultsByGender.rsm F Finish 5k
+
+* 10K Results
+ResultsByGender.rsm M Finish 10k
+ResultsByGender.rsm F Finish 10k
+
+* Examples for other events:
+* ResultsByGender.rsm M Time 5k
+* ResultsByGender.rsm F Time 5k

@@ -13,5 +13,7 @@ Field Length        15
 Field               STATE
 Field               CLUB
 .include            eventlst
+minus               ChipStart
+Field Header        Chip Time
 Pace                5K
  

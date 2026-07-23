@@ -5,7 +5,7 @@
 *   Setup:          Set your RaceRoster sub-event ID in Entries.INI (%rr_5k%).
 *   LPT prereq:    Timer must add an LPT checkpoint event per Race Roster's LPT setup
 *                   instructions (distance varies by course, e.g. 1 km, 1.5 km, 2 km).
-*   Important:      Use either this (LPT) or @AutoResults (non-LPT) — do not mix both
+*   Important:      Use either this (LPT) or @AutoResults (non-LPT) -- do not mix both
 *                   on the same sub-event.
 
 * Step 1: Clear and recalculate all result fields

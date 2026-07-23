@@ -1,0 +1,5 @@
+*Clear out Time
+select              time
+<>
+selected            time
+selected message

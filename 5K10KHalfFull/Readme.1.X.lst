@@ -1,0 +1,30 @@
+* Readme file
+/*
+This sample race is for a 4-distance road race: 5K, 10K, Half Marathon, and Full Marathon.
+
+All distances share a single start/finish with the following timing events (mats):
+GunStart, ChipStart, Announcer, and Finish.
+
+Participants are separated by the RACE field (5K, 10K, HALF, or FULL).
+
+Online Integration:
+  - RaceRoster is the sole online system for registration and results.
+  - SendGrid is used for email notifications (Web API).
+  - Twilio is used for SMS notifications.
+
+Key files:
+  - @CalcPlaces     -- Clears and recalculates places for all 4 distances.
+  - @ResultsToRR    -- Uploads results to RaceRoster for all 4 distances.
+  - @AutoResults    -- Combines CalcPlaces + ResultsToRR for one-click publishing.
+  - @AutoResultsLPT -- Combines CalcPlaces + CalcStatus + ResultsLPTToRR (LPT workflow).
+  - @awards5K/10K/Half/Full -- Per-distance awards listings (print).
+  - @awards2RR5K/10K/Half/Full -- Per-distance awards with RaceRoster upload.
+  - GunTimePromt5K/10K/Half/Full -- Per-distance gun time entry dialogs.
+  - LiveEmailFinish -- Sends finish-time email to each runner (SendGrid).
+  - LiveSMSFinish   -- Sends finish-time SMS to each runner (Twilio).
+
+We recommend using the Priority to group your listing files.
+You may also use different colors to differentiate the functionality of the different listing files.
+
+All the files follow the best practice recommendation.
+*/

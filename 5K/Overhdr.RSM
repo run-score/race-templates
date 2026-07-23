@@ -1,8 +1,9 @@
 * Awards list header
 *
 * Purpose:          Prints the race name and "AWARDS LIST" banner at the top
-*                   of the awards report. Resets the exclude count to 0
-*                   so no runners are excluded at the start of awards.
+*                   of the awards report. Exclude 0 has no effect and is
+*                   kept for clarity; the exclusion array is fresh at each
+*                   listing run. Only Cancel Exclude clears exclusions mid-run.
 *
 * Parameters:       None.
 *

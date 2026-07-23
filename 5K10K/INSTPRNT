@@ -1,0 +1,14 @@
+PRINTER CONTROL     27 69
+LABELS
+Field               NO.
+FIELD               FIRST NAME
+FIELD               LAST NAME
+LINE FEED           2
+Message             AGE:
+FIELD               AGE
+Message               Sex:
+FIELD               SEX
+Message               TShirt:
+Field               TSHIRT
+LINE FEED           3
+

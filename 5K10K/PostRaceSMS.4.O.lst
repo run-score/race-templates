@@ -1,0 +1,37 @@
+* Sends bulk SMS results after the race is finalized.
+* When to use:      After all errors are fixed and "Event to Database" has been run.
+* How to use:       Double-click to blast results to all runners with a PHONE and TIME.
+* Note:             Keep messages under 160 characters. Total length depends on URL size.
+* Setup:            Ensure "Event to Database" is run first to populate result fields.
+
+/* Before running: You MUST execute the "Event to Database" command. 
+* This copies Finish Times and Places into the participant records so 
+* this script can find them.
+*/
+
+Select              PHONE
+NE
+And
+Select              TIME
+NE
+
+SMS Destination     PHONE
+No Column Headers
+No Page Numbers
+No Total
+Squeeze
+
+* Message Construction
+Field               Name
+Message             : Time:
+Space               1
+Field               TIME
+Message             . Div:
+Space               1
+Field               DIVPLACE
+Message             /
+Field               DIVTOTAL
+Message             . Full Results:
+Space               1
+Field               Result URL
+

@@ -1,0 +1,18 @@
+* Calculates Cross-Country Team Scores for 5K
+* When to use:      Use this when you need to generate a team standings report based on finishing places.
+* How to use:       Ensure your CLUB (or team) field is populated.
+Header
+.include            racename.5K
+
+----------------------------------------------------------------------------
+                          TEAM Results - 5K
+----------------------------------------------------------------------------
+.End of Header
+Select              Race
+=                   5k
+.include            fieldlst
+Event               Finish
+Team Field          CLUB
+Team Score          5
+Team Displace       7
+ 

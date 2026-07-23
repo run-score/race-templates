@@ -1,0 +1,39 @@
+                               Vernon Races
+                          TEN KILOMETER ROAD RACE
+                   Vernon, New York           06/20/2009
+
+Place Bib   Name                                     S Age Div   City               St Divpl Divto Sexpl Sexto Gun Time   Chip Time     
+===== ===== ======================================== = === ===== ================== == ===== ===== ===== ===== ========== ========== 
+    1    45 James Baker                              M  38 M3039 Apalachin          DE 2     6     4     19    1:33:07.81 1:01:42.32 
+    2    44 Ryan Ryan                                M  60 M6099 Afton              NY 3     3     17    19    1:34:22.18 1:02:56.40 
+    3    51 Christine Evans                          F  47 F4049 Apalachin          PA                         1:35:06.91 1:03:36.58 
+    4    40 Janet Nelson                             F  35 F3039 Northville         PA 2     4     13    25    1:39:28.12 1:07:57.09 
+    5    49 Christine Morgan                         F  38 F3039 Delaware           PA                         1:39:50.64 1:08:18.86 
+    6    41 Gregory Harris                           M  27 M2029 Walton             PA 1     3     14    19    1:41:38.56 1:10:08.06 
+    7    52 Rachel Cook                              F  67 F6099 Carbondale         NY                         1:42:17.57 1:10:48.07 
+    8    60 Ronald Williams                          M  66 M6099 Devon              PA                         1:42:28.96 1:10:57.80 
+    9    46 Benjamin Moore                           M  66 M6099 Samsonville        PA 1     3     5     19    1:43:17.02 1:11:41.72 
+   10    54 Emma Wilson                              F  27 F2029 Apalachin          MD                         1:43:20.51 1:11:47.45 
+   11    38 Susan Baker                              F  69 F6099 Pembrooke          PA 2     7     4     25    1:43:33.59 1:12:01.64 
+   12    43 Harold Scott                             M  35 M3039 Afton              NY 4     6     12    19    1:44:04.97 1:12:33.23 
+   13    36 Sharon Carter                            F  40 F4049 Apalachin          NY 3     3     6     25    1:44:47.11 1:13:18.04 
+   14    42 Melissa Jones                            F  54 F5059 Vernon             PA 2     5     15    25    1:45:21.18 1:13:47.16 
+   15    55 Elizabeth Scott                          F  68 F6099 Kane               NY                         1:46:04.75 1:14:35.07 
+   16    66 Cynthia Phillips                         F  58 F5059 Apalachin          RI                         1:46:27.12 1:15:01.81 
+   17    61 George Collins                           M  28 M2029 Issacstown         KY                         1:46:51.48 1:15:21.76 
+   18    53 Patrick Jackson                          M  59 M5059 Swift Town         NJ                         1:48:55.33 1:17:23.42 
+   19    67 Charles Evans                            M  40 M4049 Middletown         NY                         1:48:55.96 1:17:26.38 
+   20    56 Thomas Evans                             M  47 M4049 Westtown           OH                         1:49:12.39 1:17:39.09 
+   21    64 Debra Lewis                              F  30 F3039 Northville         NY                         1:49:51.87 1:18:20.54 
+   22    48 Douglas Roberts                          M  52 M5059 Afton              NJ                         1:50:14.84 1:18:44.30 
+   23    65 Michelle Davis                           F  29 F2029 Pembrooke          PA                         1:50:47.52 1:19:09.67 
+   24    37 Joshua Robinson                          M  53 M5059 Delaware           NY 1     4     2     19    1:50:49.18 1:19:14.54 
+   25    39 Laura Thomas                             F  25 F2029 Stumbleton         NY 3     5     14    25    1:53:15.10 1:21:42.59 
+   26    63 Eric Nelson                              M  65 M6099 Swift Town         PA                         1:55:54.58 1:24:21.04 
+   27    50 Karen Ryan                               F  34 F3039 Vernon             PA                         1:56:31.37 1:25:02.60 
+   28    58 Karen Mitchell                           F  23 F2029 Mudville           RI                         1:56:47.54 1:25:15.09 
+   29    35 Cynthia Campbell                         F  61 F6099 Westtown           NY 6     7     17    25    1:57:00.54 1:25:30.45 
+   30    47 Joseph Torres                            M  31 M3039 Johnson City       PA                         1:57:04.03 1:25:31.63 
+   31    59 Ronald Ryan                              M  50 M5059 Pocono             NY                         1:57:22.74 1:25:51.84 
+   32    62 Heather Swift                            F  45 F4049 Pembrooke          PA                         2:01:03.57 1:29:31.68 
+   33    57 Angela Scott                             F  59 F5059 Issacstown         PA                         2:04:41.93 1:33:09.71 
