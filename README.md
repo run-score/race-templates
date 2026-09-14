@@ -45,14 +45,14 @@ self-contained race you can copy and adapt.
 RunScore consumes this repo as a git submodule and installs these templates under
 `{app}\SampleRaces\` via the product installer.
 
-## AI / author documentation
+## AI orientation
 
-Every race folder has a `README.md` that follows a locked 12-section schema for
-AI ingest and chatbot answers. See [`TEMPLATE_README_SCHEMA.md`](TEMPLATE_README_SCHEMA.md)
-before adding or editing a race README.
+[`CONTEXT.md`](CONTEXT.md) and each race folder's `CONTEXT.md` are **AI
+orientation only**. They are not written for human use. Timers should ignore
+them.
 
-Each race also keeps `Readme.1.X.lst` for the RunScore UI; do not delete it.
-`README.md` is the AI source of truth.
+Each race folder has a short `README.md` for copy-and-run steps. In-app help
+is `Readme.1.X.lst` (do not delete).
 
 ## Using a template
 

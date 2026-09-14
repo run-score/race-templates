@@ -1,0 +1,38 @@
+* Field purposes (Enter/Edit Names). Names match ENTRIES.FRM.
+/*
+Chip / timing
+-------------
+BIB         Printed bib. Chip reads attach to this number. If a runner wore
+            the wrong bib, the chip and times at this bib slot are already
+            correct -- swap identity fields only.
+CHIP        Transponder / chip ID tied to the bib.
+GUNSTART    Clock time of the gun. Start of gun elapsed time.
+CHIPSTART   Clock time when this chip crossed the start mat. Start of net
+            (chip) time. May be unused in gun-only / elite races.
+Finish      Clock time when this chip crossed the finish mat.
+
+
+Results
+-------
+RACE            Distance / sub-event this runner is in. Exact stored values
+                differ by template.
+RUNNER STATUS   Calculated race-day status (starting, in progress, complete,
+                and similar). Recalc with @CalcStatus.
+DNF             DNF or DQ flag. Not the same as RUNNER STATUS.
+TIME            Elapsed gun time (Finish minus GUNSTART).
+NETTIME         Elapsed chip time (Finish minus CHIPSTART).
+PACE            Pace derived from elapsed time.
+PLACE           Overall place. This template calculates PLACE from chip time
+                (@CalcPlaces). May differ from gun-time overall awards.
+DIV             Age/gender division code (set from Entries.INI).
+DIVPLACE / DIVTOTAL     Place and field size in the division.
+SEXPLACE / SEXTOTAL     Place and field size by sex.
+AGEPLACE / AGETOTAL     Place and field size in the age group.
+Result URL      Public results link (Race Roster).
+
+
+Personal
+--------
+Personal runner information: FIRST NAME, LAST NAME, Name, AGE, BIRTHDATE,
+SEX, CLUB, ADDRESS, CITY, STATE, ZIP, EMAIL, PHONE, TSHIRT.
+*/
