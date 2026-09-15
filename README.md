@@ -45,14 +45,14 @@ self-contained race you can copy and adapt.
 RunScore consumes this repo as a git submodule and installs these templates under
 `{app}\SampleRaces\` via the product installer.
 
-## AI / author documentation
+## AI orientation
 
-Every race folder has a `README.md` that follows a locked 12-section schema for
-AI ingest and chatbot answers. See [`TEMPLATE_README_SCHEMA.md`](TEMPLATE_README_SCHEMA.md)
-before adding or editing a race README.
+[`CONTEXT.md`](CONTEXT.md) and each race folder's `CONTEXT.md` are **AI
+orientation only**. They are not written for human use. Timers should ignore
+them.
 
-Each race also keeps `Readme.1.X.lst` for the RunScore UI; do not delete it.
-`README.md` is the AI source of truth.
+Each race folder has a short `README.md` for copy-and-run steps. In-app help
+is `Readme.1.X.lst` (do not delete).
 
 ## Using a template
 
@@ -60,7 +60,8 @@ Each race also keeps `Readme.1.X.lst` for the RunScore UI; do not delete it.
    rename it for your event.
 2. Open the copied folder as a race in RunScore.
 3. Update the race name and date and review `race.ini` / `Entries.INI` to match
-   your event's settings, timer, and online integrations.
+   your event's settings, timer, and online integrations. Race name, date, and
+   related keys: [Race Configuration](https://docs.runscore.com/docs/9.0/entries-ini/race-configuration).
 4. Import or enter your registrants (templates include a sample `entries.csv`).
 5. Score the race and generate results, awards, and exports using the included
    listing files.
