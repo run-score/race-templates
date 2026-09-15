@@ -60,7 +60,8 @@ is `Readme.1.X.lst` (do not delete).
    rename it for your event.
 2. Open the copied folder as a race in RunScore.
 3. Update the race name and date and review `race.ini` / `Entries.INI` to match
-   your event's settings, timer, and online integrations.
+   your event's settings, timer, and online integrations. Race name, date, and
+   related keys: [Race Configuration](https://docs.runscore.com/docs/9.0/entries-ini/race-configuration).
 4. Import or enter your registrants (templates include a sample `entries.csv`).
 5. Score the race and generate results, awards, and exports using the included
    listing files.

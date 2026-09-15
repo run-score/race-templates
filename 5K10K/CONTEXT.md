@@ -90,7 +90,7 @@ is a shared optional mat, not a per-RACE LPT map.
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
 4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
 5. One-click auto results -- `@AutoResults.5.M.lst` / `@AutoResultsLPT.5.M.lst`.
-6. Print / upload awards -- `@awards5k.6.R.lst` / `@awards10.6.R.lst` and `@awards2RR5k.6.R.lst` / `@awards2RR10k.6.R.lst`.
+6. Print awards -- `@awards5k.6.R.lst` / `@awards10.6.R.lst`. Upload awards to Race Roster -- `@awards2RR5k.6.R.lst` / `@awards2RR10k.6.R.lst`. These are different listings (print vs unstructured RR upload), not a rename of the print files. Purpose is in each file's leading `*` comment.
 7. Live email / SMS finish -- `LiveEmailFinish.4.G.lst` / `LiveSMSFinish.4.O.lst`.
 
 ## Key listings

@@ -158,7 +158,9 @@ Minimum set when present in the race:
 3. Publish structured results to Race Roster
 4. Publish unstructured / LPT (if applicable)
 5. One-click auto results (`@AutoResults` / `@AutoResultsLPT`)
-6. Print / upload awards
+6. Awards -- print listings (`@awards*`) and Race Roster upload listings
+   (`@awards2RR*`) are **different files**, not a rename. Spell exact names.
+   Do not glob. Purpose is the leading `*` comment in each `.lst` / `.rsm`.
 7. Live email / SMS finish (if present)
 
 **Gun-time rule (multi-distance required):** workflow #1 must state explicitly:
@@ -223,10 +225,19 @@ over restating mat lists. Cover at least:
 `<RaceFolder>/README.md` is for timers. Keep it to:
 
 - H1 = folder name
-- 1-3 sentences: distances and shared vs staggered start
-- Copy folder / open in RunScore / set name and date / replace `Entries.INI` keys
-- `Readme.1.X.lst` exists; do not delete
-- `Fields.1.X.lst` exists (field purposes from `ENTRIES.FRM`); do not delete; do not copy that glossary into CONTEXT.md
+- 1-3 sentences: distances. Do not claim a shared course unless that is
+  true for this sample. Shared finish is common; starts, routes, and gun
+  times can differ.
+- Numbered steps (not one sentence):
+  1. Copy this folder
+  2. Open it in RunScore
+  3. Set race name and date -- [Race Configuration](https://docs.runscore.com/docs/9.0/entries-ini/race-configuration)
+  4. Review `Entries.INI` keys before live upload -- same page
+- One gun-time sentence **for this race** (do not copy a sibling's wording)
+- `Readme.1.X.lst` -- in-app help; do not delete
+- `Fields.1.X.lst` -- field purposes from `ENTRIES.FRM`. Optional: remove it
+  from the listing list, or rename it to a `.txt`, if not needed in-app.
+  Do not copy that glossary into CONTEXT.md.
 
 No Distances table, no listing names, no RACE casing. Those live only in `CONTEXT.md`.
 

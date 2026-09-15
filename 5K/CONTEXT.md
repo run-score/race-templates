@@ -82,7 +82,7 @@ awards upload, and live email/SMS.
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
 4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
 5. One-click auto results -- `@AutoResults.5.M.lst` / `@AutoResultsLPT.5.M.lst`.
-6. Print / upload awards -- `@awards.6.R.lst` / `@awards2RR.6.R.lst`.
+6. Print awards -- `@awards.6.R.lst`. Upload awards to Race Roster -- `@awards2RR.6.R.lst`. These are different listings (print vs unstructured RR upload). Purpose is in each file's leading `*` comment.
 7. Live email / SMS finish -- `LiveEmailFinish.4.G.lst` / `LiveSMSFinish.4.O.lst`.
 
 ## Key listings
@@ -118,7 +118,6 @@ Scope enum is lowercase (`all` / `5k` / ...). Scope is not the RACE field (`5k` 
 - Awards traps (exact): `@awards` / `@awards2RR` -- no per-distance suffix
 - `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
-- Events.xml uses `Announcer`; some UI text may say Announce
 - Field purposes (in-app): `Fields.1.X.lst` -- names from `ENTRIES.FRM`. Do not duplicate that glossary here.
 
 ## How to use
@@ -138,4 +137,4 @@ Scope enum is lowercase (`all` / `5k` / ...). Scope is not the RACE field (`5k` 
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
 - Timing mats / LPT / splits: see **Timing model** (do not invent mats beyond that section)
-- `Readme.1.X.lst` may omit mats or say Announce vs Announcer -- this CONTEXT.md and Events.xml are authoritative for AI
+- `Readme.1.X.lst` may omit mats -- this CONTEXT.md and Events.xml are authoritative for AI

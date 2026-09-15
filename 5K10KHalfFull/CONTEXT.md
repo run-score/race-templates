@@ -109,7 +109,7 @@ Do not assign Split18K (or any Split*) to FULL just because the mat exists in Ev
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
 4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
 5. One-click auto results -- `@AutoResults.5.M.lst` / `@AutoResultsLPT.5.M.lst`.
-6. Print / upload awards -- `@awards5K.6.R.lst` / `@awards10K.6.R.lst` / `@awardsHalf.6.R.lst` / `@awardsFull.6.R.lst` and matching `@awards2RR*` listings.
+6. Print awards -- `@awards5K.6.R.lst` / `@awards10K.6.R.lst` / `@awardsHalf.6.R.lst` / `@awardsFull.6.R.lst`. Upload awards to Race Roster -- `@awards2RR5K.6.R.lst` / `@awards2RR10K.6.R.lst` / `@awards2RRHalf.6.R.lst` / `@awards2RRFull.6.R.lst`. These are different listings (print vs unstructured RR upload), not a rename of the print files. Purpose is in each file's leading `*` comment.
 7. Live email / SMS finish -- `LiveEmailFinish.4.G.lst` / `LiveSMSFinish.4.O.lst`.
 
 ## Key listings
@@ -154,7 +154,7 @@ Scope enum is lowercase (`all` / `5k` / `10k` / `half` / `full`). Scope is **not
 - Sample race .lst / .rsm / .INI content is ASCII-only
 - Key listings Scope enum is lowercase; RACE field casing is independent
 - RACE values are uppercase (`5K`, `10K`, `HALF`, `FULL`)
-- Awards traps (exact): `@awards5K` / `@awards10K` / `@awardsHalf` / `@awardsFull` and matching `@awards2RR*` -- never invent `@awards10` (that form is `5K10K` only)
+- Awards traps (exact): print `@awards5K` / `@awards10K` / `@awardsHalf` / `@awardsFull`; RR upload `@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf` / `@awards2RRFull` (different listings) -- never invent `@awards10` (that form is `5K10K` only)
 - `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
 - FULL LPT upload reuses generic `ResultsOnlineLPT.rsm` (no Full-specific split LPT RSM)

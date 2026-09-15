@@ -56,7 +56,7 @@ Same shape in every template. Open files by role; do not dump the whole folder.
 | `CONTEXT.md` | AI source of truth for this race (12 locked sections) |
 | `README.md` | Laconic human page |
 | `Readme.1.X.lst` | In-app help listing. Keep it. Incomplete vs `CONTEXT.md` / `Events.xml`. |
-| `Fields.1.X.lst` | In-app field purposes. Names from `ENTRIES.FRM`. |
+| `Fields.1.X.lst` | In-app field purposes. Names from `ENTRIES.FRM`. Optional to keep. |
 | `race.ini` | Online-system JSON (Race Roster, timer cloud names) |
 | `Entries.INI` | Race settings, user variables, load-chip / division rules |
 | `ENTRIES.DTA` | Sample participant database (fixed-width) |
@@ -81,6 +81,12 @@ Folder anatomy is shared. Differences that cause wrong edits live in that race's
 - **Awards listing filenames** differ (`@awards` vs `@awards10` vs `@awards10K`).
 - **Gun-time prompts:** single-distance uses `GunTimePromt`; multi-distance uses per-RACE files plus `@GUNTIME` for all. The `Promt` spelling is on disk -- do not rename it.
 - **Splits / LPT:** only some distances have course Split* mats.
+
+## Shared mats
+
+Road templates in this repo include an Announcer mat. `Events.xml` uses
+`Announcer`. Some UI text and `Readme.1.X.lst` may say Announce. Use the
+Events.xml name.
 
 ## Edit rules
 
