@@ -42,6 +42,7 @@ Do not inherit those from a sibling folder. Restate them in that race's `CONTEXT
 | `5K/` | Single-distance road race |
 | `5K10K/` | Two distances (5 km / 10 km) |
 | `5K10KHalf/` | Three distances (5K / 10K / half) |
+| `5K10KHalf-LTP/` | Three distances with Race Roster Live Predictive Tracking |
 | `5K10KHalfFull/` | Four distances (5K / 10K / half / full) |
 | `.gitignore` | Runtime files created by opening a race in RunScore |
 
@@ -80,7 +81,9 @@ Folder anatomy is shared. Differences that cause wrong edits live in that race's
 - **RACE field casing** is not consistent (`5k` vs `5K`).
 - **Awards listing filenames** differ (`@awards` vs `@awards10` vs `@awards10K`).
 - **Gun-time prompts:** single-distance uses `GunTimePromt`; multi-distance uses per-RACE files plus `@GUNTIME` for all. The `Promt` spelling is on disk -- do not rename it.
-- **Splits / LPT:** only some distances have course Split* mats.
+- **Splits:** only some distances have course Split* mats.
+- **LPT:** only `5K10KHalf-LTP/` contains LPT publishing files. Standard
+  samples keep `@CalcStatus` as a timer-monitoring tool, not an LPT workflow.
 
 ## Shared mats
 

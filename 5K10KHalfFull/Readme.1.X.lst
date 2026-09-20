@@ -16,7 +16,7 @@ Key files:
   - @CalcPlaces     -- Clears and recalculates places for all 4 distances.
   - @ResultsToRR    -- Uploads results to RaceRoster for all 4 distances.
   - @AutoResults    -- Combines CalcPlaces + ResultsToRR for one-click publishing.
-  - @AutoResultsLPT -- Combines CalcPlaces + CalcStatus + ResultsLPTToRR (LPT workflow).
+  - @CalcStatus     -- Refreshes STARTING / IN_PROGRESS / COMPLETE for timer monitoring.
   - @awards5K/10K/Half/Full -- Per-distance awards listings (print).
   - @awards2RR5K/10K/Half/Full -- Per-distance awards with RaceRoster upload.
   - GunTimePromt5K/10K/Half/Full -- Per-distance gun time entry dialogs.

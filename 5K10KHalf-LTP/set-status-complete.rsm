@@ -1,0 +1,8 @@
+* Set RUNNER STATUS to COMPLETE for runners with a Finish time.
+Select              BIB
+>                   0
+And
+Select              FINISH
+NE
+Selected            RUNNER STATUS
+Selected Message    COMPLETE

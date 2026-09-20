@@ -1,4 +1,4 @@
-# 5K10KHalfFull
+﻿# 5K10KHalfFull
 
 Four-distance 5K / 10K / half / full marathon road race. This sample shares
 a finish; starts and routes can differ by distance.
@@ -11,6 +11,8 @@ a finish; starts and routes can differ by distance.
    any live upload. Same page.
 
 Set a gun time per distance.
+
+For Race Roster Live Predictive Tracking, start from [`5K10KHalf-LTP`](../5K10KHalf-LTP) instead.
 
 RunScore shows `Readme.1.X.lst` as in-app help (do not delete).
 `Fields.1.X.lst` describes Enter/Edit Names fields. You may remove it from

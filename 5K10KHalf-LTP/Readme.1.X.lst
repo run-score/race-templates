@@ -1,0 +1,26 @@
+* Readme file
+/*
+This sample race is for a 3-distance 5K, 10K, and Half Marathon using
+Race Roster Live Predictive Tracking (LPT).
+
+Participants are separated by the RACE field (5K, 10K, or HALF). Each distance
+has its own LPT listing because each course uses different split columns.
+
+Key files:
+  - @CalcPlaces       -- Recalculates elapsed times and places.
+  - @CalcStatus       -- Refreshes STARTING / IN_PROGRESS / COMPLETE.
+  - @ResultsLPTToRR   -- Uploads all three structured LPT result sets.
+  - @AutoResultsLPT   -- Combines CalcPlaces + CalcStatus + ResultsLPTToRR.
+  - Events2DB         -- Copies start, finish, and split reads to fields.
+
+LPT is structured JSON only. This sample has no unstructured results upload.
+Awards still go to a separate unstructured Race Roster result set.
+
+There is deliberately no @AutoResults in this template. Do not mix LPT and
+non-LPT uploads on the same Race Roster result set.
+
+Before publishing, seed the dummy Status event with 0 for every bib. Estimated
+finish time supplies pace until the runner reaches the first split.
+
+We recommend using Priority and colors to group listing files by function.
+*/

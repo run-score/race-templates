@@ -7,22 +7,21 @@ RACE field (5k or 10k). The 5K and 10K can start together or at staggered (wave)
 gun times -- set the gun time for each distance from Misc, or use the
 GunTimePromt5k / GunTimePromt10k dialogs.
 
-Timing events (mats): GunStart, ChipStart, LPTCheckpoint, Announcer, and Finish.
-(LPTCheckpoint feeds Race Roster live participant tracking; 5kSplit is available
-as an optional split point.)
+Timing events (mats): GunStart, ChipStart, 5kSplit, Announcer, and Finish.
+The optional 5kSplit is unused until you configure it.
 
 Online integration:
   - Race Roster is the online system for registration and results (structured,
-    unstructured, and live-tracking uploads).
+    and unstructured uploads).
   - SendGrid is used for email notifications (Web API).
   - Twilio is used for SMS notifications.
 
 Key files:
   - @CalcPlaces          -- Clears and recomputes places per distance (5k, then 10k).
-  - @CalcStatus          -- Computes runner status for live participant tracking (LPT).
-  - @ResultsToRR / @ResultsUnsToRR / @ResultsLPTToRR -- Upload structured, unstructured,
-    and LPT results to Race Roster, per distance.
-  - @AutoResults / @AutoResultsLPT -- One-click recalculate + upload (non-LPT / LPT).
+  - @CalcStatus          -- Refreshes STARTING / IN_PROGRESS / COMPLETE for timer monitoring.
+  - @ResultsToRR / @ResultsUnsToRR -- Upload structured and unstructured results
+    to Race Roster, per distance.
+  - @AutoResults         -- One-click recalculate + structured results upload.
   - @awards5k / @awards10          -- Per-distance awards (print).
   - @awards2RR5k / @awards2RR10k   -- Per-distance awards uploaded to Race Roster.
   - AgeGraded5K / AgeGraded10K, ResultsPrint5K / ResultsPrint10K,

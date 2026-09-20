@@ -13,11 +13,12 @@ Online Integration:
   - Twilio is used for SMS notifications.
 
 Key files:
-  - @CalcPlaces     — Clears and recalculates places for all 3 distances.
-  - @ResultsToRR    — Uploads results to RaceRoster for all 3 distances.
-  - @AutoResults    — Combines CalcPlaces + ResultsToRR for one-click publishing.
-  - @awards5K/10K/Half — Per-distance awards listings.
-  - GunTimePromt5K/10K/Half — Per-distance gun time entry dialogs.
+  - @CalcPlaces     -- Clears and recalculates places for all 3 distances.
+  - @CalcStatus     -- Refreshes STARTING / IN_PROGRESS / COMPLETE for timer monitoring.
+  - @ResultsToRR    -- Uploads results to RaceRoster for all 3 distances.
+  - @AutoResults    -- Combines CalcPlaces + ResultsToRR for one-click publishing.
+  - @awards5K/10K/Half -- Per-distance awards listings.
+  - GunTimePromt5K/10K/Half -- Per-distance gun time entry dialogs.
 
 We recommend using the Priority to group your listing files.
 You may also use different colors to differentiate the functionality of the different listing files.

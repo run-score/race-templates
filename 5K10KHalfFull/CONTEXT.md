@@ -17,7 +17,7 @@ Participants separated by: RACE field (`5K` / `10K` / `HALF` / `FULL`)
 Sample Race Roster-oriented road race with four distances (5 km, 10 km, half
 marathon, and marathon) on a shared start and finish. Per-distance gun times are
 set via prompts. Intended as a copy-and-adapt starting point for multi-distance
-timed road races with online results, LPT, course splits, awards upload, and
+timed road races with online results, course splits, awards upload, and
 live email/SMS.
 
 ## Distances
@@ -35,19 +35,9 @@ live email/SMS.
 - Events (mats): GunStart, ChipStart, Announcer, Finish
 - Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
-- Split points: Split2K, Split5K, Split8K, Split10K, Split18K (present in Events.xml; used per RACE as below)
+- LPT: no -- use `5K10KHalf-LTP` for Live Predictive Tracking
+- Split points: Split2K, Split5K, Split8K, Split10K, Split18K (optional; unused until configured)
 
-Split points by RACE (from LPT RSMs -- do not invent extra splits):
-
-| RACE value | Course Split* mats in LPT RSM | LPT RSM |
-|---|---|---|
-| `5K` | none (LPTCheckpoint only) | `ResultsOnlineLPT.rsm` |
-| `10K` | Split2K, Split5K, Split8K | `ResultsOnlineLPT10K.rsm` |
-| `HALF` | Split5K, Split10K, Split18K | `ResultsOnlineLPTHalf.rsm` |
-| `FULL` | **none** (LPTCheckpoint only -- no marathon-only Split* RSM) | `ResultsOnlineLPT.rsm` |
-
-Do not assign Split18K (or any Split*) to FULL just because the mat exists in Events.xml.
 
 ## Awards policy
 
@@ -63,7 +53,7 @@ Do not assign Split18K (or any Split*) to FULL just because the mat exists in Ev
 
 | System | Role | Wired in this template |
 |---|---|---|
-| Race Roster | registration / results / LPT / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), LPT (`@ResultsLPTToRR`), awards (`@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf` / `@awards2RRFull`) |
+| Race Roster | registration / results / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), awards (`@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf` / `@awards2RRFull`) |
 | SendGrid | email | yes |
 | Twilio | SMS | yes |
 | Other | N/A | N/A |
@@ -107,8 +97,8 @@ Do not assign Split18K (or any Split*) to FULL just because the mat exists in Ev
 1. Set gun time(s) -- Per-distance `GunTimePromt*` sets **one** RACE only; `@GUNTIME.2.O.lst` sets **all** distances. Prompts: `GunTimePromt5K.2.O.lst` / `GunTimePromt10K.2.O.lst` / `GunTimePromtHalf.2.O.lst` / `GunTimePromtFull.2.O.lst`.
 2. Recalculate places -- `@CalcPlaces.5.P.lst` (and `@CalcStatus.5.P.lst` for status).
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
-4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
-5. One-click auto results -- `@AutoResults.5.M.lst` / `@AutoResultsLPT.5.M.lst`.
+4. Publish unstructured results -- `@ResultsUnsToRR.5.Q.lst`.
+5. One-click auto results -- `@AutoResults.5.M.lst`.
 6. Print awards -- `@awards5K.6.R.lst` / `@awards10K.6.R.lst` / `@awardsHalf.6.R.lst` / `@awardsFull.6.R.lst`. Upload awards to Race Roster -- `@awards2RR5K.6.R.lst` / `@awards2RR10K.6.R.lst` / `@awards2RRHalf.6.R.lst` / `@awards2RRFull.6.R.lst`. These are different listings (print vs unstructured RR upload), not a rename of the print files. Purpose is in each file's leading `*` comment.
 7. Live email / SMS finish -- `LiveEmailFinish.4.G.lst` / `LiveSMSFinish.4.O.lst`.
 
@@ -120,9 +110,7 @@ Do not assign Split18K (or any Split*) to FULL just because the mat exists in Ev
 | `@CalcStatus.5.P.lst` | listing | recalculate status | all |
 | `@ResultsToRR.5.Q.lst` | listing | structured results to Race Roster | all |
 | `@ResultsUnsToRR.5.Q.lst` | listing | unstructured results to Race Roster | all |
-| `@ResultsLPTToRR.5.Q.lst` | listing | LPT results to Race Roster | all |
 | `@AutoResults.5.M.lst` | listing | one-click auto results | all |
-| `@AutoResultsLPT.5.M.lst` | listing | one-click auto results with LPT | all |
 | `@awards5K.6.R.lst` | listing | print awards | 5k |
 | `@awards10K.6.R.lst` | listing | print awards | 10k |
 | `@awardsHalf.6.R.lst` | listing | print awards | half |
@@ -157,7 +145,6 @@ Scope enum is lowercase (`all` / `5k` / `10k` / `half` / `full`). Scope is **not
 - Awards traps (exact): print `@awards5K` / `@awards10K` / `@awardsHalf` / `@awardsFull`; RR upload `@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf` / `@awards2RRFull` (different listings) -- never invent `@awards10` (that form is `5K10K` only)
 - `awards-*.txt` files are committed sample outputs of awards listings (not live data)
 - Filename typo retained: `GunTimePromt` (not Prompt)
-- FULL LPT upload reuses generic `ResultsOnlineLPT.rsm` (no Full-specific split LPT RSM)
 - Field purposes (in-app): `Fields.1.X.lst` -- names from `ENTRIES.FRM`. Do not duplicate that glossary here.
 
 ## How to use
@@ -176,5 +163,5 @@ Scope enum is lowercase (`all` / `5k` / `10k` / `half` / `full`). Scope is **not
 - Do not commit RaceRosterLastRaceId/Mapping/Race/ResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- Timing mats / LPT / Split-by-RACE map: see **Timing model** only -- FULL has **no** course Split* in its LPT RSM
-- `Readme.1.X.lst` may omit LPT/splits -- this CONTEXT.md and Events.xml are authoritative for AI
+- Timing mats / split map: see **Timing model** only
+- `Readme.1.X.lst` may omit splits -- this CONTEXT.md and Events.xml are authoritative for AI

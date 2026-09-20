@@ -1,0 +1,28 @@
+ Print mail labels sorted by ZIP code for Avery 5160 10x3 labels
+Sort                ZIP
+top margin          2
+left margin         1
+
+font                bold
+columns             3
+line length         99* Page Layout/Format
+*Page length         60lines/inch          6
+select              NO.
+>=                  ?Enter first label number you want
+and
+select              NO.
+<=                  ?Enter last label number
+Labels
+Field               FIRST NAME
+Squeeze
+Field               LAST NAME
+Line Feed
+field               ADDRESS
+Line Feed
+Field               CITY
+Field               STATE
+Field               ZIP
+Line Feed
+Line Feed
+Line Feed
+ 

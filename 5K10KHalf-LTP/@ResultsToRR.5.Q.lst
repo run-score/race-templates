@@ -1,0 +1,17 @@
+* Save Structured (JSON) Results to RaceRoster.
+*
+*   When to use:    After the race to publish final structured results, or during the race for live updates.
+*   How to use:     Double-click to upload all results to RaceRoster.
+*
+*   Setup:
+*     Pass the RaceRoster sub-event ID and race code below.
+*     Example (direct):  ResultsOnline.rsm   297655   5K
+*     Example (Entries): ResultsOnline.rsm   %rr_5k%   5K
+*
+*   Recommendation:
+*     - LPT live results use @ResultsLPTToRR, not this listing. Do not run both
+*       against the same Race Roster result set. Define IDs in Entries.INI.
+
+ResultsOnline.rsm   %rr_5k%   5K
+ResultsOnline.rsm   %rr_10k%   10K
+ResultsOnline.rsm   %rr_half%   HALF
