@@ -84,18 +84,20 @@ checking `Events.xml` and `ENTRIES.FRM` together.
 
 ## Sample data state
 
-100 bibs. Deliberately not all finishers, so every Race Status appears:
+100 bibs. Deliberately not all clean finishers.
 
-| Rows | State |
-|---|---|
-| Finish event has 99 of 100 | `COMPLETE` |
-| Bib 28 (5K) -- Split1k and Split2k, no Finish | `IN_PROGRESS` |
-| Bib 79 -- gun only, no chip read, no splits, no Finish | `STARTING` |
+| Bib | RACE | Mats | `RUNNER STATUS` | `DNF` field | Why it is there |
+|---|---|---|---|---|---|
+| 28 | `5K` | Split1k, Split2k; no Finish | `IN_PROGRESS` | `DNF` | Dropped (injury). Still on-course by mats. |
+| 79 | `HALF` | gun only; no chip, splits, or Finish | `STARTING` | `DNS` | Registered, did not start. Dummy Status `0` still includes them until you mark `DNS`. |
+| 35 | `10K` | ChipStart, Split1k, Split2k, Finish; no Split5k / Split8k | `COMPLETE` | `DQ` | Wrong turn. Finished the wrong course. Do not add 5k/8k times. |
 
-Bib 79 models a runner the timer will later mark `DNS`, but who looks
-`STARTING` until someone notices there are no times. Do not pre-mark it `DNF`
-or `DNS` -- that removes the case LPT has to handle. Do not "fix" either row by
-giving it a finish time.
+Everyone else is a normal `COMPLETE` with a Finish.
+
+`RUNNER STATUS` and the `DNF` field are independent. `@CalcStatus` only looks at
+mats. `SetDNF` / `SetDNS` / `SetDQ` write the `DNF` field. LPT listings use
+`Select DNF` / `EQ`, so a filled `DNF` field drops the row from Race Roster JSON.
+Do not "fix" these rows (give 28 a finish, start 79, or put 35 on 5k/8k).
 
 ## Awards policy
 

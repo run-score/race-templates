@@ -22,5 +22,13 @@ non-LPT uploads on the same Race Roster result set.
 Before publishing, seed the dummy Status event with 0 for every bib. Estimated
 finish time supplies pace until the runner reaches the first split.
 
+Sample exceptions (leave them):
+  - Bib 28 (5K): DNF after 1k and 2k (injury). Status stays IN_PROGRESS.
+  - Bib 79 (HALF): DNS. Never started. Status stays STARTING.
+  - Bib 35 (10K): DQ. Wrong turn; 1k and 2k then Finish, no 5k/8k.
+
+RUNNER STATUS is from mats. DNF/DNS/DQ is the DNF field. LPT listings skip
+rows whose DNF field is filled.
+
 We recommend using Priority and colors to group listing files by function.
 */

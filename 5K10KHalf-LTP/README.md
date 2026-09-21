@@ -40,9 +40,18 @@ simulating a race on `Status` and then typing `@TIME 0`. The `Estimated` field
 (from a registration question) is what Race Roster uses to place those runners
 on the map before the first mat.
 
-The sample data holds two runners back on purpose: one is `IN_PROGRESS` with
-1k and 2k splits and no finish, and one has no chip read at all so it stays
-`STARTING`. Leave them as they are if you want all three statuses to appear.
+The sample data keeps three exception rows. Leave them; they are not scoring
+bugs.
+
+| Bib | Distance | What happened | `RUNNER STATUS` | `DNF` field |
+| --- | --- | --- | --- | --- |
+| 28 | 5K | Hit 1k and 2k, then dropped (injury). No Finish. | `IN_PROGRESS` | `DNF` |
+| 79 | HALF | Registered, never started. Gun only, no chip read. | `STARTING` | `DNS` |
+| 35 | 10K | Wrong turn. Has ChipStart, 1k, 2k, and Finish, but no 5k or 8k. | `COMPLETE` | `DQ` |
+
+`RUNNER STATUS` comes from mats (`@CalcStatus`). `DNF` / `DNS` / `DQ` live in
+the `DNF` field (`SetDNF` / `SetDNS` / `SetDQ`). The LPT listings skip any row
+whose `DNF` field is filled, so these three do not go to Race Roster.
 
 See [Live Predictive Tracking](https://docs.runscore.com/docs/online/race-roster/live-predictive-tracking/intro).
 

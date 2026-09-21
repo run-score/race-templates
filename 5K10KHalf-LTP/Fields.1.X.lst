@@ -41,7 +41,8 @@ RACE            Distance / sub-event this runner is in. Exact stored values
 RUNNER STATUS   Calculated race-day status sent to Race Roster as Race Status:
                 COMPLETE (Finish), IN_PROGRESS (ChipStart or any split, no
                 Finish), STARTING (no mat read yet). Recalc with @CalcStatus.
-DNF             DNF or DQ flag. Not the same as RUNNER STATUS.
+DNF             DNF, DNS, or DQ flag. Not the same as RUNNER STATUS. LPT
+                listings omit any row with this field filled.
 TIME            Elapsed gun time (Finish minus GUNSTART).
 NETTIME         Elapsed chip time (Finish minus CHIPSTART).
 PACE            Pace derived from elapsed time.
