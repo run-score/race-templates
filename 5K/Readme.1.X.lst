@@ -5,6 +5,7 @@ This sample race is for a 5 km road race.
 The race has a single start.
 
 The race has the following events(mats): a GunStart and a ChipStart, an Announce, and a Finish.
+Run @CalcStatus to refresh STARTING / IN_PROGRESS / COMPLETE for timer monitoring.
 
 
 We recommend using the Priority to group your listing files.

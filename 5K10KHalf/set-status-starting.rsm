@@ -1,11 +1,9 @@
-* Set RUNNER STATUS to STARTING for runners without a GunStart time.
+* Set RUNNER STATUS to STARTING for everyone still unclassified.
+* Gun time is set for the field, so it cannot determine individual progress.
 Select              BIB
 >                   0
 And
 Select              RUNNER STATUS
-EQ
-And
-Select              GUNSTART
 EQ
 Selected            RUNNER STATUS
 Selected Message    STARTING

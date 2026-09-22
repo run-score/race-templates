@@ -1,0 +1,37 @@
+* Results to *.csv (comma-delimited-file)
+export
+export delimiter    tab
+select              place
+<>
+sort                place
+field               place
+field               time
+field header        TIME
+field               last name
+field               first name
+field               sex
+* if your database uses BIRTHDATE for the date of birth, use the following line
+* instead of the lines between the *******
+ field               BIRTHDATE
+
+*******
+field               MM
+field header        BIRTHDATE
+space               0
+message             /
+squeeze
+space               0
+field               DD
+field header
+space               0
+message             /
+squeeze
+space               0
+field               YY
+field header
+*******
+
+field               age
+field               city
+field               state
+field               age

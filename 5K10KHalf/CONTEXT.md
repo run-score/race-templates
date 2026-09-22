@@ -17,7 +17,7 @@ Participants separated by: RACE field (`5K` / `10K` / `HALF`)
 Sample Race Roster-oriented road race with three distances (5 km, 10 km, and half
 marathon) on a shared start and finish. Per-distance gun times are set via
 prompts. Intended as a copy-and-adapt starting point for multi-distance timed
-road races with online results, LPT, course splits, awards upload, and live
+road races with online results, course splits, awards upload, and live
 email/SMS.
 
 ## Distances
@@ -34,16 +34,9 @@ email/SMS.
 - Events (mats): GunStart, ChipStart, Announcer, Finish
 - Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
-- Split points: Split2K, Split5K, Split8K, Split10K, Split18K (present in Events.xml; used per RACE as below)
+- LPT: no -- use `5K10KHalf-LTP` for Live Predictive Tracking
+- Split points: Split2K, Split5K, Split8K, Split10K, Split18K (optional; unused until configured)
 
-Split points by RACE (from LPT RSMs -- do not invent extra splits):
-
-| RACE value | Course Split* mats in LPT RSM | LPT RSM |
-|---|---|---|
-| `5K` | none (LPTCheckpoint only) | `ResultsOnlineLPT.rsm` |
-| `10K` | Split2K, Split5K, Split8K | `ResultsOnlineLPT10K.rsm` |
-| `HALF` | Split5K, Split10K, Split18K | `ResultsOnlineLPTHalf.rsm` |
 
 ## Awards policy
 
@@ -59,7 +52,7 @@ Split points by RACE (from LPT RSMs -- do not invent extra splits):
 
 | System | Role | Wired in this template |
 |---|---|---|
-| Race Roster | registration / results / LPT / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), LPT (`@ResultsLPTToRR`), awards (`@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf`) |
+| Race Roster | registration / results / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), awards (`@awards2RR5K` / `@awards2RR10K` / `@awards2RRHalf`) |
 | SendGrid | email | yes |
 | Twilio | SMS | yes |
 | Other | N/A | N/A |
@@ -99,8 +92,8 @@ Split points by RACE (from LPT RSMs -- do not invent extra splits):
 1. Set gun time(s) -- Per-distance `GunTimePromt*` sets **one** RACE only; `@GUNTIME.2.O.lst` sets **all** distances. Prompts: `GunTimePromt5K.2.O.lst` / `GunTimePromt10K.2.O.lst` / `GunTimePromtHalf.2.O.lst`.
 2. Recalculate places -- `@CalcPlaces.5.P.lst` (and `@CalcStatus.5.P.lst` for status).
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
-4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
-5. One-click auto results -- `@AutoResults.5.M.lst` / `@AutoResultsLPT.5.M.lst`.
+4. Publish unstructured results -- `@ResultsUnsToRR.5.Q.lst`.
+5. One-click auto results -- `@AutoResults.5.M.lst`.
 6. Print awards -- `@awards5K.6.R.lst` / `@awards10K.6.R.lst` / `@awardsHalf.6.R.lst`. Upload awards to Race Roster -- `@awards2RR5K.6.R.lst` / `@awards2RR10K.6.R.lst` / `@awards2RRHalf.6.R.lst`. These are different listings (print vs unstructured RR upload), not a rename of the print files. Purpose is in each file's leading `*` comment.
 7. Live email / SMS finish -- `LiveEmailFinish.4.G.lst` / `LiveSMSFinish.4.O.lst`.
 
@@ -112,9 +105,7 @@ Split points by RACE (from LPT RSMs -- do not invent extra splits):
 | `@CalcStatus.5.P.lst` | listing | recalculate status | all |
 | `@ResultsToRR.5.Q.lst` | listing | structured results to Race Roster | all |
 | `@ResultsUnsToRR.5.Q.lst` | listing | unstructured results to Race Roster | all |
-| `@ResultsLPTToRR.5.Q.lst` | listing | LPT results to Race Roster | all |
 | `@AutoResults.5.M.lst` | listing | one-click auto results | all |
-| `@AutoResultsLPT.5.M.lst` | listing | one-click auto results with LPT | all |
 | `@awards5K.6.R.lst` | listing | print awards | 5k |
 | `@awards10K.6.R.lst` | listing | print awards | 10k |
 | `@awardsHalf.6.R.lst` | listing | print awards | half |
@@ -163,5 +154,5 @@ Scope enum is lowercase (`all` / `5k` / `10k` / `half`). Scope is **not** the RA
 - Do not commit RaceRosterLastRaceId/Mapping/Race/ResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- Timing mats / LPT / Split-by-RACE map: see **Timing model** only (do not assign Split18K to every distance)
-- `Readme.1.X.lst` may omit LPT/splits -- this CONTEXT.md and Events.xml are authoritative for AI
+- Timing mats / Split-by-RACE map: see **Timing model** only (do not assign Split18K to every distance)
+- `Readme.1.X.lst` may omit splits -- this CONTEXT.md and Events.xml are authoritative for AI

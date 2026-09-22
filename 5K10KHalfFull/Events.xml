@@ -1,4 +1,4 @@
-<events>
+﻿<events>
   <event
     name="GunStart"
     type="start"
@@ -9,13 +9,6 @@
     name="ChipStart"
     type="start"
     distance_type="meters"
-    >
-  </event>
-  <event
-    name="LPTCheckpoint"
-    distance_type="meters"
-    pre_event="GunStart"
-    pre_event_earlier
     >
   </event>
   <event

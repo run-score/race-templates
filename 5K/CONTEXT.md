@@ -16,7 +16,7 @@ Participants separated by: RACE field (single distance `5k`)
 
 Sample Race Roster-oriented 5 km road race with a single start. Dual start mats
 (GunStart and ChipStart) feed a shared Finish. Intended as a copy-and-adapt
-starting point for a single-distance timed road race with online results, LPT,
+starting point for a single-distance timed road race with online results,
 awards upload, and live email/SMS.
 
 ## Distances
@@ -31,7 +31,7 @@ awards upload, and live email/SMS.
 - Events (mats): GunStart, ChipStart, Announcer, Finish
 - Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: yes -- LPTCheckpoint (listings wired; hardware optional)
+- LPT: no -- use `5K10KHalf-LTP` for Live Predictive Tracking
 - Split points: N/A
 
 ## Awards policy
@@ -48,7 +48,7 @@ awards upload, and live email/SMS.
 
 | System | Role | Wired in this template |
 |---|---|---|
-| Race Roster | registration / results / LPT / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), LPT (`@ResultsLPTToRR`), awards (`@awards2RR`) |
+| Race Roster | registration / results / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), awards (`@awards2RR`) |
 | SendGrid | email | yes |
 | Twilio | SMS | yes |
 | Other | N/A | N/A |
@@ -80,8 +80,8 @@ awards upload, and live email/SMS.
 1. Set gun time -- `GunTimePromt.2.O.lst` or `@GUNTIME.2.O.lst` (single distance; either sets the one gun time).
 2. Recalculate places -- run `@CalcPlaces.5.P.lst` (and `@CalcStatus.5.P.lst` for status).
 3. Publish structured results to Race Roster -- `@ResultsToRR.5.Q.lst`.
-4. Publish unstructured / LPT -- `@ResultsUnsToRR.5.Q.lst`, `@ResultsLPTToRR.5.Q.lst`.
-5. One-click auto results -- `@AutoResults.5.M.lst` / `@AutoResultsLPT.5.M.lst`.
+4. Publish unstructured results -- `@ResultsUnsToRR.5.Q.lst`.
+5. One-click auto results -- `@AutoResults.5.M.lst`.
 6. Print awards -- `@awards.6.R.lst`. Upload awards to Race Roster -- `@awards2RR.6.R.lst`. These are different listings (print vs unstructured RR upload). Purpose is in each file's leading `*` comment.
 7. Live email / SMS finish -- `LiveEmailFinish.4.G.lst` / `LiveSMSFinish.4.O.lst`.
 
@@ -93,9 +93,7 @@ awards upload, and live email/SMS.
 | `@CalcStatus.5.P.lst` | listing | recalculate status | all |
 | `@ResultsToRR.5.Q.lst` | listing | structured results to Race Roster | all |
 | `@ResultsUnsToRR.5.Q.lst` | listing | unstructured results to Race Roster | all |
-| `@ResultsLPTToRR.5.Q.lst` | listing | LPT results to Race Roster | all |
 | `@AutoResults.5.M.lst` | listing | one-click auto results | all |
-| `@AutoResultsLPT.5.M.lst` | listing | one-click auto results with LPT | all |
 | `@awards.6.R.lst` | listing | print awards | all |
 | `@awards2RR.6.R.lst` | listing | upload awards to Race Roster | all |
 | `@GUNTIME.2.O.lst` | listing | set gun time | all |
@@ -136,5 +134,5 @@ Scope enum is lowercase (`all` / `5k` / ...). Scope is not the RACE field (`5k` 
 - Do not commit RaceRosterLastRaceId/Mapping/Race/ResultSets.txt (runtime cache; gitignored)
 - Not a triathlon / XC / relay template
 - Awards gun vs PLACE chip divergence is intentional
-- Timing mats / LPT / splits: see **Timing model** (do not invent mats beyond that section)
+- Timing mats / splits: see **Timing model** (do not invent mats beyond that section)
 - `Readme.1.X.lst` may omit mats -- this CONTEXT.md and Events.xml are authoritative for AI

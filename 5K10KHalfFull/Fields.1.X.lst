@@ -16,8 +16,8 @@ Results
 -------
 RACE            Distance / sub-event this runner is in. Exact stored values
                 differ by template.
-RUNNER STATUS   Calculated race-day status (starting, in progress, complete,
-                and similar). Recalc with @CalcStatus.
+RUNNER STATUS   Timer-monitoring status: STARTING, IN_PROGRESS, or COMPLETE.
+                Refresh with @CalcStatus.
 DNF             DNF or DQ flag. Not the same as RUNNER STATUS.
 TIME            Elapsed gun time (Finish minus GUNSTART).
 NETTIME         Elapsed chip time (Finish minus CHIPSTART).

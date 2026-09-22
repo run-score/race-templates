@@ -1,4 +1,4 @@
-* Upload structured (JSON) overall results to RaceRoster.
+`* Upload structured (JSON) overall results to RaceRoster.
 *   Param 1 (%1):  The RaceRoster sub-event ID.
 *
 *   Recommendation:

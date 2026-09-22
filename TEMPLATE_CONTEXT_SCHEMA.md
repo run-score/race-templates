@@ -88,9 +88,9 @@ Bullets, fixed keys (use these labels verbatim):
 ```text
 - Start model: <single shared start | staggered gun times per distance | ...>
 - Events (mats): <comma-separated exact event names from Events.xml -- core race path only>
-- Optional / unused mats: <N/A unless a mat is truly unused and not a Split/LPT>
+- Optional / unused mats: <N/A unless a mat is truly unused and not a course split>
 - Finish model: <shared finish | ...>
-- LPT: <yes/no -- if yes, name checkpoint event; listings may be wired even if hardware is not>
+- LPT: <yes/no -- standard samples are no; use 5K10KHalf-LTP for LPT>
 - Split points: <N/A, or list mats + per-RACE mapping when multi-distance>
 ```
 
@@ -98,8 +98,8 @@ Bullets, fixed keys (use these labels verbatim):
 do not restate the full mat/split list in Limitations.
 
 When course splits exist, include a **Split points by RACE** mini-table (or bullets) mapping
-each RACE value to the Split* mats used in that distance's LPT RSM. Do not invent splits
-for a distance (e.g. FULL often has **no** course Split* -- only LPTCheckpoint).
+each RACE value to the Split* mats used by that distance. For the dedicated LPT
+sample, this map must also match the corresponding `ResultsOnlineLPT*.rsm`.
 
 Each mat name must appear in exactly one of: Events (core), Optional, or Split points
 (plus LPT naming). Do not triple-book the same event.
@@ -125,7 +125,7 @@ not prose like "awards per distance":
 
 | System | Role | Wired in this template |
 |---|---|---|
-| Race Roster | registration / results / LPT / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), LPT (`@ResultsLPTToRR`), awards (`@awards2RR` or `@awards2RR*` -- exact names in Key listings) |
+| Race Roster | registration / results / awards upload | yes -- structured (`@ResultsToRR`), unstructured (`@ResultsUnsToRR`), awards (`@awards2RR` or `@awards2RR*` -- exact names in Key listings) |
 | SendGrid | email | yes/no |
 | Twilio | SMS | yes/no |
 | Other | ... | N/A |
@@ -156,8 +156,8 @@ Minimum set when present in the race:
 1. Set gun time(s)
 2. Recalculate places
 3. Publish structured results to Race Roster
-4. Publish unstructured / LPT (if applicable)
-5. One-click auto results (`@AutoResults` / `@AutoResultsLPT`)
+4. Publish unstructured results (or LPT in the dedicated LPT sample)
+5. One-click auto results (`@AutoResults`; `@AutoResultsLPT` only in `5K10KHalf-LTP`)
 6. Awards -- print listings (`@awards*`) and Race Roster upload listings
    (`@awards2RR*`) are **different files**, not a rename. Spell exact names.
    Do not glob. Purpose is the leading `*` comment in each `.lst` / `.rsm`.
@@ -258,14 +258,14 @@ No Distances table, no listing names, no RACE casing. Those live only in `CONTEX
 
 ## Per-race fill differences (checklist)
 
-| Section | 5K | 5K10K | 5K10KHalf | 5K10KHalfFull |
-|---|---|---|---|---|
-| Distance count | 1 | 2 | 3 | 4 |
-| RACE values | `5k` | `5k`, `10k` | `5K`, `10K`, `HALF` | `5K`, `10K`, `HALF`, `FULL` |
-| Awards print | `@awards` | `@awards5k`, `@awards10` (no trailing k on 10) | `@awards5K`, `@awards10K`, `@awardsHalf` | + `@awardsFull` |
-| Awards RR | `@awards2RR` | `@awards2RR5k`, `@awards2RR10k` | `@awards2RR5K`, `@awards2RR10K`, `@awards2RRHalf` | + `@awards2RRFull` |
-| Gun prompts | `GunTimePromt` | `GunTimePromt5k` / `10k` | `GunTimePromt5K` / `10K` / `Half` | + `GunTimePromtFull` |
-| LPT split map | LPTCheckpoint only | optional `5kSplit` (not distance-specific LPT RSMs) | 5K: none; 10K: Split2K/5K/8K; HALF: Split5K/10K/18K | same + FULL: none (generic `ResultsOnlineLPT.rsm`) |
+| Section | 5K | 5K10K | 5K10KHalf | 5K10KHalfFull | 5K10KHalf-LTP |
+|---|---|---|---|---|---|
+| Distance count | 1 | 2 | 3 | 4 | 3 |
+| RACE values | `5k` | `5k`, `10k` | `5K`, `10K`, `HALF` | `5K`, `10K`, `HALF`, `FULL` | `5K`, `10K`, `HALF` |
+| Awards print | `@awards` | `@awards5k`, `@awards10` (no trailing k on 10) | `@awards5K`, `@awards10K`, `@awardsHalf` | + `@awardsFull` | same as 5K10KHalf |
+| Awards RR | `@awards2RR` | `@awards2RR5k`, `@awards2RR10k` | `@awards2RR5K`, `@awards2RR10K`, `@awards2RRHalf` | + `@awards2RRFull` | same as 5K10KHalf |
+| Gun prompts | `GunTimePromt` | `GunTimePromt5k` / `10k` | `GunTimePromt5K` / `10K` / `Half` | + `GunTimePromtFull` | same as 5K10KHalf |
+| LPT | no | no | no | no | 5K: 1K/2K; 10K: 1K/2K/5K/8K; HALF: 1K/2K/5K/10K/18K |
 
 Verify RACE casing and awards filenames from each race's data/listings when writing --
 do not copy from this table blindly if files disagree.

@@ -1,0 +1,18 @@
+* Alphabetical Participant List for Bib Assignment
+* Purpose:          Master lookup for assigning bibs and verifying race categories.
+* Multi-Client:     Ideal for running on multiple RSClients to speed up check-in.
+* Why Birthdate:    Essential for distinguishing between runners with identical names
+*                    (e.g., Sr. vs Jr.) to ensure the right person gets the right bib.
+*
+* Note: use an empty comparand after <> - a literal "" matches two quote
+*       characters, not an empty string, and would exclude nothing.
+Select              Last Name
+<>
+Field               BIB
+Field               FIRST NAME
+Field               LAST NAME
+Field               RACE
+Field               BIRTHDATE
+Sort                LAST NAME
+Sort                FIRST NAME
+Destination         Browse

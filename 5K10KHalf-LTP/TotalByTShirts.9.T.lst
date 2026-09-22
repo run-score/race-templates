@@ -1,0 +1,7 @@
+* Tallys how many T-shirts of each size
+* Quickly Calculates Totals for Logistics and Inventory
+* When to use:      Use this for pre-race or post-race logistics, such as counting how many T-shirts to order, medals needed, or the gender breakdown of the field.
+* How to use:       Use the BY command on a field (like TSHIRT) without listing any other Field commands. This tells RunScore to simply count the occurrences rather than listing every runner.
+* Pro Tip:          Use BY PERCENT if you need to see the mathematical breakdown (e.g., "Large = 10 (21.3%)") for easier ordering.
+no page numbers
+BY                  TSHIRT

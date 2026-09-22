@@ -1,0 +1,43 @@
+   
+
+        ********** FEMALE OVERALL RESULTS FOR HALF RACE ***********
+    1 Heather Scott                             20 Moorestown      PA Swift RR   10:11:24 
+    2 Nancy Young                               62 Afton           NY Walton RC  10:12:34 
+    3 Brenda Edwards                            65 Thompsonville   NY Vernon RC  10:12:47 
+         ********** MALE OVERALL RESULTS FOR HALF RACE ***********
+    1 Thomas Collins                            30 Walton          WI Walton RC  10:01:33 
+    2 Larry Wright                              48 Dwighton        PA Walton RC  10:06:41 
+    3 Jeffrey Taylor                            69 Devon           PA MMRC       10:10:53 
+FEMALE AGE RACE HALF GROUP:  1 - 19
+MALE AGE RACE HALF GROUP:  1 - 19
+FEMALE AGE RACE HALF GROUP:  20 - 29
+MALE AGE RACE HALF GROUP:  20 - 29
+    1    29 Jerry Murphy                              20 Thompsonville      NJ 10:14:26 
+    2    72 Steve Young                               24 Johnson City       PA 10:24:57 
+    3    74 Ryan Morgan                               25 Middletown         MD 10:25:50 
+FEMALE AGE RACE HALF GROUP:  30 - 39
+    1    21 Cynthia Thomas                            33 Pembrooke          NY 10:12:57 
+    2    24 Katherine Walker                          34 Samsonville        PA 10:13:14 
+    3    26 Janet Thomas                              33 Samsonville        NY 10:13:34 
+MALE AGE RACE HALF GROUP:  30 - 39
+    1    69 Joseph Torres                             34 Middletown         NJ 10:24:29 
+    2    82 Frank Clark                               35 Afton              PA 10:27:35 
+    3   100 Jonathan Wilson                           34 Middletown         NY 10:38:26 
+FEMALE AGE RACE HALF GROUP:  40 - 49
+    1    70 Susan Martin                              49 Pembrooke          NY 10:24:40 
+MALE AGE RACE HALF GROUP:  40 - 49
+    1    20 James Brown                               44 Pembrooke          NY 10:12:52 
+    2    52 George Carter                             48 Westtown           NY 10:20:21 
+    3    90 Gary Murphy                               43 Norton             NY 10:28:54 
+FEMALE AGE RACE HALF GROUP:  50 - 59
+    1    58 Anna Morgan                               55 Dwighton           NY 10:21:51 
+    2    65 Shirley Nelson                            59 Thompsonville      NY 10:23:24 
+    3    77 Jessica Mitchell                          51 Moorestown         PA 10:26:39 
+MALE AGE RACE HALF GROUP:  50 - 59
+    1    71 Jerry Johnson                             57 Middletown         PA 10:24:51 
+    2    79 Raymond Thomas                            53 Devon              PA 10:27:06 
+FEMALE AGE RACE HALF GROUP:  60 - 99
+MALE AGE RACE HALF GROUP:  60 - 99
+    1    36 Richard White                             62 Moorestown         WI 10:15:29 
+    2    44 Jeffrey Torres                            66 Afton              NY 10:17:37 
+    3    45 Robert Collins                            67 Stumbleton         RI 10:17:38 

@@ -1,0 +1,97 @@
+* Upload structured (JSON) 5K results with splits and runner status to RaceRoster (LPT).
+*   Param 1 (%1):  The RaceRoster sub-event ID.
+*   Param 2 (%2):  The race code for filtering (5K).
+*
+*   Columns come from database fields, not raw events. Events2DB.rsm copies each
+*   mat onto its field first, so a corrected or filtered value is what ships.
+*   Run @CalcStatus.lst before uploading: it runs Events2DB and sets RUNNER STATUS.
+*
+*   Status event (Hide): RunScore only uploads a runner who has a time on some
+*   event. The dummy Status event carries 0 for that purpose, so runners who
+*   have not reached a mat still reach Race Roster. Seed it by simulating a race
+*   on Status and typing @TIME 0. Race Roster ignores the Hide column.
+*
+*   Estimated Finish Time is the only pace Race Roster has for a STARTING
+*   runner -- it plots them between the start and the first mat.
+*
+*   Split marks below (1K, 2K) are sample positions. Timers MUST rename the
+*   events in Events.xml AND the matching lines here when their mats differ.
+*
+*   Note:           LPT requires structured (JSON) results -- unstructured (text) uploads
+*                   are not supported by Live Predictive Tracking.
+*
+*   Recommendation:
+*     - Define sub-event IDs in Entries.INI (e.g. %rr_5k%) rather than hardcoding
+*       them here or in multiple listings -- one place to update when IDs change.
+*     - Do not add List DNF: an empty cell means "not there yet", not a DNF.
+
+External Report To  RaceRoster
+Records Per Page    100000
+No Page Numbers
+Dq Field            DNF
+
+Header
+.INCLUDE            RACENAME.%2
+##%1##
+.End of Header
+
+Select              BIB
+>                   0
+And
+Select              DNF
+EQ
+And
+Select              Race
+=                   %2
+Field               BIB
+Field               Name
+Field               Sex
+Field               AGE
+Field               DIV
+Field               City
+Field               State
+Field               DIVPLACE
+Field               DIVTOTAL
+Field               SEXPLACE
+Field               SEXTOTAL
+
+* Include flag: dummy Status event (0). Race Roster does not show this column.
+Event               Status
+Field Header        Hide
+
+Field               RUNNER STATUS
+Field Header        Race Status
+
+* Clock times of day
+Field               CHIPSTART
+Time Format         HH:MM:SS.01
+Field Header        Start Chip Time Local
+
+Field               Finish
+Time Format         HH:MM:SS.01
+Field Header        Finish Time Local
+
+* Elapsed finish times (CalcPlaces writes these)
+Field               TIME
+Time Format         H:MM:SS.01
+Field Header        Gun Time
+
+Field               NETTIME
+Time Format         H:MM:SS.01
+Field Header        Chip Time
+
+* Course splits: cumulative elapsed from ChipStart
+Event               Split1k
+minus               ChipStart
+Time Format         H:MM:SS.01
+Field Header        1K
+
+Event               Split2K
+minus               ChipStart
+Time Format         H:MM:SS.01
+Field Header        2K
+
+* Predicted pace for runners who have not reached a mat yet
+Field               Estimated
+Time Format         HH:MM:SS
+Field Header        Estimated Finish Time

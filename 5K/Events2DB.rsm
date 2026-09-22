@@ -1,4 +1,4 @@
-* EVENT TO DATABASE for ChipStart and Finish
+* Copy timing events to database fields for status monitoring.
 EVENT TO DATABASE
 EVENT               CHIPSTART
 EVENT FIELD         CHIPSTART

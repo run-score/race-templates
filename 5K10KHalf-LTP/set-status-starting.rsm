@@ -1,0 +1,10 @@
+* Set RUNNER STATUS to STARTING for everyone still unclaimed after COMPLETE
+* and IN_PROGRESS have run: no Finish and no mat read anywhere on course.
+* Gun time is set for the whole field at the gun, so it cannot decide this.
+Select              BIB
+>                   0
+And
+Select              RUNNER STATUS
+EQ
+Selected            RUNNER STATUS
+Selected Message    STARTING

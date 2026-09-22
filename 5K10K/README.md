@@ -1,4 +1,4 @@
-# 5K10K
+﻿# 5K10K
 
 Two-distance 5 km / 10 km road race. This sample shares a finish; starts,
 routes, and gun times can differ by distance.
@@ -11,6 +11,8 @@ routes, and gun times can differ by distance.
    any live upload. Same page.
 
 Gun times may match or be staggered per distance.
+
+For Race Roster Live Predictive Tracking, start from [`5K10KHalf-LTP`](../5K10KHalf-LTP) instead.
 
 RunScore shows `Readme.1.X.lst` as in-app help (do not delete).
 `Fields.1.X.lst` describes Enter/Edit Names fields. You may remove it from
