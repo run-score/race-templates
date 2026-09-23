@@ -1,4 +1,4 @@
-# 5K10KHalf-LTP
+# 5K10KHalf-LPT
 
 Three-distance 5K / 10K / half marathon road race wired for Race Roster
 **Live Predictive Tracking**. This sample shares a finish; starts and routes

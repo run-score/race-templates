@@ -34,7 +34,7 @@ email/SMS.
 - Events (mats): GunStart, ChipStart, Announcer, Finish
 - Optional / unused mats: N/A
 - Finish model: shared single Finish
-- LPT: no -- use `5K10KHalf-LTP` for Live Predictive Tracking
+- LPT: no -- use `5K10KHalf-LPT` for Live Predictive Tracking
 - Split points: Split2K, Split5K, Split8K, Split10K, Split18K (optional; unused until configured)
 
 

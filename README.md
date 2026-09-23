@@ -40,7 +40,7 @@ self-contained race you can copy and adapt.
 | [`5K/`](5K) | Single-distance 5 km road race (Race Roster-oriented). |
 | [`5K10K/`](5K10K) | Two-distance 5 km / 10 km road race with shared finish. |
 | [`5K10KHalf/`](5K10KHalf) | Three-distance 5K / 10K / half marathon road race. |
-| [`5K10KHalf-LTP/`](5K10KHalf-LTP) | Three-distance sample dedicated to Race Roster Live Predictive Tracking. |
+| [`5K10KHalf-LPT/`](5K10KHalf-LPT) | Three-distance sample dedicated to Race Roster Live Predictive Tracking. |
 | [`5K10KHalfFull/`](5K10KHalfFull) | Four-distance 5K / 10K / half / full marathon road race. |
 
 RunScore consumes this repo as a git submodule and installs these templates under

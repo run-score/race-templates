@@ -1,4 +1,4 @@
-# 5K10KHalf-LTP
+# 5K10KHalf-LPT
 
 > AI source of truth for this race. Not for human use.
 > Repo map: [`../CONTEXT.md`](../CONTEXT.md). Human page: [`README.md`](README.md).
@@ -6,7 +6,7 @@
 
 ## Identity
 
-Template id: 5K10KHalf-LTP
+Template id: 5K10KHalf-LPT
 Race type: road
 Distance count: 3
 Sample display name: Vernon Races

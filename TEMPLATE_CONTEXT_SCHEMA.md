@@ -90,7 +90,7 @@ Bullets, fixed keys (use these labels verbatim):
 - Events (mats): <comma-separated exact event names from Events.xml -- core race path only>
 - Optional / unused mats: <N/A unless a mat is truly unused and not a course split>
 - Finish model: <shared finish | ...>
-- LPT: <yes/no -- standard samples are no; use 5K10KHalf-LTP for LPT>
+- LPT: <yes/no -- standard samples are no; use 5K10KHalf-LPT for LPT>
 - Split points: <N/A, or list mats + per-RACE mapping when multi-distance>
 ```
 
@@ -157,7 +157,7 @@ Minimum set when present in the race:
 2. Recalculate places
 3. Publish structured results to Race Roster
 4. Publish unstructured results (or LPT in the dedicated LPT sample)
-5. One-click auto results (`@AutoResults`; `@AutoResultsLPT` only in `5K10KHalf-LTP`)
+5. One-click auto results (`@AutoResults`; `@AutoResultsLPT` only in `5K10KHalf-LPT`)
 6. Awards -- print listings (`@awards*`) and Race Roster upload listings
    (`@awards2RR*`) are **different files**, not a rename. Spell exact names.
    Do not glob. Purpose is the leading `*` comment in each `.lst` / `.rsm`.
@@ -258,7 +258,7 @@ No Distances table, no listing names, no RACE casing. Those live only in `CONTEX
 
 ## Per-race fill differences (checklist)
 
-| Section | 5K | 5K10K | 5K10KHalf | 5K10KHalfFull | 5K10KHalf-LTP |
+| Section | 5K | 5K10K | 5K10KHalf | 5K10KHalfFull | 5K10KHalf-LPT |
 |---|---|---|---|---|---|
 | Distance count | 1 | 2 | 3 | 4 | 3 |
 | RACE values | `5k` | `5k`, `10k` | `5K`, `10K`, `HALF` | `5K`, `10K`, `HALF`, `FULL` | `5K`, `10K`, `HALF` |
