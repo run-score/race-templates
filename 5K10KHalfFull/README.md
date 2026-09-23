@@ -12,7 +12,7 @@ a finish; starts and routes can differ by distance.
 
 Set a gun time per distance.
 
-For Race Roster Live Predictive Tracking, start from [`5K10KHalf-LTP`](../5K10KHalf-LTP) instead.
+For Race Roster Live Predictive Tracking, start from [`5K10KHalf-LPT`](../5K10KHalf-LPT) instead.
 
 RunScore shows `Readme.1.X.lst` as in-app help (do not delete).
 `Fields.1.X.lst` describes Enter/Edit Names fields. You may remove it from

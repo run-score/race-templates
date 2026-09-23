@@ -32,7 +32,7 @@ with online results, optional 5k split, awards upload, and live email/SMS.
 - Events (mats): GunStart, ChipStart, Announcer, Finish
 - Optional / unused mats: `5kSplit`
 - Finish model: shared single Finish
-- LPT: no -- use `5K10KHalf-LTP` for Live Predictive Tracking
+- LPT: no -- use `5K10KHalf-LPT` for Live Predictive Tracking
 - Split points: `5kSplit` (optional course split; unused unless configured)
 
 
